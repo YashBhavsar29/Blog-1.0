@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en"
+    data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+    <title>The Dev Notebook — Yash Bhavsar</title>
+    <meta name="description"
+        content="Notes on games, systems, and the things that broke along the way, by Yash Bhavsar." />
+
+    <script>
+        /* apply the saved (or system) theme before first paint to avoid a flash */
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem("notebook-theme"); } catch (e) { }
+            if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="notebook.css" />
+</head>
+
+<body>
+    <!-- ============ TOP BAR (home): theme toggle left, links centered, nothing right ============ -->
+    <header class="topbar topbar--home">
+        <span class="topbar-spacer"
+            aria-hidden="true"></span>
+        <nav aria-label="Primary">
+            <a href="#top">notebook</a>
+            <a href="#entries">entries</a>
+            <a href="#about">about</a>
+        </nav>
+        <button class="theme-toggle"
+            type="button"
+            data-theme-toggle>☾ night desk</button>
+    </header>
+
+    <main class="sheet-page"
+        id="top">
+        <span class="holes"
+            aria-hidden="true"></span>
+        <span class="tape tape--tl"
+            aria-hidden="true"></span>
+        <span class="tape tape--tr"
+            aria-hidden="true"></span>
+        <span class="stain"
+            aria-hidden="true"></span>
+
+        <!-- ============ HERO ============ -->
+        <section class="hero">
+            <div>
+                <p class="kicker">blog.yashbhavsar.in · vol. 1</p>
+                <h1 class="hero-title">The <span class="hl">Dev</span><br />Notebook</h1>
+                <p class="hero-sub">Notes on games, systems, and the things that broke along the way.</p>
+                <p class="hero-intro">
+                    I'm Yash, a Unity game developer. This is where I write things down: how I
+                    structure code, what shipped, what didn't, and what I learned in between.
+                </p>
+            </div>
+
+            <aside class="sticky"
+                aria-label="What I'm working on">
+                <b>on my desk</b>
+                notes on modular, event-driven Unity code, plus the next journal entry.
+            </aside>
+        </section>
+
+        <!-- ============ SERIES ============ -->
+        <div class="section-head">
+            <h2>Entries</h2>
+            <span class="note">pull a page out of a notebook ↓</span>
+        </div>
+
+        <div class="tabs"
+            role="group"
+            aria-label="Filter by series">
+            <button class="tab is-active"
+                type="button"
+                data-series-tab="all">All</button>
+            <button class="tab"
+                type="button"
+                data-series-tab="journal">Dev Journal</button>
+            <button class="tab"
+                type="button"
+                data-series-tab="systems">Systems Notes</button>
+            <button class="tab"
+                type="button"
+                data-series-tab="postmortem">Post-mortems</button>
+        </div>
+
+        <!-- ============ NOTEBOOK CARDS ============ -->
+        <div class="entries"
+            id="entries">
+
+            <!-- Entry 001: the real one -->
+            <a class="entry"
+                href="posts/my-first-year-of-diploma.html"
+                data-entry
+                data-series="journal"
+                aria-label="Entry 001: My 1st Year of Diploma">
+                <div class="entry-stage">
+                    <div class="entry-sheet">
+                        <span class="sheet-no">ENTRY 001</span>
+                        <h3 class="sheet-title">My 1st Year of Diploma</h3>
+                        <p class="sheet-meta">first programs, full notebooks · 7 min</p>
+                    </div>
+                    <div class="entry-book">
+                        <span class="book-label"><b>DEV JOURNAL</b>vol. 1 · 2026</span>
+                        <svg class="book-doodle"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            stroke="#f4ecd8"
+                            stroke-width="2.4"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M20 4 L24.5 15 L36 16 L27 24 L30 36 L20 29.5 L10 36 L13 24 L4 16 L15.5 15 Z" />
+                        </svg>
+                    </div>
+                    <span class="entry-hint">pull the page out →</span>
+                </div>
+            </a>
+
+            <!-- Entry 002: still being written -->
+            <div class="entry entry--empty entry--navy"
+                data-series="systems"
+                aria-label="Entry 002, coming soon">
+                <div class="entry-stage">
+                    <div class="entry-sheet">
+                        <span class="sheet-no">ENTRY 002</span>
+                        <h3 class="sheet-title">coming soon…</h3>
+                        <p class="sheet-meta">systems notes</p>
+                    </div>
+                    <div class="entry-book">
+                        <span class="book-label"><b>SYSTEMS NOTES</b>vol. 1 · 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entry 003: still being written -->
+            <div class="entry entry--empty entry--green"
+                data-series="postmortem"
+                aria-label="Entry 003, coming soon">
+                <div class="entry-stage">
+                    <div class="entry-sheet">
+                        <span class="sheet-no">ENTRY 003</span>
+                        <h3 class="sheet-title">coming soon…</h3>
+                        <p class="sheet-meta">post-mortem</p>
+                    </div>
+                    <div class="entry-book">
+                        <span class="book-label"><b>POST-MORTEMS</b>vol. 1 · 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ ABOUT (lives on the blog itself) ============ -->
+        <section class="about"
+            id="about">
+            <div class="section-head">
+                <h2>About</h2>
+                <span class="note">the person holding the pencil</span>
+            </div>
+
+            <!-- SAMPLE COPY: placeholder text. Rewrite it in your own words before publishing. -->
+            <div class="about-text">
+                <p>
+                    I'm Yash Bhavsar, a Unity game developer from Maharashtra. I started out in a diploma in
+                    Artificial Intelligence and Machine Learning, and somewhere between the first lab and the
+                    first prototype I figured out that what I really like is <span class="hl">making things
+                        that respond when you touch them</span>.
+                </p>
+                <p>
+                    These days I build games and the systems underneath them: modular, event-driven code that
+                    stays readable a month later. I like small tools, clean architecture, and tinkering with
+                    hardware when a breadboard is nearby.
+                </p>
+                <p>
+                    Away from the editor you'll find me sketching in a notebook, rewatching Pokémon, and
+                    collecting ideas for the next thing to break. This blog is where I write down what I
+                    learn from it.
+                </p>
+            </div>
+
+            <div class="about-cta">
+                <a class="origami origami--blue"
+                    href="https://yashbhavsar.in"
+                    data-origami>
+                    <span class="origami-paper"
+                        aria-hidden="true">
+                        <span class="origami-face">
+                            <small>yashbhavsar.in</small>
+                            <b>portfolio ↗</b>
+                        </span>
+                        <span class="fold fold--t"></span>
+                        <span class="fold fold--l"></span>
+                        <span class="fold fold--r"></span>
+                        <span class="fold fold--b"></span>
+                    </span>
+                    <span class="origami-cap">
+                        <b>Visit my portfolio</b>
+                        <span>games, projects and experiments</span>
+                    </span>
+                </a>
+
+                <a class="origami origami--red"
+                    href="https://www.cosmicdream.in/"
+                    data-origami>
+                    <span class="origami-paper"
+                        aria-hidden="true">
+                        <span class="origami-face">
+                            <small>cosmicdream.in</small>
+                            <b>the studio ↗</b>
+                        </span>
+                        <span class="fold fold--t"></span>
+                        <span class="fold fold--l"></span>
+                        <span class="fold fold--r"></span>
+                        <span class="fold fold--b"></span>
+                    </span>
+                    <span class="origami-cap">
+                        <b>Visit Cosmic Dream Studio</b>
+                        <span>where the games get made</span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============ FOOTER ============ -->
+        <footer class="colophon colophon--note">
+            <span>Content curated with thoughts🧠and experiences.🔮</span>
+        </footer>
+
+        <span class="page-no"
+            aria-hidden="true">p. 1</span>
+    </main>
+
+    <script src="notebook.js"></script>
+</body>
+
+</html>
