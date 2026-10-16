@@ -25,12 +25,12 @@
 
     /* ---- series tabs: dim the notebooks that are not in the series ---- */
     const tabs = document.querySelectorAll("[data-series-tab]");
-    const entries = document.querySelectorAll("[data-series]");
+    const pages = document.querySelectorAll("[data-series]");
     tabs.forEach((tab) => {
         tab.addEventListener("click", () => {
             const wanted = tab.dataset.seriesTab;
             tabs.forEach((t) => t.classList.toggle("is-active", t === tab));
-            entries.forEach((entry) => {
+            pages.forEach((entry) => {
                 const match = wanted === "all" || entry.dataset.series === wanted;
                 entry.classList.toggle("is-dim", !match);
             });

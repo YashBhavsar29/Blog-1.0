@@ -388,7 +388,7 @@ a {
 }
 
 /* ============ HOME: NOTEBOOK ENTRY CARDS ============ */
-.entries {
+.pages {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px 34px;
@@ -1272,6 +1272,38 @@ hr.squiggle {
 .origami--red:hover .origami-cap b,
 .origami--red:focus-visible .origami-cap b {
     color: var(--red);
+}
+
+/* ---------- ABOUT: title + first paragraph with a sticky beside them ---------- */
+.about-top {
+    display: grid;
+    grid-template-columns: minmax(0, 38em) minmax(190px, 240px);
+    gap: 0 44px;
+    align-items: start;
+}
+.about-top > div > p {
+    margin: 0 0 1.1em;
+}
+.about-top .sticky {
+    margin-top: 104px; /* lines up with the About title, below the section-head gap */
+    transform: rotate(-2deg);
+}
+.sticky--green {
+    background: #cfe9b8;
+    color: #1f3a12;
+}
+.sticky--green b {
+    color: #4a7a26;
+}
+
+@media (max-width: 900px) {
+    .about-top {
+        grid-template-columns: 1fr;
+    }
+    .about-top .sticky {
+        margin-top: 4px;
+        max-width: 280px;
+    }
 }
 
 @media (max-width: 760px) {
