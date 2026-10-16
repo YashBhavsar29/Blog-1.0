@@ -11,11 +11,11 @@
         content="Blogs on books, habits, and the adventurous journey of becoming best version of myself, by Yash Bhavsar." />
 
     <script>
-        /* apply the saved (or system) theme before first paint to avoid a flash */
+        /* Apply the saved theme before first paint; light is the default. */
         (function () {
             var t = null;
             try { t = localStorage.getItem("notebook-theme"); } catch (e) { }
-            if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            if (!t) t = "light";
             document.documentElement.setAttribute("data-theme", t);
         })();
     </script>
@@ -35,19 +35,7 @@
 </head>
 
 <body>
-    <!-- ============ TOP BAR (home): theme toggle left, links centered, nothing right ============ -->
-    <header class="topbar topbar--home">
-        <span class="topbar-spacer"
-            aria-hidden="true"></span>
-        <nav aria-label="Primary">
-            <a href="#top">notebook</a>
-            <a href="#pages">pages</a>
-            <a href="#about">about</a>
-        </nav>
-        <button class="theme-toggle"
-            type="button"
-            data-theme-toggle>☾ night desk</button>
-    </header>
+    <div data-include="partials/header-home.html"></div>
 
     <main class="sheet-page"
         id="top">
@@ -260,11 +248,7 @@
             </div>
         </section>
 
-        <!-- ============ FOOTER ============ -->
-        <footer class="colophon">
-            <span>© 2026 Yash Bhavsar</span>
-            <span>Content curated with thoughts🧠 & experiences.🔮</span>
-        </footer>
+        <div data-include="partials/footer.html"></div>
 
         <span class="page-no"
             aria-hidden="true">p. 1</span>
