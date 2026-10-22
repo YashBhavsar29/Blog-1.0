@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="en"
+    data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+    <title>Six Semesters, Six Different Me’s — The Dev Notebook</title>
+    <meta name="description"
+        content="How my perspective changed every semester of college: from pure curiosity to certificates, competitions, an internship lesson, leadership, an intentional friendship, and a no-regrets final semester." />
+
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem("notebook-theme"); } catch (e) { }
+            if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="../notebook.css" />
+    <link rel="stylesheet"
+        href="../post-extras.css" />
+
+    <style>
+        /* ============================================================
+   College building drawn along the bottom edge of a post
+   (replaces the Pikachu + bolt). Paste into post-extras.css
+   or at the end of notebook.css.
+   ============================================================ */
+        .edge-doodle {
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: min(540px, 82%);
+            height: auto;
+            margin: 0 auto -90px;
+            /* sinks into the sheet's bottom padding so it stands on the edge */
+            mix-blend-mode: multiply;
+            /* drops the white background of the drawing onto the paper */
+            pointer-events: none;
+        }
+
+        /* night desk: white lines on the dark paper */
+        [data-theme="dark"] .edge-doodle {
+            filter: invert(1);
+            mix-blend-mode: screen;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 760px) {
+            .edge-doodle {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pencil-bar"
+        aria-hidden="true"></div>
+
+    <div data-include="../partials/header-post.html"></div>
+
+    <main class="sheet-page">
+        <span class="holes"
+            aria-hidden="true"></span>
+        <span class="tape tape--tl"
+            aria-hidden="true"></span>
+        <span class="tape tape--tr"
+            aria-hidden="true"></span>
+        <span class="stain"
+            aria-hidden="true"></span>
+
+        <article class="post">
+            <div class="post-kicker">
+                <span class="chip">Page 001</span>
+                <span>Life Notes</span>
+                <span>·</span>
+                <span>12 min read</span>
+                <span>·</span>
+                <span>October 2026</span>
+            </div>
+
+            <h1>Six Semesters, Six Different Me’s</h1>
+            <p class="dek">How my perspective changed every semester of diploma days, and why I’m glad it did.</p>
+
+            <hr class="squiggle" />
+
+            <p class="lead">
+                I was reflecting on the semesters I’ve passed in my diploma college days when I noticed something odd: I
+                never
+                actually <span class="hl">decided</span> to change how I see things. It just kept happening, quietly,
+                in the background, like a phone updating overnight. Every semester arrived with its own goals, its own
+                priorities and its own mindset, and looking back, each one was a small upgrade over the one before it.
+            </p>
+            <p>
+                I didn’t notice any of it while it was happening. Only when I laid all six semesters side by side did
+                the pattern show up. So I’m writing it down while it’s still fresh. Think of this as a travel diary,
+                except the place I travelled through was my own head.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 245"
+                    role="img"
+                    aria-label="Pencil sketch of a paper plane flying along a looping dotted trail between two clouds"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <g stroke="#9aa0ad"
+                        stroke-width="1.8">
+                        <path d="M60 70 h58 a13 13 0 0 0 -3 -25 a19 19 0 0 0 -36 -3 a15 15 0 0 0 -19 28z" />
+                        <path d="M440 196 h52 a11 11 0 0 0 -3 -21 a16 16 0 0 0 -31 -2 a13 13 0 0 0 -18 23z" />
+                    </g>
+                    <path d="M40 205 C120 205 170 130 130 112 C95 98 82 148 140 158 C230 172 330 88 430 82"
+                        stroke="#2b4f8a"
+                        stroke-width="2.6"
+                        stroke-dasharray="3 9" />
+                    <g class="plane">
+                        <path d="M428 92 L552 42 L492 130 L470 108 Z"
+                            fill="#fffdf7" />
+                        <path d="M470 108 L552 42" />
+                        <path d="M470 108 L464 134 L492 130" />
+                        <path d="M556 30 l10 -10 M566 46 l14 -3 M544 24 l-2 -14"
+                            stroke="#c4442f" />
+                    </g>
+                    <text x="40"
+                        y="236"
+                        class="t-md">semester 1: no map, just curiosity</text>
+                </svg>
+                <figcaption><i>Fig. 1</i> — no destination yet, just a lot of sky.</figcaption>
+            </figure>
+
+            <h2><span class="sec">SEM 1–2</span>Everything was new</h2>
+
+            <p>
+                In the first two semesters I had no goal and no clarity about what I was supposed to be doing.
+                Everything around me was new: the campus, the people, the rhythm of lectures, the odd freedom of
+                nobody checking your homework every day. I wasn’t chasing anything. I was exploring, taking things in
+                as they came.
+            </p>
+            <p>
+                My perspective was small, and honestly, I think that’s what kept it pure. I went to lectures. I was
+                properly into learning the subjects, not just surviving them. Alongside the syllabus I practised DSA
+                and DP, and I watched YouTube videos on nearly every topic we studied. Not in the panic week before
+                exams, but almost every day. Nobody told me to, and there was no reward waiting. I simply liked the
+                feeling of a concept clicking into place.
+            </p>
+            <span class="margin-note">no goals. just curiosity.</span>
+            <p>
+                Then exams would come closer and the mood changed. The library and the quiet corners around campus
+                filled up with a few classmates and me, and I found myself running small lectures for them, mostly on
+                Physics and Chemistry. It was a study group on paper but a classroom without a teacher in practice.
+                Explaining a topic out loud to someone else turned out to be the fastest way to find out whether I
+                actually understood it.
+            </p>
+
+            <blockquote class="pull">
+                I didn’t have a goal yet, but I had curiosity. Looking back, that was enough to start.
+                <cite>— note to self</cite>
+            </blockquote>
+
+            <h2><span class="sec">SEM 3</span>The certificate I couldn’t explain</h2>
+
+            <p>
+                The first real shift in my perspective began with an embarrassing moment in the 2nd semester, one
+                that took an entire vacation to digest.
+            </p>
+
+            <div class="broke">
+                <span class="stamp">THE MOMENT</span>
+                <p>
+                    During the viva for DLS (Development of Life Skills), our professor asked each of us to submit a
+                    certificate we had earned. I had nothing. I’d been learning from YouTube for months and had no
+                    certificate to show for any of it. So I handed in the only one I had: an appreciation certificate
+                    from my society’s internal gathering, given because I had cleared my 10th SSC. Which was, let’s
+                    be honest, pretty normal. Not exactly an achievement.
+                </p>
+                <p>Sir looked at it and asked:</p>
+                <p class="say">“What is the significance of this certificate?”</p>
+                <p class="say">“What did you learn from it?”</p>
+                <p>
+                    I was blank. Not nervous-blank, but truly empty, because there was no honest answer to give.
+                </p>
+            </div>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 250"
+                    role="img"
+                    aria-label="Sketch of a tilted certificate with a red seal, a speech bubble asking what did you learn from it, and a bubble containing only an ellipsis"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <g transform="rotate(-3 285 125)">
+                        <rect x="150"
+                            y="30"
+                            width="270"
+                            height="180"
+                            rx="4"
+                            fill="#fffdf7" />
+                        <rect x="162"
+                            y="42"
+                            width="246"
+                            height="156"
+                            stroke="#7a7d86"
+                            stroke-width="1.6"
+                            stroke-dasharray="5 5" />
+                        <text x="285"
+                            y="76"
+                            text-anchor="middle"
+                            class="t-md">appreciation</text>
+                        <path d="M205 86 h160" />
+                        <path d="M200 112 h170"
+                            stroke="#9aa0ad" />
+                        <path d="M190 134 h190"
+                            stroke="#9aa0ad" />
+                        <path d="M190 156 h110"
+                            stroke="#9aa0ad" />
+                        <path d="M362 190 l-6 20 l16 -8 l16 8 l-6 -20"
+                            stroke="#c4442f" />
+                        <circle cx="372"
+                            cy="172"
+                            r="21"
+                            fill="#c4442f"
+                            fill-opacity=".85"
+                            stroke="#c4442f" />
+                        <path d="M372 160 l4 9 10 1 -8 6 3 10 -9 -6 -9 6 3 -10 -8 -6 10 -1z"
+                            stroke="#fffdf7"
+                            stroke-width="1.6" />
+                    </g>
+                    <rect x="430"
+                        y="34"
+                        width="154"
+                        height="76"
+                        rx="12"
+                        fill="#fffdf7"
+                        stroke="#2b4f8a" />
+                    <path d="M462 110 L444 140 L488 110"
+                        fill="#fffdf7"
+                        stroke="#2b4f8a" />
+                    <text x="507"
+                        y="68"
+                        text-anchor="middle"
+                        class="t-blue">what did you</text>
+                    <text x="507"
+                        y="94"
+                        text-anchor="middle"
+                        class="t-blue">learn from it?</text>
+                    <rect x="22"
+                        y="70"
+                        width="106"
+                        height="58"
+                        rx="12"
+                        fill="#fffdf7"
+                        stroke="#c4442f" />
+                    <path d="M110 128 L134 150 L122 128"
+                        fill="#fffdf7"
+                        stroke="#c4442f" />
+                    <text x="75"
+                        y="114"
+                        text-anchor="middle"
+                        class="t-big t-red">…</text>
+                    <text x="40"
+                        y="236"
+                        class="t-sm">my answer, at the time</text>
+                </svg>
+                <figcaption><i>Fig. 2</i> — the certificate, and the question I couldn’t answer.</figcaption>
+            </figure>
+
+            <p>
+                That silence followed me out of the room. It wasn’t that I hadn’t learned anything. It was that I had
+                nothing I could point to, nothing that said <em>this is what I did and this is what it taught me</em>.
+                I realised that learning is only half the job. The other half is being able to show it.
+            </p>
+            <p>
+                So I made a decision. From then on I wouldn’t just go through courses, I would finish them and earn
+                the certificate at the end. Over a few months of vacation I worked through certified courses, one of
+                which was a DSA in Python course by Jovial ML.
+            </p>
+            <p>
+                It was a small change, from “I’m learning” to “I’m learning, and I can prove it.” But it was also the
+                first time I started thinking about my future in a structured way, not as something that would just
+                happen to me.
+            </p>
+
+            <h2><span class="sec">SEM 4</span>Stepping outside my own campus</h2>
+
+            <p>
+                By the fourth semester, study, exams and submissions weren’t enough to fill my head. I wanted to see
+                what else was out there. So I started participating in inter-college competitions, mostly coding
+                contests and tech quizzes, while still keeping up with everything else college demanded.
+            </p>
+            <p>
+                I took part in many and won a few, and yes, the wins felt great. But what actually changed was what I
+                was chasing. I wanted to explore as many colleges around us as I could, walk into their events, talk
+                to new students and build connections with people I’d never have met otherwise. Every competition was
+                really an excuse to meet a new campus.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 250"
+                    role="img"
+                    aria-label="Sketch of a medal with a star on blue and red ribbons, a small trophy cup, and sparkles"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M240 16 L276 16 L314 108 L280 116 Z"
+                        fill="#2b4f8a"
+                        fill-opacity=".8" />
+                    <path d="M360 16 L324 16 L286 108 L320 116 Z"
+                        fill="#c4442f"
+                        fill-opacity=".8" />
+                    <circle cx="300"
+                        cy="162"
+                        r="54"
+                        fill="#ffe45e"
+                        fill-opacity=".8" />
+                    <circle cx="300"
+                        cy="162"
+                        r="42"
+                        stroke-width="1.6"
+                        stroke-dasharray="3 5" />
+                    <path
+                        d="M300 134 L309 155 L332 157 L315 172 L320 194 L300 183 L280 194 L285 172 L268 157 L291 155 Z"
+                        fill="#fffdf7" />
+                    <path d="M70 92 h60 v30 a30 30 0 0 1 -60 0 z"
+                        fill="#fffdf7" />
+                    <path d="M70 102 h-14 a14 14 0 0 0 14 22 M130 102 h14 a14 14 0 0 1 -14 22" />
+                    <path d="M100 152 v22 M80 182 h40 M86 174 h28" />
+                    <path d="M205 60 v22 M194 71 h22"
+                        stroke="#c4442f" />
+                    <path d="M410 44 v18 M401 53 h18"
+                        stroke="#2b4f8a" />
+                    <path d="M440 168 v16 M432 176 h16"
+                        stroke="#c4442f" />
+                    <path d="M170 190 v14 M163 197 h14"
+                        stroke="#2b4f8a" />
+                    <text x="440"
+                        y="120"
+                        class="t-big t-blue">{ }</text>
+                    <text x="500"
+                        y="170"
+                        class="t-big t-red">?</text>
+                    <text x="300"
+                        y="238"
+                        text-anchor="middle"
+                        class="t-md">coding contests &amp; tech quizzes</text>
+                </svg>
+                <figcaption><i>Fig. 3</i> — the semester I started collecting colleges.</figcaption>
+            </figure>
+
+            <p>
+                That was the semester I noticed my world was bigger than my college. Until then, “college” meant one
+                building and the same faces. Suddenly it meant a whole city of students, all working through their own
+                version of the same journey.
+            </p>
+
+            <h2><span class="sec">SEM 4 · VACATION</span>The internship we almost didn’t get</h2>
+
+            <p>
+                At the end of that vacation came vocational training, and with it a lesson that wasn’t in any
+                syllabus. We didn’t want to wait for a company to be handed to us. So my friend Anand and I decided to
+                find one ourselves, by physically going everywhere we could.
+            </p>
+            <p>
+                We covered the city and the industrial areas on a bike, on trips of 100+ km, marking every location on
+                Google Maps as we went. At almost every stop the story ended in one of three ways: the place was
+                closed, it didn’t offer internships, or it wanted our money.
+            </p>
+            <p>
+                That third one was the pattern. Several places were happy to give us an “internship certificate” plus
+                some training, for a fee. It was what many of our seniors and classmates had done, and it was
+                starting to look like the only way in. After enough locked doors, I was almost ready to quit.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 252"
+                    role="img"
+                    aria-label="Sketch of a map with a dotted bike route, three red crossed-out pins and one blue starred pin, and a small bicycle"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <defs>
+                        <path id="pin-s4"
+                            d="M0 0 c-8 -12 -14 -18 -14 -26 a14 14 0 1 1 28 0 c0 8 -6 14 -14 26z" />
+                    </defs>
+                    <rect x="20"
+                        y="12"
+                        width="560"
+                        height="200"
+                        rx="3"
+                        fill="#fffdf7"
+                        stroke="#9aa0ad" />
+                    <path d="M207 12 V212 M393 12 V212"
+                        stroke="#d6cfba"
+                        stroke-width="1.6"
+                        stroke-dasharray="2 6" />
+                    <path d="M20 150 H580 M120 12 V212 M470 12 V212"
+                        stroke="#e4dac5"
+                        stroke-width="6" />
+                    <text x="40"
+                        y="48"
+                        class="t-md t-blue">100+ km by bike</text>
+                    <g stroke-width="2">
+                        <circle cx="60"
+                            cy="112"
+                            r="14" />
+                        <circle cx="108"
+                            cy="112"
+                            r="14" />
+                        <path d="M60 112 L80 92 H100 L108 112 M80 92 L90 112 H60 M100 92 L96 82 M92 82 h10" />
+                    </g>
+                    <path d="M70 196 C120 110 170 170 230 120 S330 70 370 140 S470 175 520 72"
+                        stroke="#2b4f8a"
+                        stroke-width="2.6"
+                        stroke-dasharray="3 9" />
+                    <g transform="translate(150 152)">
+                        <use href="#pin-s4"
+                            stroke="#c4442f"
+                            fill="#fffdf7" />
+                        <path d="M-6 -32 l12 12 M6 -32 l-12 12"
+                            stroke="#c4442f" />
+                    </g>
+                    <g transform="translate(305 94)">
+                        <use href="#pin-s4"
+                            stroke="#c4442f"
+                            fill="#fffdf7" />
+                        <path d="M-6 -32 l12 12 M6 -32 l-12 12"
+                            stroke="#c4442f" />
+                    </g>
+                    <g transform="translate(440 166)">
+                        <use href="#pin-s4"
+                            stroke="#c4442f"
+                            fill="#fffdf7" />
+                        <path d="M-6 -32 l12 12 M6 -32 l-12 12"
+                            stroke="#c4442f" />
+                    </g>
+                    <g transform="translate(520 74)">
+                        <use href="#pin-s4"
+                            stroke="#2b4f8a"
+                            fill="#ffe45e" />
+                        <path d="M0 -37 l3 7 8 1 -6 5 2 8 -7 -4 -7 4 2 -8 -6 -5 8 -1z"
+                            stroke="#2b4f8a"
+                            stroke-width="1.4" />
+                    </g>
+                    <text x="300"
+                        y="240"
+                        text-anchor="middle"
+                        class="t-sm">✕ closed &nbsp;·&nbsp; ✕ no internships &nbsp;·&nbsp; ✕ “pay us first”
+                        &nbsp;·&nbsp; ★ open!</text>
+                </svg>
+                <figcaption><i>Fig. 4</i> — the search map: three kinds of closed doors, and one open one.</figcaption>
+            </figure>
+
+            <p>
+                Anand wouldn’t let me. He’s my best friend and my classmate, and he suggested one last try: go back to
+                the Software IT Park area one more time. So the two of us rode there again.
+            </p>
+            <p>
+                And there it was: a startup called Modi Innovations Pvt Ltd, open at the very moment we walked up. We
+                asked whether they could give us an internship, and we ended up talking directly to the head of the
+                startup’s branch in the IT Park, Abhishek Sir.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 250"
+                    role="img"
+                    aria-label="Sketch of IT park buildings with rows of windows and a small unit with an open sign"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <defs>
+                        <pattern id="itwin-s4"
+                            width="26"
+                            height="28"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="6"
+                                y="6"
+                                width="13"
+                                height="15"
+                                stroke-width="1.6" />
+                        </pattern>
+                    </defs>
+                    <path d="M20 214 H580" />
+                    <rect x="50"
+                        y="124"
+                        width="110"
+                        height="90"
+                        fill="#fffdf7" />
+                    <rect x="50"
+                        y="124"
+                        width="110"
+                        height="90"
+                        fill="url(#itwin-s4)"
+                        stroke="none" />
+                    <rect x="190"
+                        y="46"
+                        width="150"
+                        height="168"
+                        fill="#fffdf7" />
+                    <rect x="190"
+                        y="46"
+                        width="150"
+                        height="168"
+                        fill="url(#itwin-s4)"
+                        stroke="none" />
+                    <path d="M265 20 V6 M258 6 h14" />
+                    <rect x="205"
+                        y="20"
+                        width="120"
+                        height="28"
+                        fill="#fffdf7" />
+                    <text x="265"
+                        y="41"
+                        text-anchor="middle"
+                        class="t-md">IT PARK</text>
+                    <rect x="370"
+                        y="96"
+                        width="120"
+                        height="118"
+                        fill="#fffdf7" />
+                    <rect x="370"
+                        y="96"
+                        width="120"
+                        height="118"
+                        fill="url(#itwin-s4)"
+                        stroke="none" />
+                    <rect x="504"
+                        y="152"
+                        width="76"
+                        height="62"
+                        fill="#fffdf7" />
+                    <rect x="530"
+                        y="178"
+                        width="24"
+                        height="36"
+                        fill="#ffe45e"
+                        fill-opacity=".8" />
+                    <path d="M514 152 V138 M570 152 V138"
+                        stroke="#c4442f"
+                        stroke-width="1.6" />
+                    <rect x="506"
+                        y="118"
+                        width="66"
+                        height="22"
+                        fill="#fffdf7"
+                        stroke="#c4442f" />
+                    <text x="539"
+                        y="135"
+                        text-anchor="middle"
+                        class="t-sm t-red">OPEN</text>
+                    <path d="M438 62 C470 70 508 86 532 112 M532 112 l-4 -12 M532 112 l-12 -5"
+                        stroke="#2b4f8a" />
+                    <text x="420"
+                        y="52"
+                        class="t-md t-blue">open. finally.</text>
+                    <text x="40"
+                        y="240"
+                        class="t-sm">the IT Park, and the one door that was open</text>
+                </svg>
+                <figcaption><i>Fig. 5</i> — the IT Park, and the startup that was open.</figcaption>
+            </figure>
+
+            <p>
+                He said yes. We told him how much effort we’d put into the search, and how many places had offered us
+                paid training instead. We were honest that most of our seniors and classmates had taken that route and
+                that we’d been about to take it as a last option too. That’s when Abhishek Sir taught us something I
+                still carry with me:
+            </p>
+
+            <blockquote class="pull">
+                An internship is learning while you work. If someone asks you to pay for doing their work, say no. If I
+                ever ask you to pay, leave here too.
+                <cite>— Abhishek Sir, as I remember it</cite>
+            </blockquote>
+
+            <p>
+                He also cleared up a misconception that scams quietly depend on. Some internships are paid, which
+                means <em>the company pays you</em>. A lot of students hear “paid internship” and assume it means they
+                have to pay, and that confusion is exactly what lets fake programs charge fees.
+            </p>
+            <span class="margin-note">paid internship = they pay you.</span>
+            <p>
+                We had been about to take the paid option as a last resort. Instead we left with a real internship,
+                and a lesson that saved us from paying for something that should have been paying us.
+            </p>
+
+            <h2><span class="sec">SEM 5</span>From participating to organising</h2>
+
+            <p>
+                If the fourth semester was about participating, the fifth was about organising. I was selected as the
+                Event Manager of the department, which meant I stopped only showing up to events and started running
+                them. I managed departmental events and helped build a magazine and a website for the committee.
+            </p>
+            <p>
+                It’s a very different feeling to be the person an event depends on. You see the work behind the
+                curtain, the parts nobody claps for, and you start to appreciate every event you ever attended as a
+                spectator.
+            </p>
+            <p>
+                My study approach changed too. I became more strategic and more serious about scoring well, with the
+                intention of getting the best results I could, and I wanted to be seen by my teachers as someone who
+                gave everything. I was doing everything possible: for the exams, for the events, for the impression I
+                was leaving.
+            </p>
+
+            <h2><span class="sec">SEM 5 · PEOPLE</span>The friendship I chose on purpose</h2>
+
+            <p>
+                This semester also held one of the most memorable and thoughtful decisions of my life.
+            </p>
+            <p>
+                Everyone knows friendship isn’t something you can force. It builds by itself with the people you match
+                vibes with, share interests with and spend time around. But in the fifth semester, for the first time
+                in my life, I picked a friendship on purpose. I looked at who I’d genuinely want to learn from, and
+                then I tried to build the bond.
+            </p>
+            <p>
+                His name was Shubham, a student from the Computer Engineering department, and the best student in his
+                class. I was inspired by him, truly. So I started following his orbit: talking to him, sharing what I
+                knew. And it turned out he was fascinated by my programming skills and technical knowledge, which gave
+                us something to trade.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 250"
+                    role="img"
+                    aria-label="Sketch of two friends facing each other with speech bubbles, and two arrows between them labelled study habits and code"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="40"
+                        y="12"
+                        width="190"
+                        height="52"
+                        rx="12"
+                        fill="#fffdf7"
+                        stroke="#2b4f8a" />
+                    <path d="M120 64 L150 90 L162 64"
+                        fill="#fffdf7"
+                        stroke="#2b4f8a" />
+                    <text x="135"
+                        y="46"
+                        text-anchor="middle"
+                        class="t-blue">how do you study?</text>
+                    <circle cx="190"
+                        cy="122"
+                        r="24"
+                        fill="#fffdf7" />
+                    <path d="M146 214 C146 150 234 150 234 214" />
+                    <rect x="172"
+                        y="178"
+                        width="36"
+                        height="28"
+                        fill="#fffdf7"
+                        transform="rotate(-6 190 192)" />
+                    <path d="M178 188 h22 M178 196 h16"
+                        stroke-width="1.6"
+                        stroke="#9aa0ad" />
+                    <text x="190"
+                        y="240"
+                        text-anchor="middle"
+                        class="t-sm">me</text>
+                    <rect x="340"
+                        y="12"
+                        width="190"
+                        height="52"
+                        rx="12"
+                        fill="#fffdf7"
+                        stroke="#c4442f" />
+                    <path d="M440 64 L424 90 L410 64"
+                        fill="#fffdf7"
+                        stroke="#c4442f" />
+                    <text x="435"
+                        y="46"
+                        text-anchor="middle"
+                        class="t-red">teach me HTML!</text>
+                    <circle cx="410"
+                        cy="122"
+                        r="24"
+                        fill="#fffdf7" />
+                    <circle cx="400"
+                        cy="122"
+                        r="6"
+                        stroke-width="1.6" />
+                    <circle cx="420"
+                        cy="122"
+                        r="6"
+                        stroke-width="1.6" />
+                    <path d="M406 122 h8"
+                        stroke-width="1.6" />
+                    <path d="M366 214 C366 150 454 150 454 214" />
+                    <rect x="386"
+                        y="182"
+                        width="48"
+                        height="26"
+                        fill="#fffdf7" />
+                    <path d="M380 210 H440" />
+                    <text x="410"
+                        y="240"
+                        text-anchor="middle"
+                        class="t-sm">Shubham</text>
+                    <text x="300"
+                        y="134"
+                        text-anchor="middle"
+                        class="t-sm t-blue">study habits</text>
+                    <path d="M348 146 H252 M260 140 l-8 6 8 6"
+                        stroke="#2b4f8a" />
+                    <path d="M252 172 H348 M340 166 l8 6 -8 6"
+                        stroke="#c4442f" />
+                    <text x="300"
+                        y="198"
+                        text-anchor="middle"
+                        class="t-sm t-red">code</text>
+                </svg>
+                <figcaption><i>Fig. 6</i> — habits one way, code the other.</figcaption>
+            </figure>
+
+            <p>
+                From him I learned how to prepare for exams, study better, score better and get noticed by teachers.
+                He learned how to study collaboratively instead of competitively, along with programming fundamentals
+                like HTML, Android and more. Shubham is still my best friend today.
+            </p>
+            <p>
+                I didn’t abandon my old friends, not for a moment. I had simply started spending more of my time with
+                Shubham and his roommates, people who took studying seriously, so my days drifted toward the Computer
+                Engineering crowd and, for a while, away from my AIML classmates. It was a nice experience of
+                drifting, one I chose with my eyes open.
+            </p>
+
+            <h2><span class="sec">SEM 6</span>No space for regrets</h2>
+
+            <p>
+                The final semester was full of everything: activities, events, work, projects, laughs, mistakes,
+                responsibilities, emotions, memories. Honestly it was more than I could comfortably carry, and still I
+                went through almost all of it.
+            </p>
+            <p>
+                My perspective this time was simple. This was the last semester, so I wanted to spend it to the
+                fullest, with as many experiences as I could fit in, so there would be no room for “I wish I had”
+                later. Sports, gatherings, events, final-year projects, and whatnot. I said yes to almost everything,
+                and “almost” is where the best stories live.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 250"
+                    role="img"
+                    aria-label="Sketch of a tilted carrom board with coins, a striker and a red queen, with notes about winning but having my name mispronounced"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <g transform="rotate(8 300 125)">
+                        <rect x="200"
+                            y="25"
+                            width="200"
+                            height="200"
+                            rx="6"
+                            fill="#fffdf7"
+                            stroke-width="3" />
+                        <rect x="214"
+                            y="39"
+                            width="172"
+                            height="172"
+                            stroke-width="1.6" />
+                        <circle cx="222"
+                            cy="47"
+                            r="11"
+                            fill="#2a2f3a"
+                            fill-opacity=".85" />
+                        <circle cx="378"
+                            cy="47"
+                            r="11"
+                            fill="#2a2f3a"
+                            fill-opacity=".85" />
+                        <circle cx="222"
+                            cy="203"
+                            r="11"
+                            fill="#2a2f3a"
+                            fill-opacity=".85" />
+                        <circle cx="378"
+                            cy="203"
+                            r="11"
+                            fill="#2a2f3a"
+                            fill-opacity=".85" />
+                        <circle cx="300"
+                            cy="125"
+                            r="34"
+                            stroke="#c4442f" />
+                        <circle cx="300"
+                            cy="125"
+                            r="8"
+                            fill="#c4442f"
+                            stroke="#c4442f" />
+                        <circle cx="300"
+                            cy="100"
+                            r="7"
+                            fill="#2a2f3a" />
+                        <circle cx="322"
+                            cy="112"
+                            r="7"
+                            fill="#fffdf7" />
+                        <circle cx="322"
+                            cy="138"
+                            r="7"
+                            fill="#2a2f3a" />
+                        <circle cx="300"
+                            cy="150"
+                            r="7"
+                            fill="#fffdf7" />
+                        <circle cx="278"
+                            cy="138"
+                            r="7"
+                            fill="#2a2f3a" />
+                        <circle cx="278"
+                            cy="112"
+                            r="7"
+                            fill="#fffdf7" />
+                        <path d="M240 190 H360"
+                            stroke-width="1.4" />
+                        <circle cx="300"
+                            cy="190"
+                            r="11"
+                            fill="#ffe45e" />
+                        <path d="M300 176 L300 160"
+                            stroke="#2b4f8a"
+                            stroke-dasharray="3 6" />
+                    </g>
+                    <text x="28"
+                        y="112"
+                        class="t-big t-red">we won!</text>
+                    <text x="28"
+                        y="146"
+                        class="t-md">(the trophy part, anyway)</text>
+                    <text x="428"
+                        y="106"
+                        class="t-md">but my name</text>
+                    <text x="428"
+                        y="134"
+                        class="t-md">got mispronounced</text>
+                    <text x="428"
+                        y="162"
+                        class="t-md">on stage.</text>
+                </svg>
+                <figcaption><i>Fig. 7</i> — the carrom board, and the name that came out wrong.</figcaption>
+            </figure>
+
+            <p>
+                Not everything went perfectly, which is exactly why I remember it. A few moments from that semester:
+            </p>
+
+            <ul class="moments">
+                <li>
+                    <b>The carrom win I missed on stage</b>
+                    I was part of the carrom team, and we won. But when the winners were called up, the speaker didn’t
+                    pronounce my name correctly, and in the confusion I missed my moment: walking up, taking the prize
+                    and shaking hands with the principal, the trustees and everyone else on stage. We won, and I still
+                    laugh about the one part I didn’t get to do.
+                </li>
+                <li>
+                    <b>What carrom cost me</b>
+                    The matches were scheduled on the same day as our cultural events, so I couldn’t attend many of the
+                    great things happening on campus. And then, to make it a little sadder, our teacher didn’t allow us
+                    to play the further interzonal matches, because our internal exams fell on the same day.
+                </li>
+                <li>
+                    <b>The pani puri stall</b>
+                    The day before the carrom matches was our traditional day, along with a funfair at college. My best
+                    friend Mayur had a pani puri stall, and as I was passing by, he pulled me in to help serve plates to
+                    a crowd that simply didn’t end. His stall won first prize, and I was genuinely happy for him. The
+                    catch: I’d spent the day behind the counter instead of in the photos, so I missed taking pictures
+                    with our classmates. He missed them too.
+                </li>
+                <li>
+                    <b>The stage act</b>
+                    I was also managing the art and design team for our department’s stage act, themed on Jammu &amp;
+                    Kashmir. A few girls from the DDGM department worked under me to get everything done. Another
+                    responsibility, and another thing I’d never have done if I hadn’t said yes.
+                </li>
+            </ul>
+
+            <p>
+                None of those memories are perfect, and I wouldn’t trade a single imperfect one. I didn’t leave the last
+                semester with a list of things I should have done. I left with a list of things I did, mispronounced
+                name and missing photos included.
+            </p>
+
+            <h2><span class="sec">LOOKING BACK</span>What I took from it</h2>
+
+            <p>
+                Put all six semesters in one place and the pattern is hard to miss. This is what my notebook margin
+                would look like:
+            </p>
+
+            <div class="insert insert--log"
+                data-file="mindset.log">
+                <pre><span class="k">sem 1–2</span>  →  curiosity
+<span class="k">sem 3</span>    →  proof
+<span class="k">sem 4</span>    →  connections
+<span class="k">sem 5</span>    →  leadership
+<span class="k">sem 6</span>    →  fullness   <span class="c"># no-regrets mode</span></pre>
+            </div>
+
+            <ul>
+                <li>Curiosity came first, then proof, then people, then leadership, then fullness.</li>
+                <li>None of the shifts were planned. I only saw the pattern when I looked back.</li>
+                <li>Each version of me was right for its semester, and each one made the next version possible.</li>
+            </ul>
+
+            <div class="takeaway">
+                <b>Takeaway</b>
+                <p>
+                    I’m sharing this because I feel many of you go through such mental shifts in your own journey.
+                    Your beliefs and your thinking about certain things change during these years, and it’s great to
+                    see it happen, to watch your mindset take shape along the way. If you’re in the middle of a
+                    semester right now: which version of you is it?
+                </p>
+            </div>
+
+            <p>Hope it was insightful.</p>
+
+            <p class="signoff">— Yash</p>
+
+            <nav class="post-nav"
+                aria-label="Entries">
+                <a href="../index.html">← back to the notebook</a>
+                <a href="my-first-year-of-diploma.html">previous: My 1st Year of Diploma</a>
+            </nav>
+        </article>
+
+        <img class="edge-doodle"
+            src="../assets/campus.png"
+            alt="Pencil sketch of diploma college buiilding" />
+
+        <span class="page-no"
+            title="Blog number 2"
+            aria-hidden="true">Blog #1</span>
+    </main>
+
+    <script src="../notebook.js"></script>
+</body>
+
+</html>
