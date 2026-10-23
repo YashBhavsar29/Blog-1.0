@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en"
+    data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+    <title>Student of Life: Being a Continuous Learner — The Dev Notebook</title>
+    <meta name="description"
+        content="Why I call myself a “Student of Life”: a hackathon story about learning by doing, why “I can’t” usually means “I haven’t yet,” and why learning shouldn’t stop when school does." />
+
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem("notebook-theme"); } catch (e) { }
+            if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="../notebook.css" />
+    <link rel="stylesheet"
+        href="../post-extras.css" />
+
+    <style>
+        /* ============================================================
+   College building drawn along the bottom edge of a post
+   (replaces the Pikachu + bolt). Paste into post-extras.css
+   or at the end of notebook.css.
+   ============================================================ */
+        .edge-doodle {
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: min(540px, 82%);
+            height: auto;
+            margin: 0 auto -90px;
+            /* sinks into the sheet's bottom padding so it stands on the edge */
+            mix-blend-mode: multiply;
+            /* drops the white background of the drawing onto the paper */
+            pointer-events: none;
+            content: url("../assets/hackathon.png");
+        }
+
+        /* night desk: white lines on the dark paper */
+        [data-theme="dark"] .edge-doodle {
+            /* change the image to dark.png */
+            content: url("../assets/hackathon-dark.png");
+            mix-blend-mode: screen;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 760px) {
+            .edge-doodle {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pencil-bar"
+        aria-hidden="true"></div>
+
+    <div data-include="../partials/header-post.html"></div>
+
+    <main class="sheet-page">
+        <span class="holes"
+            aria-hidden="true"></span>
+        <span class="tape tape--tl"
+            aria-hidden="true"></span>
+        <span class="tape tape--tr"
+            aria-hidden="true"></span>
+        <span class="stain"
+            aria-hidden="true"></span>
+
+        <article class="post">
+            <div class="post-kicker">
+                <span class="chip">Page 001</span>
+                <span>My Thoughts</span>
+                <span>·</span>
+                <span>11 min read</span>
+                <span>·</span>
+                <span>October 2026</span>
+            </div>
+
+            <h1>Student of Life: Being a Continuous Learner</h1>
+            <p class="dek">School & college taught us that learning is boring. Here’s why I’m choosing to unlearn that.
+            </p>
+
+            <hr class="squiggle" />
+
+            <p class="lead">
+                Think about the word “learning.” What picture comes to your mind first? For most of us, it’s a
+                classroom. A thick book. A pen running out of ink. An exam hall where everyone is quiet and nervous. 🏫
+            </p>
+            <p>
+                We spend many years in schools and colleges studying one subject after another, and somewhere along the
+                way we quietly make a decision without noticing it: <span class="hl">learning is boring work.</span>
+                Read it, write it, repeat it, take the test, forget it. We do all this without much interest, because
+                we have to.
+            </p>
+            <p>
+                I think this is one of the biggest things school gets wrong. Nobody teaches us this on purpose. It just
+                slowly becomes a habit: <strong>learning equals boring.</strong>
+            </p>
+
+            <h2><span class="sec">THE PROBLEM</span>The “only when it’s compulsory” trap 🙅‍♂️</h2>
+
+            <p>
+                The problem begins when the classroom ends.
+            </p>
+            <p>
+                Once we link learning with boredom, we stop learning in our daily life. A new skill, a new tool, a new
+                subject: our first answer is “no,” unless it becomes absolutely necessary. Until the deadline comes.
+                Until the exam is tomorrow. Until the job asks for it.
+            </p>
+            <p>
+                Waiting for a “must” before we learn is a poor way to live. Learning is the one skill that makes every
+                other skill possible, and we treat it like a punishment.
+            </p>
+            <p>
+                I didn’t understand how big this problem is until I saw it up close, in a place where there was no time
+                to hide from it.
+            </p>
+
+            <h2><span class="sec">THE STORY</span>A hackathon, six people, and one restaurant ⏱️</h2>
+
+            <p>
+                It was around the even semester of my 2nd year of degree. Some of my old diploma friends from the
+                Computer and IT department invited me to join their hackathon team.
+            </p>
+            <p>
+                If you’ve never heard of one, a hackathon is a contest where teams build a working product in a very
+                short time. Ours gave us <strong>24 hours</strong>. One day, one night, and a list of requirements the
+                judges would check at the end.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 232"
+                    role="img"
+                    aria-label="Sketch of a stopwatch between a moon and a sun, with a checklist of ticked boxes beside it"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="288"
+                        y="22"
+                        width="24"
+                        height="12"
+                        rx="2"
+                        fill="#fffdf7" />
+                    <path d="M300 34 v18" />
+                    <path d="M356 62 l12 -12 M362 46 l14 12"
+                        stroke="#2b4f8a" />
+                    <circle cx="300"
+                        cy="126"
+                        r="70"
+                        fill="#fffdf7" />
+                    <circle cx="300"
+                        cy="126"
+                        r="58"
+                        stroke="#9aa0ad"
+                        stroke-width="9"
+                        stroke-dasharray="2 28.4" />
+                    <path d="M300 126 V84"
+                        stroke="#c4442f"
+                        stroke-width="3" />
+                    <path d="M300 126 L326 140" />
+                    <circle cx="300"
+                        cy="126"
+                        r="4"
+                        fill="#2a2f3a" />
+                    <text x="300"
+                        y="170"
+                        text-anchor="middle"
+                        class="t-md">24h</text>
+                    <path d="M96 56 a26 26 0 1 0 24 38 a20 20 0 0 1 -24 -38z"
+                        fill="#ffe45e"
+                        fill-opacity=".8" />
+                    <circle cx="100"
+                        cy="156"
+                        r="12"
+                        fill="#ffe45e"
+                        fill-opacity=".8" />
+                    <path
+                        d="M100 134 v-8 M100 178 v8 M78 156 h-8 M122 156 h8 M84 140 l-6 -6 M116 140 l6 -6 M84 172 l-6 6 M116 172 l6 6" />
+                    <text x="40"
+                        y="222"
+                        class="t-sm">one day, one night</text>
+                    <text x="440"
+                        y="38"
+                        class="t-sm t-red">the judges’ list</text>
+                    <g stroke="#2b4f8a">
+                        <rect x="440"
+                            y="56"
+                            width="22"
+                            height="22"
+                            rx="3" />
+                        <path d="M445 67 l5 5 9 -11" />
+                        <rect x="440"
+                            y="94"
+                            width="22"
+                            height="22"
+                            rx="3" />
+                        <path d="M445 105 l5 5 9 -11" />
+                        <rect x="440"
+                            y="132"
+                            width="22"
+                            height="22"
+                            rx="3" />
+                        <path d="M445 143 l5 5 9 -11" />
+                    </g>
+                    <path d="M474 67 h86 M474 105 h86 M474 143 h86"
+                        stroke="#9aa0ad" />
+                </svg>
+                <figcaption><i>Fig. 1</i> — one day, one night, and a list to finish.</figcaption>
+            </figure>
+
+            <p>We were a team of six, split into three pairs:</p>
+            <ul>
+                <li>two people on <strong>backend</strong></li>
+                <li>two people on <strong>frontend</strong></li>
+                <li>two people on <strong>ML</strong> (the “smart” part of the project)</li>
+            </ul>
+            <p>
+                I was in the backend pair, along with Tanishq. The frontend pair was Harsh and Kartik.
+            </p>
+            <p>
+                Here’s the easiest way to understand those roles. Imagine a restaurant:
+            </p>
+            <ul>
+                <li>The <strong>frontend</strong> is the dining area. It’s what the customer sees: the menu, the
+                    tables, the look and feel.</li>
+                <li>The <strong>backend</strong> is the kitchen. The real work happens there, and the customer never
+                    sees it.</li>
+                <li>The “doors” between them, where the waiter takes an order to the kitchen and brings the food back,
+                    are called <strong>API endpoints</strong>.</li>
+                <li>The <strong>ML</strong> side is like a clever chef who decides things using patterns and data. 🤖
+                </li>
+            </ul>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 255"
+                    role="img"
+                    aria-label="Sketch of a restaurant: a dining table on the left labelled frontend, a kitchen with a pot and chef hat on the right labelled backend, and a serving window between them with arrows for orders and food"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <text x="110"
+                        y="28"
+                        text-anchor="middle"
+                        class="t-md">dining area</text>
+                    <text x="110"
+                        y="48"
+                        text-anchor="middle"
+                        class="t-sm t-blue">frontend</text>
+                    <ellipse cx="110"
+                        cy="152"
+                        rx="56"
+                        ry="14"
+                        fill="#fffdf7" />
+                    <path d="M110 166 V204 M88 204 h44" />
+                    <g transform="rotate(-8 110 133)">
+                        <rect x="96"
+                            y="116"
+                            width="28"
+                            height="34"
+                            fill="#fffdf7" />
+                        <path d="M101 126 h16 M101 133 h16 M101 140 h10"
+                            stroke-width="1.6"
+                            stroke="#9aa0ad" />
+                    </g>
+                    <rect x="292"
+                        y="56"
+                        width="16"
+                        height="48"
+                        fill="#fffdf7" />
+                    <rect x="292"
+                        y="152"
+                        width="16"
+                        height="58"
+                        fill="#fffdf7" />
+                    <path d="M232 118 H372 M364 112 l8 6 -8 6"
+                        stroke="#2b4f8a" />
+                    <path d="M372 138 H232 M240 132 l-8 6 8 6"
+                        stroke="#c4442f" />
+                    <text x="236"
+                        y="108"
+                        class="t-sm t-blue">order</text>
+                    <text x="236"
+                        y="160"
+                        class="t-sm t-red">food</text>
+                    <text x="490"
+                        y="28"
+                        text-anchor="middle"
+                        class="t-md">kitchen</text>
+                    <text x="490"
+                        y="48"
+                        text-anchor="middle"
+                        class="t-sm t-red">backend</text>
+                    <rect x="430"
+                        y="152"
+                        width="130"
+                        height="58"
+                        fill="#fffdf7" />
+                    <path d="M448 152 V126 H492 V152"
+                        fill="#fffdf7" />
+                    <path d="M444 126 H496 M470 118 v8" />
+                    <path d="M458 112 q-7 -9 0 -17 M478 112 q-7 -9 0 -17"
+                        stroke="#2b4f8a" />
+                    <path d="M520 118 v-10 a12 12 0 0 1 6 -22 a14 14 0 0 1 26 -3 a12 12 0 0 1 8 22 v13 z"
+                        fill="#fffdf7" />
+                    <text x="540"
+                        y="142"
+                        text-anchor="middle"
+                        class="t-sm">ML chef</text>
+                    <text x="300"
+                        y="238"
+                        text-anchor="middle"
+                        class="t-sm t-red">the serving window = API endpoints</text>
+                </svg>
+                <figcaption><i>Fig. 2</i> — frontend, backend, and the window between them.</figcaption>
+            </figure>
+
+            <p>
+                My job was to build the kitchen, which meant the endpoints and the connection to the database, where
+                all our information was stored. Harsh and Kartik were good at the dining area. They built the screens
+                of the app, and they did it well.
+            </p>
+
+            <h2><span class="sec">THE WALL</span>The wall 🧱</h2>
+
+            <p>
+                Here’s where things got stuck.
+            </p>
+            <p>
+                My kitchen was ready. I had given Harsh and Kartik everything they needed: the list of doors, and the
+                details of how to knock on each one. In simple words, I had handed them the order form.
+            </p>
+            <p>
+                But the dining area and the kitchen still weren’t talking to each other. They had never worked with a
+                backend before, so they didn’t know how to send a request from their screens to my endpoints, get the
+                data back and show it on the app.
+            </p>
+            <p>
+                The hours were going by, and the clock was loud.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 225"
+                    role="img"
+                    aria-label="Sketch of a phone on the left, a brick wall in the middle and a database on the right, with a dashed arrow from the phone stopping at the wall"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <text x="300"
+                        y="30"
+                        text-anchor="middle"
+                        class="t-md t-red">the wall</text>
+                    <rect x="170"
+                        y="44"
+                        width="260"
+                        height="150"
+                        fill="#c4442f"
+                        fill-opacity=".1"
+                        stroke="#c4442f" />
+                    <path d="M170 69 H430 M170 94 H430 M170 119 H430 M170 144 H430 M170 169 H430"
+                        stroke="#c4442f"
+                        stroke-width="1.6" />
+                    <path
+                        d="M235 44 V69 M300 44 V69 M365 44 V69 M202 69 V94 M267 69 V94 M332 69 V94 M397 69 V94 M235 94 V119 M300 94 V119 M365 94 V119 M202 119 V144 M267 119 V144 M332 119 V144 M397 119 V144 M235 144 V169 M300 144 V169 M365 144 V169 M202 169 V194 M267 169 V194 M332 169 V194 M397 169 V194"
+                        stroke="#c4442f"
+                        stroke-width="1.6" />
+                    <rect x="36"
+                        y="70"
+                        width="64"
+                        height="110"
+                        rx="10"
+                        fill="#fffdf7" />
+                    <path d="M58 82 h20"
+                        stroke-width="1.6" />
+                    <path d="M48 106 h40 M48 122 h40 M48 138 h26"
+                        stroke="#9aa0ad"
+                        stroke-width="1.6" />
+                    <text x="68"
+                        y="206"
+                        text-anchor="middle"
+                        class="t-sm">screens</text>
+                    <path d="M106 125 H162 M154 119 l8 6 -8 6"
+                        stroke="#2b4f8a"
+                        stroke-dasharray="4 6" />
+                    <text x="126"
+                        y="110"
+                        class="t-big t-red">?</text>
+                    <path d="M470 94 v70 a40 14 0 0 0 80 0 v-70"
+                        fill="#fffdf7" />
+                    <path d="M470 118 a40 14 0 0 0 80 0 M470 141 a40 14 0 0 0 80 0" />
+                    <ellipse cx="510"
+                        cy="94"
+                        rx="40"
+                        ry="14"
+                        fill="#fffdf7" />
+                    <text x="510"
+                        y="206"
+                        text-anchor="middle"
+                        class="t-sm">the data</text>
+                </svg>
+                <figcaption><i>Fig. 3</i> — everything was ready on both sides, but nothing could cross.</figcaption>
+            </figure>
+
+            <p>
+                I helped them, of course. We sat together and I walked them through it step by step until their
+                screens finally started showing real data. The work got done.
+            </p>
+            <p>
+                But I’ll be honest with you. I was a little annoyed. 😤
+            </p>
+            <p>
+                My feeling was not “why are you so slow?” It was closer to: <em>you could have figured this out.</em>
+                The information was all there. The doors were listed, and the way to knock was explained. If they had
+                tried, searched and experimented on their own, I could have spent that time building more of the
+                backend, and helping Tanishq, who had his own hard problems.
+            </p>
+            <p>
+                In a 24-hour contest, every hour I spent teaching was an hour I didn’t spend building.
+            </p>
+
+            <h2><span class="sec">THE ONE WHO DID IT</span>The one who just did it 💪</h2>
+
+            <p>
+                And then there was Tanishq.
+            </p>
+            <p>
+                Tanishq had <strong>no previous experience</strong> with the backend technology we were using. He also
+                had no experience with React, which is the tool we used to build our real-time dashboard, the live
+                screen that updates by itself as new information comes in.
+            </p>
+            <p>
+                He had every right to say, “I’ve never done this, give it to someone else.”
+            </p>
+            <p>
+                He didn’t say that. He sat down, figured it out, and built the backend work he had taken on and the
+                whole real-time dashboard himself. Nobody had to hold his hand.
+            </p>
+            <span class="margin-note">his learning gave my time back.</span>
+            <p>
+                Because of that, I had the room to focus on other parts of the project. That space is the real gift one
+                person’s attitude gives the whole team.
+            </p>
+            <p>
+                By the end of the 24 hours we had completed <strong>every requirement</strong> the judges had asked
+                for. 🏆
+            </p>
+
+            <h2><span class="sec">THE LESSON</span>Nobody was wrong. Nobody was right.</h2>
+
+            <p>
+                I want to be very clear about something, because I’ve thought about this for a long time:
+                <strong>no one in this story was the bad guy.</strong>
+            </p>
+            <p>
+                Harsh and Kartik are talented. Their frontend was good, and it’s exactly the kind of work that makes a
+                project feel real. They weren’t lazy, and they weren’t careless. They simply weren’t in the habit of
+                reaching beyond what they already knew, because for most of us, that was never encouraged. In school,
+                we’re told to stay inside the syllabus.
+            </p>
+            <p>
+                Tanishq wasn’t a genius either. He didn’t know more than they did when he started. He had the same
+                blank start, the same unfamiliar tools and the same ticking clock.
+            </p>
+            <p>
+                The only difference was his <strong>approach to learning</strong>: <em>if I need it, I’ll learn it,
+                    right now.</em>
+            </p>
+            <p>
+                That’s the whole point of this post. It isn’t about who is better. It’s about which mindset we want to
+                build in ourselves.
+            </p>
+
+            <h2><span class="sec">THE HABIT</span>“We can’t do this” 💻</h2>
+
+            <p>
+                I’ve seen smaller versions of this story many times among my friends.
+            </p>
+            <p>
+                Someone learns a tech stack, a set of tools for building things. They get comfortable and stay inside
+                it forever. Then a project needs something slightly different, or a simple task comes up that’s a step
+                outside their comfort zone. And the answer is often:
+            </p>
+            <p>
+                <em>“We can’t do this.”</em>
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 205"
+                    role="img"
+                    aria-label="Sketch of a hanging tag where the word can’t is crossed out and replaced by haven’t yet"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M176 100 C150 60 110 40 70 56"
+                        stroke="#9aa0ad" />
+                    <g transform="rotate(-3 310 100)">
+                        <path d="M150 100 L190 58 H462 a10 10 0 0 1 10 10 V132 a10 10 0 0 1 -10 10 H190 Z"
+                            fill="#fffdf7" />
+                        <circle cx="178"
+                            cy="100"
+                            r="6" />
+                        <text x="204"
+                            y="108"
+                            class="t-md">can’t</text>
+                        <path d="M198 99 H262"
+                            stroke="#c4442f" />
+                        <path d="M272 101 H302 M294 95 l8 6 -8 6"
+                            stroke="#2b4f8a" />
+                        <text x="314"
+                            y="108"
+                            class="t-md t-blue">haven’t yet</text>
+                    </g>
+                    <text x="300"
+                        y="188"
+                        text-anchor="middle"
+                        class="t-sm">same sentence, one small word</text>
+                </svg>
+                <figcaption><i>Fig. 4</i> — “can’t” is almost always “haven’t yet.”</figcaption>
+            </figure>
+
+            <span class="margin-note">can’t = haven’t yet.</span>
+            <p>
+                But if you look closely, that sentence is almost never true. What they mean is “I haven’t done this
+                <strong>yet</strong>.” And the gap between “can’t” and “haven’t yet” is usually much smaller than it
+                looks. Often it’s a weekend of trying, a few tutorials and a couple of errors that make you want to
+                throw your laptop. 🙃
+            </p>
+            <p>
+                Think about it: the people who build impressive things aren’t born knowing every tool. They’re just the
+                ones who didn’t say no first.
+            </p>
+
+            <h2><span class="sec">THE METHOD</span>The best teacher is the thing itself 🔧</h2>
+
+            <p>
+                There’s a line I keep going back to. Someone once said:
+            </p>
+
+            <blockquote class="pull">
+                Actually doing a thing is the best way to learn it. 💯
+                <cite>— a line I keep coming back to</cite>
+            </blockquote>
+
+            <p>
+                I’ve found it true again and again. Reading about swimming doesn’t teach you to swim. Watching ten
+                videos on cooking doesn’t make the dish taste right. We think we’ve understood something because it
+                made sense while we were reading. But real understanding comes in the first moment something breaks
+                and we have to fix it.
+            </p>
+            <p>
+                Tanishq proved it to me. He wasn’t “ready” for that task. He became ready <em>by doing it</em>. And
+                honestly, so did every one of us at that hackathon, in different ways.
+            </p>
+            <p>
+                So I believe we should be able to adapt to whatever comes our way. If we need to learn something new,
+                or work with a technology we’ve never touched, we should do it without hesitation. Not because it’s
+                easy, but because that’s how we grow. 🌱
+            </p>
+
+            <h2><span class="sec">THE DESK</span>The desk where it happens</h2>
+
+            <p>
+                Since we’re talking about doing, here’s my corner. This is my desk at the hostel, with a new cup from
+                GDGC added to it. ☕
+            </p>
+
+            <figure class="polaroid polaroid--clip">
+                <img src="../assets/hostel-desk.jfif"
+                    alt="Photo of my hostel desk with few post-its attached for me" />
+                <figcaption>my hostel desk, and few post-its</figcaption>
+            </figure>
+
+            <p>
+                It’s not fancy. But it’s where a lot of my “I’ll figure it out” moments happen.
+            </p>
+
+            <h2><span class="sec">THE WHY</span>Not just for marks. Not just for jobs. 🧠</h2>
+
+            <p>
+                So what is the point of learning, if not for good marks or a good job?
+            </p>
+            <p>
+                Let me be honest: those are real reasons, and I’m not going to pretend otherwise. We all want to do
+                well, and we all need to earn. There’s nothing wrong with that.
+            </p>
+            <p>
+                But if those are the <strong>only</strong> reasons, then something strange happens. The moment the exam
+                is over, we stop learning. The moment the job is secured, we stop growing. We end up using a tiny part
+                of what we’re capable of, and we call it “enough.”
+            </p>
+            <p>
+                That’s why my mindset is simple: I want to learn things, but not only to score high, and not only to
+                get hired. I want to learn because understanding things makes life bigger. Because there’s a quiet joy
+                in being able to say, “I couldn’t do this last month, and now I can.” ✨
+            </p>
+
+            <h2><span class="sec">THE IDENTITY</span>Why my profile says “Student of Life” 🎓</h2>
+
+            <p>
+                If you’ve seen my LinkedIn, you may have noticed that I describe myself as a
+                <strong>Student of Life</strong>.
+            </p>
+
+            <figure class="polaroid polaroid--pin polaroid--wide">
+                <img src="../assets/linkedin-profile.png"
+                    alt="Screenshot of my LinkedIn profile showing the headline Student of Life" />
+                <figcaption>where it says it: Student of Life</figcaption>
+            </figure>
+
+            <p>
+                I wrote that on purpose, and I mean it fully. I believe we should remain students for our whole life.
+                Not just in technical skills, but in every area: experiencing new things, trying new things, being a
+                beginner again and again. Cooking, music, philosophy, a new language, how to handle people, how to
+                handle ourselves. 💫☀️
+            </p>
+            <p>
+                Being a beginner doesn’t feel great. You look clumsy. You make mistakes. You can’t skip the awkward
+                part. But it’s the only road that leads anywhere new.
+            </p>
+            <p>
+                And the good news is that you don’t need a classroom for any of it. You don’t need permission, and you
+                don’t need an exam at the end. All you need is curiosity, and the willingness to say
+                <em>“let me try.”</em>
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 240"
+                    role="img"
+                    aria-label="Sketch of a graduation cap with a tassel resting on a pencil"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M222 108 v38 q78 34 156 0 v-38"
+                        fill="#fffdf7" />
+                    <path d="M300 40 L430 88 L300 136 L170 88 Z"
+                        fill="#2b4f8a"
+                        fill-opacity=".85" />
+                    <circle cx="300"
+                        cy="88"
+                        r="5"
+                        fill="#fffdf7" />
+                    <path d="M300 88 Q370 96 420 100 V140" />
+                    <circle cx="420"
+                        cy="146"
+                        r="6"
+                        fill="#ffe45e" />
+                    <path d="M420 152 v18" />
+                    <g transform="rotate(-5 300 198)">
+                        <rect x="186"
+                            y="190"
+                            width="14"
+                            height="16"
+                            fill="#9aa0ad" />
+                        <rect x="172"
+                            y="190"
+                            width="14"
+                            height="16"
+                            rx="3"
+                            fill="#c4442f"
+                            fill-opacity=".85" />
+                        <rect x="200"
+                            y="190"
+                            width="190"
+                            height="16"
+                            fill="#ffe45e"
+                            fill-opacity=".8" />
+                        <path d="M240 190 v16 M290 190 v16 M340 190 v16"
+                            stroke-width="1.4" />
+                        <path d="M390 190 L420 198 L390 206 Z"
+                            fill="#fffdf7" />
+                        <path d="M411 195 l9 3 -9 3"
+                            fill="#2a2f3a" />
+                    </g>
+                    <path d="M146 52 v16 M138 60 h16"
+                        stroke="#c4442f" />
+                    <path d="M470 54 v14 M463 61 h14"
+                        stroke="#2b4f8a" />
+                    <text x="300"
+                        y="234"
+                        text-anchor="middle"
+                        class="t-md">a lifelong student</text>
+                </svg>
+                <figcaption><i>Fig. 5</i> — the cap goes on once. The pencil stays in hand.</figcaption>
+            </figure>
+
+            <h2><span class="sec">BEFORE YOU GO</span>One small word</h2>
+
+            <div class="takeaway">
+                <b>Takeaway</b>
+                <p>
+                    Next time you hear yourself say “I can’t do this,” pause for a second and add one small word at
+                    the end: <em>“I can’t do this… <strong>yet</strong>.”</em>
+                </p>
+                <p>
+                    Then open the tool, read the first page, break the first thing and fix it. You’ll be surprised how
+                    fast “can’t” turns into “I did.”
+                </p>
+            </div>
+
+            <p>
+                You should be a lifelong learner. You should be a lifelong student. 🎓
+            </p>
+
+            <p class="signoff">— Yash</p>
+
+            <nav class="post-nav"
+                aria-label="Entries">
+                <a href="../index.html">← back to the notebook</a>
+                <a href="six-semesters-six-mes.html">previous: Six Semesters, Six Different Me’s</a>
+            </nav>
+        </article>
+
+        <img class="edge-doodle"
+            style="filter: none;"
+            alt="Pencil sketch of the 6 of us at hackathon" />
+
+        <span class="page-no"
+            title="Blog number 2"
+            aria-hidden="true">Blog #2</span>
+    </main>
+
+    <script src="../notebook.js"></script>
+</body>
+
+</html>
