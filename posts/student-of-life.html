@@ -39,16 +39,6 @@
    or at the end of notebook.css.
    ============================================================ */
         .edge-doodle {
-            display: block;
-            position: relative;
-            z-index: 1;
-            width: min(540px, 82%);
-            height: auto;
-            margin: 0 auto -90px;
-            /* sinks into the sheet's bottom padding so it stands on the edge */
-            mix-blend-mode: multiply;
-            /* drops the white background of the drawing onto the paper */
-            pointer-events: none;
             content: url("../assets/hackathon.png");
         }
 
@@ -58,12 +48,6 @@
             content: url("../assets/hackathon-dark.png");
             mix-blend-mode: screen;
             opacity: 0.85;
-        }
-
-        @media (max-width: 760px) {
-            .edge-doodle {
-                width: 100%;
-            }
         }
     </style>
 </head>

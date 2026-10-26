@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en"
+    data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+    <title>“Bhaiya, Are You Yash Bhavsar?”: My First Talk to Juniors — The Dev Notebook</title>
+    <meta name="description"
+        content="How a junior’s question at my hostel became my first guidance talk for first-year AIML and CO students: the nerves, the blank moment, what I told them about learning online, and why the only way past the fear of speaking is to face it." />
+
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem("notebook-theme"); } catch (e) { }
+            if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="../notebook.css" />
+    <link rel="stylesheet"
+        href="../post-extras.css" />
+
+    <style>
+        /* ============================================================
+   College building drawn along the bottom edge of a post
+   (replaces the Pikachu + bolt). Paste into post-extras.css
+   or at the end of notebook.css.
+   ============================================================ */
+        .edge-doodle {
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: min(540px, 82%);
+            height: auto;
+            margin: 0 auto -90px;
+            /* sinks into the sheet's bottom padding so it stands on the edge */
+            mix-blend-mode: multiply;
+            /* drops the white background of the drawing onto the paper */
+            pointer-events: none;
+        }
+
+        /* night desk: white lines on the dark paper */
+        [data-theme="dark"] .edge-doodle {
+            filter: invert(1);
+            mix-blend-mode: screen;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 760px) {
+            .edge-doodle {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pencil-bar"
+        aria-hidden="true"></div>
+
+    <div data-include="../partials/header-post.html"></div>
+
+    <main class="sheet-page">
+        <span class="holes"
+            aria-hidden="true"></span>
+        <span class="tape tape--tl"
+            aria-hidden="true"></span>
+        <span class="tape tape--tr"
+            aria-hidden="true"></span>
+        <span class="stain"
+            aria-hidden="true"></span>
+
+        <article class="post">
+            <div class="post-kicker">
+                <span class="chip">Page 004</span>
+                <span>Life Notes</span>
+                <span>·</span>
+                <span>14 min read</span>
+                <span>·</span>
+                <span>October 2026</span>
+            </div>
+
+            <h1>“Bhaiya, Are You Yash Bhavsar?”: My First Talk to My Juniors</h1>
+            <p class="dek">A stranger in the hostel, a long night of thinking, and a talk that took me out of my comfort
+                zone.</p>
+
+            <hr class="squiggle" />
+
+            <p class="lead">
+                About a year ago, in my final year of diploma, I stood in front of a class of first-year students and
+                gave a talk. 🎙
+            </p>
+            <p>
+                I wrote a short post about it on LinkedIn back then, while the feeling was still fresh. But I wanted
+                the full story to live here, in my notebook, so here it is.
+            </p>
+            <p>
+                One more thing before we start: I gave this talk in <strong>Marathi</strong>, our own language, so that
+                everyone in the room could follow it easily. In this post I’ve translated everything into English, so
+                it’s understandable to everyone. 🏫
+            </p>
+
+            <h2><span class="sec">THE INVITATION</span>A question in the hostel 😅</h2>
+
+            <p>
+                It began on an ordinary day, I was visiting in the hostel.
+            </p>
+            <p>
+                A group of juniors was passing by. I didn’t know any of them. Then one of them stopped, turned and
+                asked:
+            </p>
+            <p>
+                <strong>“Bhaiya, are you Yash Bhavsar?”</strong>
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 232"
+                    role="img"
+                    aria-label="Sketch of a hostel corridor with doors, a junior with a speech bubble asking Bhaiya, are you Yash Bhavsar, and a confused figure on the left"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M20 196 H580" />
+                    <rect x="30"
+                        y="40"
+                        width="54"
+                        height="156"
+                        fill="#fffdf7" />
+                    <path d="M70 120 v6"
+                        stroke-width="3" />
+                    <rect x="100"
+                        y="40"
+                        width="54"
+                        height="156"
+                        fill="#fffdf7" />
+                    <path d="M140 120 v6"
+                        stroke-width="3" />
+                    <rect x="170"
+                        y="40"
+                        width="54"
+                        height="156"
+                        fill="#fffdf7" />
+                    <path d="M210 120 v6"
+                        stroke-width="3" />
+                    <circle cx="264"
+                        cy="128"
+                        r="16"
+                        fill="#fffdf7" />
+                    <path d="M264 144 V180 M264 156 L248 170 M264 156 L280 166 M264 180 L254 196 M264 180 L274 196" />
+                    <path d="M252 122 q4 -4 8 0 M270 122 q4 -4 8 0"
+                        stroke-width="1.6" />
+                    <path d="M258 134 q6 -3 12 0"
+                        stroke-width="1.6" />
+                    <text x="296"
+                        y="108"
+                        class="t-big t-red">?</text>
+                    <circle cx="500"
+                        cy="128"
+                        r="16"
+                        fill="#fffdf7" />
+                    <path d="M500 144 V180 M500 156 L518 168 M500 156 L486 168 M500 180 L490 196 M500 180 L510 196" />
+                    <rect x="330"
+                        y="22"
+                        width="250"
+                        height="70"
+                        rx="14"
+                        fill="#fffdf7"
+                        stroke="#2b4f8a" />
+                    <path d="M492 92 L500 108 L512 92"
+                        fill="#fffdf7"
+                        stroke="#2b4f8a" />
+                    <text x="455"
+                        y="50"
+                        text-anchor="middle"
+                        class="t-md t-blue">“Bhaiya, are you</text>
+                    <text x="455"
+                        y="78"
+                        text-anchor="middle"
+                        class="t-md t-blue">Yash Bhavsar?”</text>
+                    <text x="500"
+                        y="222"
+                        text-anchor="middle"
+                        class="t-sm">a junior</text>
+                    <text x="264"
+                        y="222"
+                        text-anchor="middle"
+                        class="t-sm">me, confused</text>
+                </svg>
+                <figcaption><i>Fig. 1</i> — the question that started it all.</figcaption>
+            </figure>
+
+            <p>
+                I said yes, a bit confused. He told me that he and some of his classmates had seen my profile on
+                LinkedIn, and they’d even shown it to their teacher. They had liked it so much that they wanted to
+                invite me to their class, to give some guidance to the first-year students.
+            </p>
+            <p>
+                I didn’t know what to say. Nobody had ever asked me anything like that. It took me a moment just to
+                digest the question, let alone the request. So I did the only thing I could: I told him I’d let him
+                know in a day or two, and we exchanged contacts.
+            </p>
+            <p>
+                His name was Arjun.
+            </p>
+
+            <h2><span class="sec">THE DECISION</span>The night I couldn’t stop thinking 🌙</h2>
+
+            <p>
+                Back in my room, I couldn’t think about anything else. I talked it over with Anand, my best friend and
+                the same friend who’d ridden with me across the city looking for an internship.
+            </p>
+            <p>
+                The more I thought about it, the clearer it became: this was exactly the kind of opportunity I’d always
+                wanted.
+            </p>
+            <p>
+                I’ve always been inspired by people who give talks: TED talks, famous speeches, all of it. I’d given a
+                few speeches myself back in my school days, but they were for events like Teachers’ Day and
+                Independence Day. In every one of them, I told the stories of people from the past who had won in
+                life.
+            </p>
+            <p>
+                I had never told <span class="hl">my own story.</span>
+            </p>
+            <p>
+                I write my stories in LinkedIn posts and in my journal, but standing on a stage and <em>saying</em>
+                them out loud was something I’d honestly love to do. And that’s where the real challenge sat. I’m an
+                introvert, someone who fears speaking even a word in a crowd. Developing the courage to go there was
+                the hard part, much more than the talk itself.
+            </p>
+            <p>
+                But I decided. I called Arjun and said:
+            </p>
+            <p>
+                <strong>“Yes. I’ll be there next week.”</strong>
+            </p>
+
+            <h2><span class="sec">THE SCRIPT</span>What do I even say? 📝</h2>
+
+            <p>
+                Once I knew I’d do it, my head filled up with questions:
+            </p>
+            <ul>
+                <li>What could I tell them?</li>
+                <li>How should I start?</li>
+                <li>What’s actually useful for a first-year student?</li>
+                <li>And what if I say something wrong?</li>
+            </ul>
+            <p>
+                I thought about it a lot. It was really hard for me, because I overthink everything, and this was a
+                talk about my own story, which made it feel even more personal.
+            </p>
+            <p>
+                I was also deep in practicals and other work at the time, so free time was tight. Still, I finalised
+                the date, and then I did what I always do when I’m unsure: I wrote everything down. I prepared a
+                <strong>script</strong> for the talk.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 232"
+                    role="img"
+                    aria-label="Sketch of a script page with two crossed-out opening lines and one kept opening, surrounded by worried questions"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="170"
+                        y="20"
+                        width="260"
+                        height="180"
+                        fill="#fffdf7"
+                        transform="rotate(-2 300 110)" />
+                    <g transform="rotate(-2 300 110)">
+                        <path d="M170 56 H430 M170 92 H430 M170 128 H430 M170 164 H430"
+                            stroke="#d9d2c2"
+                            stroke-width="1.4" />
+                        <text x="186"
+                            y="50"
+                            class="t-sm">Hi everyone, today I will…</text>
+                        <path d="M182 42 H370"
+                            stroke="#c4442f" />
+                        <text x="186"
+                            y="86"
+                            class="t-sm">Good morning juniors, so…</text>
+                        <path d="M182 78 H380"
+                            stroke="#c4442f" />
+                        <text x="186"
+                            y="122"
+                            class="t-md t-blue">Hello Friends!</text>
+                        <path d="M186 140 h140 M186 156 h110"
+                            stroke="#9aa0ad"
+                            stroke-width="1.6" />
+                    </g>
+                    <text x="40"
+                        y="60"
+                        class="t-sm t-red">what do I say?</text>
+                    <text x="44"
+                        y="130"
+                        class="t-sm t-red">how do I start?</text>
+                    <text x="40"
+                        y="200"
+                        class="t-sm t-red">what if I get it wrong?</text>
+                    <text x="446"
+                        y="76"
+                        class="t-sm t-red">what’s useful?</text>
+                    <text x="470"
+                        y="160"
+                        class="t-big t-red">?</text>
+                </svg>
+                <figcaption><i>Fig. 2</i> — the script, and the questions around it.</figcaption>
+            </figure>
+
+            <h2><span class="sec">THE NERVES</span>The nerves before the door</h2>
+
+            <p>
+                Even with the script, I was nervous before I went. What if I miss something? What if I forget an
+                important point? What if nobody reacts?
+            </p>
+            <p>
+                It’s a strange feeling. You know the topic because it’s your own journey, and still your heart doesn’t
+                believe you.
+            </p>
+
+            <h2><span class="sec">THE MOMENT</span>Then I walked in 😬</h2>
+
+            <div class="broke">
+                <span class="stamp">THE MOMENT</span>
+                <p>
+                    I started a little scared. I picked up a piece of chalk and wrote a few words on the board, in my
+                    worst handwriting, so messy that even I couldn’t understand it.
+                </p>
+                <p>
+                    Then I turned and looked at the whole class, and I went blank. I just started speaking the words I
+                    had crammed, in a brittle, under-confident voice.
+                </p>
+                <p>
+                    The teacher noticed, and told me to relax.
+                </p>
+                <p>
+                    I took a deep breath, closed my eyes for a split second, and told myself:
+                </p>
+            </div>
+
+            <blockquote class="pull">
+                Yash, you can do it.
+                <cite>— me, to me, with my eyes closed</cite>
+            </blockquote>
+
+            <span class="margin-note">worst handwriting. even I couldn’t read it.</span>
+            <p>
+                And then I faced it.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 236"
+                    role="img"
+                    aria-label="Sketch of a blackboard with unreadable scribbles and a chalk piece, and a small face with closed eyes thinking Yash, you can do it"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="60"
+                        y="20"
+                        width="480"
+                        height="132"
+                        fill="#2f4a3d" />
+                    <path d="M60 158 H540"
+                        stroke-width="4" />
+                    <path
+                        d="M100 76 q10 -22 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 M100 104 q10 -18 20 0 t20 0 t20 0 t20 0"
+                        stroke="#f4ecd8"
+                        stroke-width="2.4" />
+                    <text x="330"
+                        y="116"
+                        style="fill:#f4ecd8"
+                        class="t-sm">(even I can’t read it)</text>
+                    <rect x="470"
+                        y="144"
+                        width="40"
+                        height="10"
+                        rx="3"
+                        fill="#fffdf7" />
+                    <circle cx="110"
+                        cy="196"
+                        r="20"
+                        fill="#fffdf7" />
+                    <path d="M99 192 q4 4 8 0 M115 192 q4 4 8 0 M102 204 q8 7 16 0"
+                        stroke-width="1.8" />
+                    <circle cx="144"
+                        cy="190"
+                        r="4"
+                        fill="#fffdf7" />
+                    <circle cx="160"
+                        cy="186"
+                        r="5"
+                        fill="#fffdf7" />
+                    <rect x="176"
+                        y="168"
+                        width="300"
+                        height="46"
+                        rx="23"
+                        fill="#fffdf7"
+                        stroke="#2b4f8a" />
+                    <text x="326"
+                        y="199"
+                        text-anchor="middle"
+                        class="t-md t-blue">Yash, you can do it…</text>
+                </svg>
+                <figcaption><i>Fig. 3</i> — messy chalk, a deep breath, and one sentence to myself.</figcaption>
+            </figure>
+
+            <h2><span class="sec">THE RELIEF</span>And then it went really well ✔</h2>
+
+            <p>
+                Everything after that went good. I asked them a few questions, which were part of my script. They asked
+                a few doubts too, and I was able to solve them. The students were interested, they stayed engaged, and
+                by the end it was a really nice, interactive session. 🎓
+            </p>
+            <p>
+                It wasn’t a lecture, it was a conversation. And it was much better than the version my nerves had
+                imagined.
+            </p>
+
+            <h2><span class="sec">THE TALK</span>What I told them</h2>
+
+            <p>
+                Here’s what I actually shared, translated from the script. My topic was <strong>online courses</strong>.
+                But I didn’t want to talk about <em>which</em> courses to take. I wanted to talk about <em>why</em> we
+                should do courses at all, and why online learning matters.
+            </p>
+
+            <h2><span class="sec">THE TALK · OPENER</span>I started with a question</h2>
+
+            <p>
+                Before the topic, I asked them something:
+            </p>
+            <p>
+                <em>You all came to diploma after your 10th. Some of you came just because your parents said so. Some
+                    of you came with a dream. It could be anything: a web developer, a software developer. Can two or
+                    three of you tell me what your dream is, and why you chose diploma?</em>
+            </p>
+            <p>
+                A few students shared theirs. Mostly the kinds of dreams I expected: data scientist, web developer, and
+                so on.
+            </p>
+
+            <h2><span class="sec">THE TALK · MY REASON</span>A lockdown, a game and a YouTube search 🎮</h2>
+
+            <p>
+                Then I told them about my first day in first year. In the very first lecture, our English madam asked
+                everyone to introduce themselves and say what their dream was. I said I wanted to be a
+                <strong>game developer</strong>.
+            </p>
+            <p>
+                I told them that behind every dream there should be a <em>reason</em>. The reason can be anything, but
+                it has to be there. If you want to be a web developer only because your friend is becoming one, or
+                because the job pays well, it will be very hard to survive in this field.
+            </p>
+            <p>
+                So I told them my reason.
+            </p>
+            <p>
+                During the lockdown, we were all at home with no school and no studies. Like many others, I was just
+                passing time, mostly playing Free Fire. Months went by like that. But as my 10th boards came closer,
+                something inside me said, <em>this has to stop.</em>
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 220"
+                    role="img"
+                    aria-label="Sketch of a game controller on the left, an arrow, and a code window on the right showing a code symbol"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                        d="M60 110 q0 -40 40 -40 h100 q40 0 40 40 v30 q0 24 -22 24 q-18 0 -26 -16 h-84 q-8 16 -26 16 q-22 0 -22 -24 z"
+                        fill="#fffdf7" />
+                    <path d="M100 100 v22 M89 111 h22" />
+                    <circle cx="190"
+                        cy="102"
+                        r="7"
+                        stroke="#c4442f" />
+                    <circle cx="210"
+                        cy="116"
+                        r="7"
+                        stroke="#2b4f8a" />
+                    <path d="M130 100 h14 M130 112 h14"
+                        stroke-width="1.8" />
+                    <path d="M310 110 H380 M370 100 l12 10 -12 10"
+                        stroke="#c4442f"
+                        stroke-width="2.6" />
+                    <rect x="400"
+                        y="50"
+                        width="170"
+                        height="120"
+                        rx="6"
+                        fill="#fffdf7" />
+                    <path d="M400 72 H570" />
+                    <circle cx="414"
+                        cy="61"
+                        r="3.5" />
+                    <circle cx="428"
+                        cy="61"
+                        r="3.5" />
+                    <circle cx="442"
+                        cy="61"
+                        r="3.5" />
+                    <text x="485"
+                        y="130"
+                        text-anchor="middle"
+                        class="t-big t-blue">&lt;/&gt;</text>
+                    <text x="150"
+                        y="206"
+                        text-anchor="middle"
+                        class="t-sm">just passing time</text>
+                    <text x="485"
+                        y="206"
+                        text-anchor="middle"
+                        class="t-sm t-blue">“how are games made?”</text>
+                </svg>
+                <figcaption><i>Fig. 4</i> — from playing games to wondering how they’re made.</figcaption>
+            </figure>
+
+            <p>
+                So I asked myself a different question: <strong>what do I actually like?</strong> And I realised I was
+                curious about how games are made. I started searching on YouTube. That’s how I learned that programming
+                languages exist, and that one of them, <strong>C#</strong>, can be used to make games. That’s also when
+                I understood that “game developer” is an actual career path.
+            </p>
+            <p>
+                I was honest with them about what happened next. I learned some C# before my final boards, but there
+                was a gap of 3 to 4 months and I forgot most of it. The language was also tricky, and I couldn’t find a
+                good tutorial, so my programming basics never became clear.
+            </p>
+            <p>
+                After my 10th, during the vacation, I kept exploring. That’s when I found
+                <strong>CodeWithHarry’s Python course</strong> and followed it. From there, my interest in programming
+                kept growing. By the time I took admission to diploma, I had already learned <strong>Python, C, C++ and
+                    Data Structures</strong>, only by watching those tutorials.
+            </p>
+
+            <h2><span class="sec">THE TALK · THE GAP</span>Why college alone isn’t enough</h2>
+
+            <p>
+                I told them that everything I’d learned before diploma is something they would also learn in their
+                three years of diploma, and later in degree.
+            </p>
+            <p>
+                But college teaching is mostly at the theory level. We study subjects for the paper, and once the final
+                exam is over, we forget most of it.
+            </p>
+            <p>
+                And when we go into the industry, our <strong>skills</strong> matter far more than our degree or
+                diploma certificate. You can’t learn how real software is built by writing code on a notebook page.
+            </p>
+            <p>
+                That’s why I told them to focus on online learning alongside college.
+            </p>
+
+            <h2><span class="sec">THE TALK · CLASSES</span>About paid classes</h2>
+
+            <p>
+                Many students join classes: M1, M2, C, Java and many more. But I often hear that even in those classes,
+                the teaching is mostly theoretical.
+            </p>
+            <p>
+                I told them that personally, I never joined classes during my diploma, because I never needed to. Most
+                of what classes charge for is available online for free, on YouTube and on many other platforms.
+            </p>
+            <p>
+                I wasn’t saying “don’t join classes.” That’s your choice. I only asked them to think about this: if you
+                used that same time on an online course, how much could you gain?
+            </p>
+
+            <h2><span class="sec">THE TALK · FOUR RULES</span>Four things that improve your skills</h2>
+
+            <p>
+                Of course, following online courses doesn’t mean following every course you find. I told them four
+                things matter.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 230"
+                    role="img"
+                    aria-label="Four sketched cards numbered one to four: a lightbulb for curiosity, a loop for practice, a cube for projects and a branching graph for up to date technology"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="22"
+                        y="30"
+                        width="124"
+                        height="130"
+                        rx="6"
+                        fill="#fffdf7" />
+                    <rect x="164"
+                        y="30"
+                        width="124"
+                        height="130"
+                        rx="6"
+                        fill="#fffdf7" />
+                    <rect x="306"
+                        y="30"
+                        width="124"
+                        height="130"
+                        rx="6"
+                        fill="#fffdf7" />
+                    <rect x="448"
+                        y="30"
+                        width="124"
+                        height="130"
+                        rx="6"
+                        fill="#fffdf7" />
+                    <text x="84"
+                        y="24"
+                        text-anchor="middle"
+                        class="t-md t-red">1</text>
+                    <text x="226"
+                        y="24"
+                        text-anchor="middle"
+                        class="t-md t-red">2</text>
+                    <text x="368"
+                        y="24"
+                        text-anchor="middle"
+                        class="t-md t-red">3</text>
+                    <text x="510"
+                        y="24"
+                        text-anchor="middle"
+                        class="t-md t-red">4</text>
+                    <circle cx="84"
+                        cy="86"
+                        r="24"
+                        fill="#ffe45e"
+                        fill-opacity=".7" />
+                    <path d="M74 114 h20 M77 122 h14" />
+                    <path d="M84 48 v-8 M52 86 h-8 M116 86 h8 M62 64 l-6 -6 M106 64 l6 -6"
+                        stroke="#c4442f" />
+                    <path d="M206 96 a22 22 0 1 1 8 14 M214 110 l-2 -14 14 2"
+                        stroke="#2b4f8a" />
+                    <path d="M386 84 l-18 -9 -18 9 v20 l18 9 18 -9 z"
+                        fill="#2b4f8a"
+                        fill-opacity=".18" />
+                    <path d="M350 84 l18 9 18 -9 M368 93 v20" />
+                    <circle cx="496"
+                        cy="116"
+                        r="6"
+                        fill="#fffdf7" />
+                    <circle cx="496"
+                        cy="64"
+                        r="6"
+                        fill="#fffdf7" />
+                    <circle cx="530"
+                        cy="88"
+                        r="6"
+                        fill="#fffdf7"
+                        stroke="#c4442f" />
+                    <path d="M496 70 V110 M496 100 Q496 88 524 90"
+                        stroke="#2b4f8a" />
+                    <text x="84"
+                        y="188"
+                        text-anchor="middle"
+                        class="t-sm">explore curiosity</text>
+                    <text x="226"
+                        y="188"
+                        text-anchor="middle"
+                        class="t-sm">practice by doing</text>
+                    <text x="368"
+                        y="188"
+                        text-anchor="middle"
+                        class="t-sm">build projects</text>
+                    <text x="510"
+                        y="188"
+                        text-anchor="middle"
+                        class="t-sm">stay up to date</text>
+                    <text x="300"
+                        y="220"
+                        text-anchor="middle"
+                        class="t-sm t-blue">four things, one direction</text>
+                </svg>
+                <figcaption><i>Fig. 5</i> — the four points from my script.</figcaption>
+            </figure>
+
+            <h2><span class="sec">RULE 1</span>Explore your curiosity</h2>
+
+            <p>
+                You have two to three years. It feels like a lot, but it passes quickly. If you try to explore
+                everything, time will run out and you’ll learn nothing completely.
+            </p>
+            <p>
+                So learn what makes you <em>curious</em>. In my case, I wanted to be a game developer, but I was also
+                interested in Android and web development, so I explored those too. Some of my friends are interested
+                in cyber security and IoT hardware, so they explore those.
+            </p>
+            <p>
+                You could even plan it semester by semester: web development this semester, data science the next. By
+                the end, you’d have explored three or four fields.
+            </p>
+            <p>
+                Some friends tell me I’m giving the wrong advice, that you should learn only the field you want a
+                career in. But my view is that in industry, whether you’re applying for a job or starting your own
+                startup, it’s expected that you know a little about <em>every</em> field.
+            </p>
+
+            <h2><span class="sec">RULE 2</span>Practice by doing</h2>
+
+            <p>
+                Say you’re watching a four-hour tutorial series. Do you watch all four hours in one day? It’s not a
+                movie. Watching it all at once doesn’t mean you’ve learned it.
+            </p>
+            <p>
+                You need real practice. Run what the video teaches on your own computer. Change something and see how
+                the output changes.
+            </p>
+            <span class="margin-note">coding = problem solving.</span>
+            <p>
+                Many people think coding is just writing programs, but coding is really <strong>problem
+                    solving</strong>: how you think through a problem, and how you turn those steps into a program.
+                Programming languages are mostly similar, and only the syntax, the way of writing, changes. Once your
+                problem-solving mindset develops, you can write code in any language. Picking up a language can take
+                about a day. Learning to solve problems takes much longer, and the more you practise, the faster you
+                learn.
+            </p>
+
+            <h2><span class="sec">RULE 3</span>Build projects</h2>
+
+            <p>
+                Writing small programs is good practice, but it doesn’t mean you now know coding. You also need to
+                understand how a small piece of code works inside a large system, and what happens to a whole website or
+                app if there’s a small mistake in it. You only learn that by building projects.
+            </p>
+            <p>
+                You don’t have to build everything on your own at the start. If you don’t know how to build a project,
+                follow an online tutorial and code along with it. You’ll still learn a lot, and later, you’ll get ideas
+                for projects of your own.
+            </p>
+            <p>
+                And the projects you build yourself are worth a lot in industry. In interviews, they ask what projects
+                you’ve made and how you made them. If you built them yourself, you have a clear advantage.
+            </p>
+
+            <h2><span class="sec">RULE 4</span>Learn up-to-date technologies</h2>
+
+            <p>
+                The last point: stay updated with new technologies. A lot is going on around AI right now. There are AI
+                tools that can build an entire website without you writing any code, so you should at least know such
+                tools exist.
+            </p>
+            <p>
+                You’ll also see ads saying “Become an AI Expert for ₹99” or “Become an AI Master.” Don’t fall for them.
+                Professors from places like Harvard and Stanford, who know far more than the people selling those
+                courses, have their courses available for free on YouTube and other platforms.
+            </p>
+            <p>
+                And one more thing: when you learn technologies, first learn <strong>Git and GitHub</strong>. It’s a
+                version control system. It lets you maintain versions of your software, and it records who changed what
+                in the code, and when.
+            </p>
+
+            <h2><span class="sec">THE TALK · THE END</span>How I ended</h2>
+
+            <p>
+                At the end, I told them I’d send a PDF with all the online learning platforms and courses I know, so
+                they could explore them. It would also include the courses I’ve done myself, in case they wanted to
+                know.
+            </p>
+            <p>
+                Then I thanked Mahamuni Sir for giving me the chance to speak to them, genuinely, from the heart. And I
+                told the students: if you have any questions, ask without any hesitation.
+            </p>
+
+            <h2><span class="sec">LOOKING BACK</span>Why this one was different</h2>
+
+            <p>
+                I’ve done speeches, seminar presentations and project presentations before. A guidance talk was new for
+                me.
+            </p>
+            <p>
+                In a seminar or project presentation, you show your work and someone judges it. In a guidance talk,
+                nobody is checking your slides. You’re sharing your own experience and trusting people with it, and what
+                you say could change how someone spends their next three years.
+            </p>
+            <p>
+                That’s a different kind of responsibility, and a different kind of nervous. 🙂
+            </p>
+
+            <h2><span class="sec">LOOKING BACK</span>“Invited while still in college” 🎇</h2>
+
+            <p>
+                I listen to many people online. A common story goes like this: they finish college, become successful in
+                life, and <em>then</em> get invited back to give a talk at their own college.
+            </p>
+            <p>
+                Mine happened earlier. I was invited while I was still in college, in my final year. And honestly, I
+                feel really proud of that. 🎇
+            </p>
+            <p>
+                I don’t say this to brag. It showed me that you don’t need to wait until you’re “successful” for your
+                experience to be useful. It’s useful the moment you’ve learned something that someone else is still
+                trying to learn.
+            </p>
+
+            <h2><span class="sec">THE FEAR</span>The fear of public speaking 😬</h2>
+
+            <p>
+                Like many people, I fear public speaking. The fast heartbeat, the dry mouth, the feeling that everyone
+                is judging you. I get all of it.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 220"
+                    role="img"
+                    aria-label="Sketch of a heartbeat line that is sharp and spiky on the left and becomes a calm smooth wave on the right after a deep breath"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M30 110 H66 L80 62 L94 150 L108 34 L122 164 L136 76 L150 110 H190"
+                        stroke="#c4442f" />
+                    <path d="M190 110 q22 -24 44 0 t44 0 t44 0 t44 0 t44 0 t44 0"
+                        stroke="#2b4f8a" />
+                    <path d="M200 30 V190"
+                        stroke="#9aa0ad"
+                        stroke-dasharray="4 6"
+                        stroke-width="1.6" />
+                    <text x="200"
+                        y="22"
+                        text-anchor="middle"
+                        class="t-sm">one deep breath</text>
+                    <text x="110"
+                        y="206"
+                        text-anchor="middle"
+                        class="t-sm t-red">walking in</text>
+                    <text x="400"
+                        y="206"
+                        text-anchor="middle"
+                        class="t-sm t-blue">a few minutes later</text>
+                </svg>
+                <figcaption><i>Fig. 6</i> — the fear didn’t vanish. It just got smaller.</figcaption>
+            </figure>
+
+            <p>
+                And the only thing that has ever really worked is this: <strong>the only way to overcome the fear is to
+                    face it.</strong>
+            </p>
+            <p>
+                Not reading about it, not planning for it, not waiting until you feel ready. Facing it, one real room at
+                a time. The fear didn’t disappear when I walked in. It just got smaller than my willingness to do it.
+            </p>
+
+            <h2><span class="sec">TAKEAWAYS</span>What I took from it 📌</h2>
+
+            <ol>
+                <li><strong>Share your journey, even when it feels small.</strong> This invitation came because
+                    students found my LinkedIn profile. I never posted to get invited. I shared what I was learning, and
+                    someone found it useful.</li>
+                <li><strong>Let preparation give your nerves somewhere to go.</strong> The script didn’t remove my
+                    nervousness, but it gave it a direction.</li>
+                <li><strong>Say yes to the room that scares you.</strong> Every time I’ve faced a fear, it was smaller
+                    than the version in my head.</li>
+            </ol>
+
+            <div class="takeaway">
+                <b>Takeaway</b>
+                <p>
+                    If there’s a talk, a presentation or a room that scares you, I hope this nudges you towards it. Be
+                    nervous. Do it anyway. 👍
+                </p>
+            </div>
+
+            <p>I hope you gained something from it.</p>
+
+            <p class="signoff">— Yash</p>
+
+            <nav class="post-nav"
+                aria-label="Entries">
+                <a href="../index.html">← back to the notebook</a>
+                <a href="chasing-perfection.html">previous: Chasing Perfection</a>
+            </nav>
+        </article>
+
+        <img class="edge-doodle"
+            src="../assets/talk.png"
+            alt="Pencil sketch of the diploma college building" />
+
+        <span class="page-no"
+            title="Blog number 4"
+            aria-hidden="true">Blog #4</span>
+    </main>
+
+    <script src="../notebook.js"></script>
+</body>
+
+</html>

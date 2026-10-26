@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en"
+    data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+    <title>Chasing Perfection: Why I Know Better and Still Can’t Stop — The Dev Notebook</title>
+    <meta name="description"
+        content="Why I keep chasing perfection even when I know it drains me: the perfect 3D portfolio I never built, the normal one I made in a week, and three lessons about focus, small steps and pushing limits." />
+
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem("notebook-theme"); } catch (e) { }
+            if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="../notebook.css" />
+    <link rel="stylesheet"
+        href="../post-extras.css" />
+
+    <style>
+        /* ============================================================
+   College building drawn along the bottom edge of a post
+   (replaces the Pikachu + bolt). Paste into post-extras.css
+   or at the end of notebook.css.
+   ============================================================ */
+        /* night desk: white lines on the dark paper */
+        [data-theme="dark"] .edge-doodle {
+            filter: none;
+            mix-blend-mode: screen;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pencil-bar"
+        aria-hidden="true"></div>
+
+    <div data-include="../partials/header-post.html"></div>
+
+    <main class="sheet-page">
+        <span class="holes"
+            aria-hidden="true"></span>
+        <span class="tape tape--tl"
+            aria-hidden="true"></span>
+        <span class="tape tape--tr"
+            aria-hidden="true"></span>
+        <span class="stain"
+            aria-hidden="true"></span>
+
+        <article class="post">
+            <div class="post-kicker">
+                <span class="chip">Page 003</span>
+                <span>My Thoughts</span>
+                <span>·</span>
+                <span>11 min read</span>
+                <span>·</span>
+                <span>October 2026</span>
+            </div>
+
+            <h1>Chasing Perfection: Why I Know Better and Still Can’t Stop</h1>
+            <p class="dek">On doing things with intention, getting stuck anyway, and what I’m learning along the way.
+            </p>
+
+            <hr class="squiggle" />
+
+            <p class="lead">
+                Here’s a small confession from someone who tracks his expenses, his screen time and his schedule: I
+                know that chasing perfection is not always a good idea. I’ve read the books. I can explain the theory.
+                I could probably give a short talk on it. ⚡
+            </p>
+            <p>
+                And yet, when I sit down to do something, I still catch myself spending far too long trying to do it
+                <span class="hl">perfectly</span>.
+            </p>
+            <p>
+                It takes time. It drains my energy. Sometimes it leaves me mentally stuck, staring at one small detail
+                while the rest of the work waits. And even after all that, letting go is hard.
+            </p>
+            <p>
+                I want to write about this honestly, because I think many of you know this feeling, even if you call it
+                something else.
+            </p>
+
+            <h2><span class="sec">THE CONFESSION</span>I know. I still do it. 🔁</h2>
+
+            <p>
+                Knowing something and doing it are very different things, and perfectionism is the best example I have.
+            </p>
+            <p>
+                You rewrite one sentence five times. You fix the alignment of something nobody else will ever notice.
+                You delay starting because the plan isn’t perfect yet. The work isn’t finished, but it <em>feels</em>
+                like work, so it feels okay. ⌚
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 222"
+                    role="img"
+                    aria-label="Sketch of a page with the same sentence written and crossed out three times, next to a pencil whose eraser is almost gone"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="30"
+                        y="24"
+                        width="330"
+                        height="170"
+                        fill="#fffdf7" />
+                    <path d="M30 60 H360 M30 96 H360 M30 132 H360 M30 168 H360"
+                        stroke="#d9d2c2"
+                        stroke-width="1.4" />
+                    <text x="48"
+                        y="54"
+                        class="t-md">draft 1: the same sentence</text>
+                    <path d="M44 45 H334"
+                        stroke="#c4442f" />
+                    <text x="48"
+                        y="90"
+                        class="t-md">draft 2: the same sentence</text>
+                    <path d="M44 81 H334"
+                        stroke="#c4442f" />
+                    <text x="48"
+                        y="126"
+                        class="t-md">draft 3: the same sentence</text>
+                    <path d="M44 117 H334"
+                        stroke="#c4442f" />
+                    <text x="48"
+                        y="162"
+                        class="t-md t-blue">draft 4: still not right…</text>
+                    <g transform="rotate(-32 480 120)">
+                        <rect x="396"
+                            y="110"
+                            width="150"
+                            height="20"
+                            fill="#ffe45e"
+                            fill-opacity=".8" />
+                        <rect x="382"
+                            y="110"
+                            width="14"
+                            height="20"
+                            fill="#9aa0ad" />
+                        <path d="M382 110 h-14 q-8 10 0 20 h14"
+                            fill="#c4442f"
+                            fill-opacity=".85" />
+                        <path d="M420 110 v20 M460 110 v20 M500 110 v20"
+                            stroke-width="1.4" />
+                        <path d="M546 110 L580 120 L546 130 Z"
+                            fill="#fffdf7" />
+                        <path d="M570 117 l10 3 -10 3"
+                            fill="#2a2f3a" />
+                    </g>
+                    <path d="M372 192 l6 3 M362 198 l5 -2 M384 200 l4 4"
+                        stroke="#c4442f" />
+                    <text x="48"
+                        y="214"
+                        class="t-sm">the eraser is almost gone</text>
+                </svg>
+                <figcaption><i>Fig. 1</i> — one sentence, many drafts.</figcaption>
+            </figure>
+
+            <p>
+                The funny part is that I’m often trying to save time. I plan carefully, I organise, I want to avoid
+                mistakes so I won’t have to redo things later. But perfectionism quietly takes back every hour I was
+                trying to save.
+            </p>
+
+            <h2><span class="sec">THE REAL ISSUE</span>It’s not really about being flawless</h2>
+
+            <p>
+                Here’s something I had to figure out slowly: for me, this isn’t about wanting to be flawless, or wanting
+                everyone to clap.
+            </p>
+            <p>
+                It’s the deep urge to do things <strong>with intention</strong>. With care. With precision. I want my
+                work to feel like it was made by someone who meant it, and that’s a good thing. Caring about quality is
+                not the problem.
+            </p>
+            <p>
+                The problem starts when “doing it with care” quietly becomes “I can’t stop until it’s perfect.” Those
+                two feel almost the same from the inside, but they lead to very different places.
+            </p>
+
+            <blockquote class="pull">
+                Care says: “Let me do this well.”<br />
+                Perfectionism says: “Let me not do this until I can’t fail.”
+                <cite>— note to self</cite>
+            </blockquote>
+
+            <p>
+                The first one moves you forward. The second one keeps you standing still.
+            </p>
+
+            <h2><span class="sec">THE STORY</span>The portfolio that never got built 🕹️</h2>
+
+            <p>
+                The best example I have of this is my portfolio.
+            </p>
+            <p>
+                For almost a quarter of a year, I was <em>going to build</em> the perfect one. Notice the wording: not
+                building, going to build.
+            </p>
+            <p>
+                It started with something beautiful. I’d come across portfolios like Bruno Simon’s, and a few others,
+                which aren’t websites in the usual sense. They’re small 3D worlds built with Three.js. You move around
+                inside them, play with the animations, and while you play, you slowly find out who the person is, what
+                they’ve made and what they care about. It felt like a game that happened to be a resume.
+            </p>
+            <p>
+                I was hooked. <em>That’s the one I want.</em>
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 222"
+                    role="img"
+                    aria-label="Sketch comparing a browser window containing a 3D cube world, labelled the dream, with a plain browser page of cards, labelled the real one"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="30"
+                        y="24"
+                        width="250"
+                        height="150"
+                        rx="6"
+                        fill="#fffdf7" />
+                    <path d="M30 46 H280" />
+                    <circle cx="46"
+                        cy="35"
+                        r="3.5" />
+                    <circle cx="60"
+                        cy="35"
+                        r="3.5" />
+                    <circle cx="74"
+                        cy="35"
+                        r="3.5" />
+                    <path d="M155 80 l40 -20 40 20 v40 l-40 20 -40 -20 z"
+                        fill="#2b4f8a"
+                        fill-opacity=".18" />
+                    <path d="M155 80 l40 20 40 -20 M195 100 v40" />
+                    <path d="M70 70 v12 M64 76 h12 M250 62 v10 M245 67 h10"
+                        stroke="#c4442f" />
+                    <path d="M60 152 q30 -16 62 0 M250 154 q14 -10 26 -2"
+                        stroke="#9aa0ad" />
+                    <text x="300"
+                        y="106"
+                        text-anchor="middle"
+                        class="t-md">vs</text>
+                    <rect x="320"
+                        y="50"
+                        width="250"
+                        height="124"
+                        rx="6"
+                        fill="#fffdf7" />
+                    <path d="M320 72 H570" />
+                    <circle cx="336"
+                        cy="61"
+                        r="3.5" />
+                    <circle cx="350"
+                        cy="61"
+                        r="3.5" />
+                    <circle cx="364"
+                        cy="61"
+                        r="3.5" />
+                    <path d="M338 90 h60 M470 90 h30 M510 90 h40"
+                        stroke="#9aa0ad" />
+                    <rect x="338"
+                        y="108"
+                        width="62"
+                        height="50"
+                        stroke="#2b4f8a" />
+                    <rect x="412"
+                        y="108"
+                        width="62"
+                        height="50"
+                        stroke="#2b4f8a" />
+                    <rect x="486"
+                        y="108"
+                        width="62"
+                        height="50"
+                        stroke="#2b4f8a" />
+                    <path d="M346 124 h46 M346 136 h30 M420 124 h46 M420 136 h30 M494 124 h46 M494 136 h30"
+                        stroke="#9aa0ad"
+                        stroke-width="1.6" />
+                    <text x="155"
+                        y="206"
+                        text-anchor="middle"
+                        class="t-sm">the dream: a whole 3D world</text>
+                    <text x="445"
+                        y="206"
+                        text-anchor="middle"
+                        class="t-sm t-blue">the real one: plain, but finished</text>
+                </svg>
+                <figcaption><i>Fig. 2</i> — the portfolio I imagined, and the one I actually needed.</figcaption>
+            </figure>
+
+            <p>
+                So I planned everything. Then, one by one, the obstacles showed up:
+            </p>
+            <ul>
+                <li>To make the 3D models, I had to learn <strong>Blender</strong>.</li>
+                <li>To bring them to life, I had to get much better at <strong>Three.js</strong>.</li>
+                <li>To run Blender properly, I needed a powerful PC, and I don’t have one.</li>
+                <li>And all of it needed a <em>lot, lot</em> of time.</li>
+            </ul>
+            <p>
+                I treated each of these as a gate I had to pass before I could start. So I spent days figuring out how
+                to build 3D models, watching tutorials, researching and “preparing”. I felt busy. I felt serious.
+                Planning feels like progress, which is exactly why it’s so dangerous.
+            </p>
+            <span class="margin-note">planning feels like progress. it isn’t.</span>
+            <p>
+                Meanwhile, I had a bigger roadmap in my head, and of course it was perfect:
+            </p>
+            <ol>
+                <li>Build a cool portfolio.</li>
+                <li>Make a resume.</li>
+                <li>Hunt for internships.</li>
+                <li>Be working, and getting paid, within a month or two.</li>
+            </ol>
+            <p>
+                Then life got in the way. Hackathons. SIH (the Smart India Hackathon, a big national contest). Tests.
+                Submissions. Regular classes. Home visits during vacations. Festivals. Every one of them was worth
+                doing, and every one of them pushed my plan a little further away.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 222"
+                    role="img"
+                    aria-label="Sketch of a calendar grid filled with tests, SIH, classes, hackathons, festivals and home visits, with a single empty box labelled portfolio"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="100"
+                        y="24"
+                        width="400"
+                        height="156"
+                        fill="#fffdf7" />
+                    <rect x="100"
+                        y="24"
+                        width="400"
+                        height="32"
+                        fill="#c4442f"
+                        fill-opacity=".18" />
+                    <text x="300"
+                        y="48"
+                        text-anchor="middle"
+                        class="t-md">the quarter</text>
+                    <path d="M180 56 V180 M260 56 V180 M340 56 V180 M420 56 V180 M100 96 H500 M100 138 H500"
+                        stroke-width="1.6" />
+                    <text x="140"
+                        y="82"
+                        text-anchor="middle"
+                        class="t-sm">tests</text>
+                    <text x="220"
+                        y="82"
+                        text-anchor="middle"
+                        class="t-sm t-red">SIH</text>
+                    <text x="300"
+                        y="82"
+                        text-anchor="middle"
+                        class="t-sm">classes</text>
+                    <text x="380"
+                        y="82"
+                        text-anchor="middle"
+                        class="t-sm t-blue">hackathon</text>
+                    <text x="460"
+                        y="82"
+                        text-anchor="middle"
+                        class="t-sm">home</text>
+                    <text x="140"
+                        y="123"
+                        text-anchor="middle"
+                        class="t-sm t-red">festival</text>
+                    <text x="220"
+                        y="123"
+                        text-anchor="middle"
+                        class="t-sm">submit</text>
+                    <text x="300"
+                        y="123"
+                        text-anchor="middle"
+                        class="t-sm">classes</text>
+                    <text x="380"
+                        y="123"
+                        text-anchor="middle"
+                        class="t-sm">tests</text>
+                    <text x="460"
+                        y="123"
+                        text-anchor="middle"
+                        class="t-sm t-blue">home</text>
+                    <text x="140"
+                        y="165"
+                        text-anchor="middle"
+                        class="t-sm">festival</text>
+                    <text x="220"
+                        y="165"
+                        text-anchor="middle"
+                        class="t-sm">classes</text>
+                    <text x="300"
+                        y="165"
+                        text-anchor="middle"
+                        class="t-sm t-red">SIH</text>
+                    <text x="380"
+                        y="165"
+                        text-anchor="middle"
+                        class="t-sm">submit</text>
+                    <rect x="426"
+                        y="144"
+                        width="68"
+                        height="30"
+                        stroke="#c4442f"
+                        stroke-dasharray="4 4" />
+                    <text x="460"
+                        y="165"
+                        text-anchor="middle"
+                        class="t-sm t-red">portfolio?</text>
+                    <text x="300"
+                        y="212"
+                        text-anchor="middle"
+                        class="t-sm">life, happening</text>
+                </svg>
+                <figcaption><i>Fig. 3</i> — every box was worth filling, and none of them was the portfolio.
+                </figcaption>
+            </figure>
+
+            <p>
+                When I finally finished everything else and sat down to get back to the portfolio, I noticed something
+                uncomfortable. <strong>Nothing was built.</strong> No pages, no models, nothing. After all that time,
+                what I had was a plan.
+            </p>
+            <p>
+                I’d been busy designing the perfect portfolio, and I hadn’t made one.
+            </p>
+
+            <h2><span class="sec">THE TURN</span>The thing I learned the hard way 🎯</h2>
+
+            <p>
+                Around then I watched a lot of videos about how a portfolio should look and how to build one. And one
+                thing kept showing up.
+            </p>
+            <p>
+                I’m applying for <strong>game programming roles</strong>. A recruiter looking at someone like me isn’t
+                going to care how magical my website’s 3D world is. Honestly, they’d barely notice it. I looked at the
+                other people in my space who were applying, and most of them had pretty <em>normal</em> portfolios.
+                What set them apart was what was inside: the <strong>projects</strong>, and the <strong>thinking behind
+                    them</strong>.
+            </p>
+            <p>
+                The dream version of my portfolio was built for me, and not for the people who’d be reading it.
+            </p>
+            <p>
+                I won’t pretend that was easy to accept. Dropping the idea took a lot of courage. I’d spent so long
+                imagining it that letting go felt like admitting the time was wasted. But it was the first useful thing
+                I’d done in months.
+            </p>
+            <p>
+                So I started over with a normal portfolio. It’s not the best or the nicest one out there. But it’s the
+                one recruiters will actually see, and the one that shows what matters.
+            </p>
+            <p>
+                I built it in <span class="hl">less than a week.</span>
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 232"
+                    role="img"
+                    aria-label="Bar chart: one very tall bar for almost a quarter of a year of planning with nothing live, and one tiny bar for less than a week of building that is live"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M60 190 H540" />
+                    <text x="205"
+                        y="34"
+                        text-anchor="middle"
+                        class="t-sm t-red">almost a quarter of a year,</text>
+                    <text x="205"
+                        y="54"
+                        text-anchor="middle"
+                        class="t-sm t-red">and nothing live</text>
+                    <rect x="150"
+                        y="70"
+                        width="110"
+                        height="120"
+                        fill="#c4442f"
+                        fill-opacity=".15"
+                        stroke="#c4442f" />
+                    <path d="M160 180 L250 80 M160 150 L220 80 M190 180 L250 110"
+                        stroke="#c4442f"
+                        stroke-opacity=".45"
+                        stroke-width="1.4" />
+                    <text x="395"
+                        y="140"
+                        text-anchor="middle"
+                        class="t-sm t-blue">less than a week,</text>
+                    <text x="395"
+                        y="160"
+                        text-anchor="middle"
+                        class="t-sm t-blue">and it’s live ✓</text>
+                    <rect x="340"
+                        y="170"
+                        width="110"
+                        height="20"
+                        fill="#2b4f8a"
+                        fill-opacity=".3"
+                        stroke="#2b4f8a" />
+                    <text x="205"
+                        y="216"
+                        text-anchor="middle"
+                        class="t-sm">planning the perfect one</text>
+                    <text x="395"
+                        y="216"
+                        text-anchor="middle"
+                        class="t-sm">building the real one</text>
+                </svg>
+                <figcaption><i>Fig. 4</i> — the same me, with two very different approaches.</figcaption>
+            </figure>
+
+            <p>
+                Think about that for a second: almost a quarter of a year for a portfolio that never existed, and less
+                than a week for one that does. 🤯
+            </p>
+            <p>
+                The perfect portfolio never went live. The normal one did.
+            </p>
+
+            <h2><span class="sec">THE COST</span>What it costs me ⚖️</h2>
+
+            <p>
+                Let me be honest about the price of this habit, with that story fresh in mind:
+            </p>
+            <ul>
+                <li><strong>Time.</strong> In my case, a full quarter of a year, and a lot of small hours before that.
+                </li>
+                <li><strong>Energy.</strong> I finish tired, even when I haven’t done much new work.</li>
+                <li><strong>Starting.</strong> Sometimes I don’t begin at all, because the first step won’t be perfect.
+                </li>
+                <li><strong>Peace.</strong> Even when something is good, I’m already thinking about what’s wrong with
+                    it.</li>
+            </ul>
+            <p>
+                And the strangest part is that perfectionism can make me feel productive while keeping me stuck.
+                Planning and polishing are easier than finishing, because finishing means somebody might see it.
+            </p>
+
+            <h2><span class="sec">THE SHIFT</span>So I try to shift my focus 🧭</h2>
+
+            <p>
+                Different experiences on this journey have taught me that chasing perfection alone is exhausting. So
+                I’m trying something else.
+            </p>
+            <p>
+                Instead of asking, <em>“Is this perfect?”</em> I ask, <em>“Does this reflect me?”</em>
+            </p>
+            <p>
+                I put more effort into building something that shows my thoughts, my values and my journey. My normal
+                portfolio does that far better than my dream one ever could, because it’s mine and it’s real. It’s
+                honest. That’s a much better thing to chase, because I can actually reach it.
+            </p>
+
+            <h2><span class="sec">THE DIFFERENCE</span>Respect is slower than recognition 🤝</h2>
+
+            <p>
+                I’ve also noticed something about people. Recognition is quick. A flashy design, a good result, a good
+                post, and people say “wow.” But it fades just as fast.
+            </p>
+            <p>
+                <strong>Respect</strong> is different. It’s earned slowly, and it comes from doing things with honesty
+                and discipline, again and again, even when nobody is watching. A 3D world might get a “wow” once. Clear
+                projects and honest thinking get trust for years.
+            </p>
+            <p>
+                I’d rather earn that.
+            </p>
+
+            <h2><span class="sec">THE CYCLE</span>Learning, unlearning, and starting again 🧠</h2>
+
+            <p>
+                Along the way I’ve had to unlearn a lot: old habits, limiting beliefs and even outdated ways of
+                thinking that I carried without noticing. “A portfolio must be amazing” was one of them.
+            </p>
+            <p>
+                I used to think learning was a one-time thing: you learn something and it’s yours forever. But it’s
+                more like a cycle:
+            </p>
+            <ol>
+                <li><strong>Pick up</strong> a new idea.</li>
+                <li><strong>Let go</strong> of what you no longer need.</li>
+                <li><strong>Start again</strong>, with an open mind.</li>
+            </ol>
+            <p>
+                It’s tough, because letting go of an old belief feels like losing a part of yourself. But it’s freeing
+                too. Every time I drop a rule that wasn’t helping me, I find I have more room to breathe.
+            </p>
+
+            <h2><span class="sec">THREE LESSONS</span>Three things I learned along the way 📌</h2>
+
+            <p>
+                These are the lessons I keep coming back to. I think they’ll be useful to you too.
+            </p>
+
+            <h2><span class="sec">LESSON 1</span>Pay attention to what truly matters 🎯</h2>
+
+            <p>
+                There’s always a lot going on around us: distractions, other people’s opinions, things pulling us in
+                different directions. It’s easy to spend a whole day busy and still feel like nothing important got
+                done.
+            </p>
+            <p>
+                That’s why it’s so important to decide what truly matters to us. We don’t have endless time or energy,
+                so we should spend both on the things that actually help us grow or bring us peace.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 232"
+                    role="img"
+                    aria-label="Sketch of a compass whose red needle points to the words what matters, surrounded by distractions like noise, opinions, trends and maybe later"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <text x="300"
+                        y="40"
+                        text-anchor="middle"
+                        class="t-md t-red">what matters</text>
+                    <circle cx="300"
+                        cy="132"
+                        r="70"
+                        fill="#fffdf7" />
+                    <circle cx="300"
+                        cy="132"
+                        r="58"
+                        stroke="#9aa0ad"
+                        stroke-width="9"
+                        stroke-dasharray="2 28.4" />
+                    <path d="M300 82 L312 132 L288 132 Z"
+                        fill="#c4442f"
+                        fill-opacity=".85" />
+                    <path d="M300 182 L312 132 L288 132 Z"
+                        fill="#fffdf7" />
+                    <circle cx="300"
+                        cy="132"
+                        r="4"
+                        fill="#2a2f3a" />
+                    <text x="90"
+                        y="96"
+                        class="t-sm">noise</text>
+                    <text x="470"
+                        y="86"
+                        class="t-sm">opinions</text>
+                    <text x="70"
+                        y="176"
+                        class="t-sm">maybe later</text>
+                    <text x="480"
+                        y="180"
+                        class="t-sm">trends</text>
+                    <path d="M130 100 q30 -6 54 10 M470 92 q-30 -6 -54 12 M140 172 q26 2 50 -10 M478 176 q-30 0 -52 -14"
+                        stroke="#9aa0ad"
+                        stroke-dasharray="3 6" />
+                </svg>
+                <figcaption><i>Fig. 5</i> — a lot is pulling at us. The needle still has to point somewhere.
+                </figcaption>
+            </figure>
+
+            <p>
+                My portfolio is a clear example. What mattered was the projects and the thinking behind them. I was
+                spending my energy on 3D models. Perfectionism spreads our care evenly over <em>everything</em>. Focus
+                puts it where it counts.
+            </p>
+
+            <h2><span class="sec">LESSON 2</span>Small steps, every single day 🔮</h2>
+
+            <p>
+                Getting better doesn’t always mean doing something big. Even small improvements, done every day, can
+                make a big difference over time. It might not show up right away, but it adds up, slowly and surely.
+            </p>
+            <p>
+                The key is to keep going, even on days when we don’t feel like it.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 232"
+                    role="img"
+                    aria-label="Sketch of a staircase of six steps labelled day 1 to day 6 with a small figure climbing and a flag at the top"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M40 190 H540" />
+                    <rect x="70"
+                        y="166"
+                        width="70"
+                        height="24"
+                        fill="#fffdf7" />
+                    <rect x="140"
+                        y="142"
+                        width="70"
+                        height="48"
+                        fill="#fffdf7" />
+                    <rect x="210"
+                        y="118"
+                        width="70"
+                        height="72"
+                        fill="#fffdf7" />
+                    <rect x="280"
+                        y="94"
+                        width="70"
+                        height="96"
+                        fill="#fffdf7" />
+                    <rect x="350"
+                        y="70"
+                        width="70"
+                        height="120"
+                        fill="#fffdf7" />
+                    <rect x="420"
+                        y="46"
+                        width="70"
+                        height="144"
+                        fill="#2b4f8a"
+                        fill-opacity=".14" />
+                    <text x="105"
+                        y="184"
+                        text-anchor="middle"
+                        class="t-sm">day 1</text>
+                    <text x="175"
+                        y="184"
+                        text-anchor="middle"
+                        class="t-sm">day 2</text>
+                    <text x="245"
+                        y="184"
+                        text-anchor="middle"
+                        class="t-sm">day 3</text>
+                    <text x="315"
+                        y="184"
+                        text-anchor="middle"
+                        class="t-sm">day 4</text>
+                    <text x="385"
+                        y="184"
+                        text-anchor="middle"
+                        class="t-sm">day 5</text>
+                    <text x="455"
+                        y="184"
+                        text-anchor="middle"
+                        class="t-sm t-blue">day 6</text>
+                    <circle cx="245"
+                        cy="94"
+                        r="8"
+                        fill="#fffdf7" />
+                    <path d="M245 102 V116 M245 108 L255 98 M245 116 L239 118" />
+                    <path d="M470 46 V16"
+                        stroke="#c4442f" />
+                    <path d="M470 16 L500 26 L470 36 Z"
+                        fill="#c4442f"
+                        fill-opacity=".85"
+                        stroke="#c4442f" />
+                    <text x="300"
+                        y="222"
+                        text-anchor="middle"
+                        class="t-sm">an okay day, repeated</text>
+                </svg>
+                <figcaption><i>Fig. 6</i> — nobody climbs it in one jump.</figcaption>
+            </figure>
+
+            <p>
+                What shapes our future isn’t only how talented we are. It’s how <strong>patient and consistent</strong>
+                we stay, even when it’s tough. A perfect day happens once in a while. An okay day, repeated a hundred
+                times, builds a life. And a simple site built in a week beats a perfect one that was never started.
+            </p>
+
+            <h2><span class="sec">LESSON 3</span>Push past the limits you didn’t know you set 🏆</h2>
+
+            <p>
+                We set limits for ourselves, sometimes without even realising it. “I’m not good at this.” “That’s for
+                other people.” “Maybe later.”
+            </p>
+            <p>
+                We should try to push past those limits. Go after goals that feel a bit scary or out of reach. That’s
+                usually where real growth begins: in the moments we step out of our comfort zone and try something that
+                challenges us.
+            </p>
+            <p>
+                You might think this clashes with everything I said about the portfolio, but I don’t think it does.
+                Dreaming big was never the mistake. The mistake was turning the dream into a <em>condition for
+                    starting</em>. A big goal is fine. Waiting for perfect conditions before you take the first step is
+                what stops us. Perfection says <em>“don’t try until you can’t fail.”</em> Growth says <em>“try, and
+                    learn from the failing.”</em> I’m choosing the second.
+            </p>
+
+            <h2><span class="sec">LAST WORD</span>Keep the spark. Stay humble. 🏁</h2>
+
+            <p>
+                As we move forward, I think we should keep that spark alive: always wanting to learn more, try new
+                things and grow.
+            </p>
+            <p>
+                At the same time, we need to stay humble and remind ourselves that we don’t know everything yet, and
+                that’s okay.
+            </p>
+            <p>
+                It’s easy to get comfortable. It’s easy to stop aiming higher once things are going fine. But deep
+                down, we know we can do more and be more.
+            </p>
+
+            <div class="takeaway">
+                <b>Takeaway</b>
+                <p>
+                    A normal portfolio built in a week beats a perfect one that never exists. So don’t settle for less
+                    than what you’re truly capable of, and don’t wait until it’s perfect to begin. 🏁
+                </p>
+            </div>
+
+            <p class="signoff">— Yash</p>
+
+            <nav class="post-nav"
+                aria-label="Entries">
+                <a href="../index.html">← back to the notebook</a>
+                <a href="student-of-life.html">previous: Student of Life</a>
+            </nav>
+        </article>
+
+        <img class="edge-doodle"
+            src="../assets/perfection.png"
+            alt="Pencil sketch of me at my desk" />
+
+        <span class="page-no"
+            title="Blog number 3"
+            aria-hidden="true">Blog #3</span>
+    </main>
+
+    <script src="../notebook.js"></script>
+</body>
+
+</html>

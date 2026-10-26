@@ -246,13 +246,18 @@ a {
 
 /* pencil sketch peeking over the bottom border of the page */
 .edge-doodle {
-    position: absolute;
     right: clamp(40px, 9vw, 120px);
     bottom: -1px;
-    width: clamp(120px, 17vw, 190px);
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: min(540px, 82%);
     height: auto;
+    margin: 0 auto -90px;
+    /* sinks into the sheet's bottom padding so it stands on the edge */
+    mix-blend-mode: multiply;
+    /* drops the white background of the drawing onto the paper */
     pointer-events: none;
-    z-index: 3;
     opacity: 0.92;
 }
 [data-theme="dark"] .edge-doodle {
@@ -974,6 +979,9 @@ hr.squiggle {
     }
     .stain {
         display: none;
+    }
+    .edge-doodle {
+        width: 78%;
     }
     .sheet-page {
         padding-left: calc(var(--margin-x) + 14px);

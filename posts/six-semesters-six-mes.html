@@ -38,30 +38,11 @@
    (replaces the Pikachu + bolt). Paste into post-extras.css
    or at the end of notebook.css.
    ============================================================ */
-        .edge-doodle {
-            display: block;
-            position: relative;
-            z-index: 1;
-            width: min(540px, 82%);
-            height: auto;
-            margin: 0 auto -90px;
-            /* sinks into the sheet's bottom padding so it stands on the edge */
-            mix-blend-mode: multiply;
-            /* drops the white background of the drawing onto the paper */
-            pointer-events: none;
-        }
-
-        /* night desk: white lines on the dark paper */
+                /* night desk: white lines on the dark paper */
         [data-theme="dark"] .edge-doodle {
             filter: invert(1);
             mix-blend-mode: screen;
             opacity: 0.85;
-        }
-
-        @media (max-width: 760px) {
-            .edge-doodle {
-                width: 100%;
-            }
         }
     </style>
 </head>
