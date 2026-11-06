@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en"
+    data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+    <title>Starting at DYP, Part 1: Before the Campus — The Dev Notebook</title>
+    <meta name="description"
+        content="How I picked my degree college: scraping cutoff lists with Python, filling admission forms for my whole friend group, CAP round surprises, and a mysterious message from an unknown number." />
+
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem("notebook-theme"); } catch (e) { }
+            if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="../notebook.css" />
+    <link rel="stylesheet"
+        href="../post-extras.css" />
+
+    <style>
+        /* ============================================================
+   College building drawn along the bottom edge of a post
+   (replaces the Pikachu + bolt). Paste into post-extras.css
+   or at the end of notebook.css.
+   ============================================================ */
+
+        /* night desk: white lines on the dark paper */
+        [data-theme="dark"] .edge-doodle {
+            filter: invert(0.1) hue-rotate(90deg);
+            mix-blend-mode: screen;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 760px) {
+            .edge-doodle {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pencil-bar"
+        aria-hidden="true"></div>
+
+    <div data-include="../partials/header-post.html"></div>
+
+    <main class="sheet-page">
+        <span class="holes"
+            aria-hidden="true"></span>
+        <span class="tape tape--tl"
+            aria-hidden="true"></span>
+        <span class="tape tape--tr"
+            aria-hidden="true"></span>
+        <span class="stain"
+            aria-hidden="true"></span>
+
+        <article class="post">
+            <div class="post-kicker">
+                <span class="chip">Page 007</span>
+                <span>Life Journal</span>
+                <span>·</span>
+                <span>Part 1 of 2</span>
+                <span>·</span>
+                <span>13 min read</span>
+                <span>·</span>
+                <span>October 2026</span>
+            </div>
+
+            <h1>Starting at DYP, Part 1: Before the Campus</h1>
+            <p class="dek">Results, college lists, friends, forms, and a lot of CAP round drama.</p>
+
+            <hr class="squiggle" />
+
+            <p class="lead">
+                This story goes back to 2025.
+            </p>
+            <p>
+                My diploma final exams were over, and the results were out. I’d scored <span class="hl">92.41%</span>.
+                It was a little lower than I had expected, but still good enough to land a decent college for my degree.
+                🎓
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 226"
+                    role="img"
+                    aria-label="Sketch of a result sheet with 92.41 percent circled in red and small sparkles around it"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="180"
+                        y="16"
+                        width="240"
+                        height="172"
+                        fill="#fffdf7"
+                        transform="rotate(-2 300 100)" />
+                    <g transform="rotate(-2 300 100)">
+                        <text x="300"
+                            y="48"
+                            text-anchor="middle"
+                            class="t-md">Final Result</text>
+                        <path d="M200 58 H400"
+                            stroke="#9aa0ad"
+                            stroke-width="1.6" />
+                        <path d="M200 78 h90 M310 78 h60 M200 94 h80 M310 94 h60"
+                            stroke="#9aa0ad"
+                            stroke-width="1.6" />
+                        <text x="300"
+                            y="144"
+                            text-anchor="middle"
+                            class="t-big">92.41%</text>
+                        <ellipse cx="300"
+                            cy="132"
+                            rx="92"
+                            ry="28"
+                            stroke="#c4442f"
+                            stroke-width="2.6" />
+                        <path d="M200 170 h120"
+                            stroke="#9aa0ad"
+                            stroke-width="1.6" />
+                    </g>
+                    <path d="M120 60 v16 M112 68 h16 M490 54 v14 M483 61 h14 M470 150 v12 M464 156 h12"
+                        stroke="#2b4f8a" />
+                    <path d="M130 130 v12 M124 136 h12"
+                        stroke="#c4442f" />
+                    <text x="300"
+                        y="216"
+                        text-anchor="middle"
+                        class="t-sm">a little less than I expected, but good enough</text>
+                </svg>
+                <figcaption><i>Fig. 1</i> — the number that started it all.</figcaption>
+            </figure>
+
+            <p>
+                This is Part 1 of the story of how I started at DYP. It’s about everything <em>before</em> the campus:
+                the lists, the forms, the friends and a lot of waiting. Part 2 will be about the first day and
+                everything after.
+            </p>
+
+            <h2><span class="sec">GLOSSARY</span>A quick glossary 📖</h2>
+
+            <p>
+                <em>(for readers outside Maharashtra’s admission system)</em>
+            </p>
+
+            <ul class="moments">
+                <li>
+                    <b>CAP (Centralised Admission Process)</b>
+                    The official process where students fill in a list of colleges and branches in order of preference.
+                    Seats are then allotted in <strong>rounds</strong>, based on marks, category and the seats
+                    available.
+                </li>
+                <li>
+                    <b>Cutoff</b>
+                    The lowest marks at which a college gave a seat last year, for each branch and category.
+                </li>
+                <li>
+                    <b>DSY (Direct Second Year)</b>
+                    After a three-year diploma, we can enter a degree directly in its second year.
+                </li>
+                <li>
+                    <b>Betterment</b>
+                    Taking a seat in one round, but trying again in the next round for a better college.
+                </li>
+                <li>
+                    <b>Caste Validity</b>
+                    A document needed for category-based seats.
+                </li>
+            </ul>
+
+            <h2><span class="sec">THE RESULTS</span>The results</h2>
+
+            <p>
+                Until my results came, I hadn’t made a list of colleges. The same was true for my friends Mayur, Anand,
+                Tushar, Shubham and the rest of the gang.
+            </p>
+
+            <h2><span class="sec">THE LISTS</span>Making the lists together 📊</h2>
+
+            <p>
+                We decided to sit together and build a college list for each person. But I’d done some research
+                beforehand.
+            </p>
+            <p>
+                Using a few tools and Python scripts, I scraped all the college websites and analysed the previous
+                year’s cutoff lists. From that I built an <strong>Excel sheet</strong> sorted by category, branch and
+                college, with all the details a proper admission counsellor would give you. I sent it to our whole
+                diploma classmates group.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 226"
+                    role="img"
+                    aria-label="Sketch of a spreadsheet with college, branch, cutoff and category columns, and a small Python snake beside it"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="80"
+                        y="20"
+                        width="400"
+                        height="156"
+                        fill="#fffdf7" />
+                    <rect x="80"
+                        y="20"
+                        width="400"
+                        height="32"
+                        fill="#2b4f8a"
+                        fill-opacity=".16" />
+                    <path d="M180 20 V176 M280 20 V176 M380 20 V176 M80 84 H480 M80 116 H480 M80 148 H480"
+                        stroke-width="1.6" />
+                    <text x="130"
+                        y="43"
+                        text-anchor="middle"
+                        class="t-sm">college</text>
+                    <text x="230"
+                        y="43"
+                        text-anchor="middle"
+                        class="t-sm">branch</text>
+                    <text x="330"
+                        y="43"
+                        text-anchor="middle"
+                        class="t-sm">cutoff</text>
+                    <text x="430"
+                        y="43"
+                        text-anchor="middle"
+                        class="t-sm">category</text>
+                    <path
+                        d="M92 68 h76 M192 68 h76 M292 68 h60 M392 68 h60 M92 100 h60 M192 100 h70 M292 100 h50 M392 100 h70 M92 132 h70 M192 132 h50 M292 132 h66 M392 132 h50 M92 164 h56 M192 164 h76 M292 164 h40 M392 164 h64"
+                        stroke="#9aa0ad"
+                        stroke-width="1.6" />
+                    <path d="M520 196 q-26 -28 8 -40 q34 -10 20 -40 q-12 -22 16 -34"
+                        stroke="#2b4f8a"
+                        stroke-width="7" />
+                    <circle cx="560"
+                        cy="52"
+                        r="9"
+                        fill="#ffe45e"
+                        stroke="#2b4f8a" />
+                    <path d="M566 56 l12 2 M566 56 l10 8"
+                        stroke="#c4442f"
+                        stroke-width="1.8" />
+                    <circle cx="558"
+                        cy="49"
+                        r="1.5"
+                        fill="#2a2f3a" />
+                    <text x="300"
+                        y="214"
+                        text-anchor="middle"
+                        class="t-sm">cutoffs, scraped with Python</text>
+                </svg>
+                <figcaption><i>Fig. 2</i> — the sheet that answered a whole friend group’s questions.</figcaption>
+            </figure>
+
+            <span class="margin-note">data over guesswork.</span>
+            <p>
+                Later, we used the same scripts and a few other tricks to make a separate options list for each person.
+                We gathered at Mayur’s home a few times, and at Anand’s home a few times.
+            </p>
+            <p>
+                It was a chill period. We didn’t have much to do. We were relaxing, travelling and having fun. But
+                underneath it all, there was a little anxiety. Would we end up in the same college or in different ones?
+                Where would we go next? A lot of questions were running in our heads.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 226"
+                    role="img"
+                    aria-label="Sketch of four friends sitting around a table with laptops and tea cups, with thought bubbles asking same college and where next"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="50"
+                        y="14"
+                        width="130"
+                        height="38"
+                        rx="19"
+                        fill="#fffdf7"
+                        stroke="#2b4f8a" />
+                    <text x="115"
+                        y="39"
+                        text-anchor="middle"
+                        class="t-sm t-blue">same college?</text>
+                    <rect x="420"
+                        y="14"
+                        width="130"
+                        height="38"
+                        rx="19"
+                        fill="#fffdf7"
+                        stroke="#2b4f8a" />
+                    <text x="485"
+                        y="39"
+                        text-anchor="middle"
+                        class="t-sm t-blue">where next?</text>
+                    <g stroke-width="1.8">
+                        <circle cx="118"
+                            cy="62"
+                            r="3" />
+                        <circle cx="128"
+                            cy="76"
+                            r="3.5" />
+                        <circle cx="482"
+                            cy="62"
+                            r="3" />
+                        <circle cx="472"
+                            cy="76"
+                            r="3.5" />
+                    </g>
+                    <circle cx="140"
+                        cy="100"
+                        r="15"
+                        fill="#fffdf7" />
+                    <path d="M118 150 C118 118 162 118 162 150" />
+                    <circle cx="240"
+                        cy="86"
+                        r="15"
+                        fill="#fffdf7" />
+                    <path d="M218 136 C218 104 262 104 262 136" />
+                    <circle cx="360"
+                        cy="86"
+                        r="15"
+                        fill="#fffdf7" />
+                    <path d="M338 136 C338 104 382 104 382 136" />
+                    <circle cx="460"
+                        cy="100"
+                        r="15"
+                        fill="#fffdf7" />
+                    <path d="M438 150 C438 118 482 118 482 150" />
+                    <ellipse cx="300"
+                        cy="156"
+                        rx="190"
+                        ry="30"
+                        fill="#fffdf7" />
+                    <path d="M130 170 V210 M470 170 V210 M300 186 V212" />
+                    <rect x="214"
+                        y="136"
+                        width="40"
+                        height="22"
+                        rx="3"
+                        fill="#fffdf7" />
+                    <rect x="346"
+                        y="136"
+                        width="40"
+                        height="22"
+                        rx="3"
+                        fill="#fffdf7" />
+                    <circle cx="290"
+                        cy="152"
+                        r="8"
+                        fill="#ffe45e"
+                        fill-opacity=".7" />
+                    <circle cx="316"
+                        cy="156"
+                        r="8"
+                        fill="#ffe45e"
+                        fill-opacity=".7" />
+                    <path d="M290 140 q-4 -8 0 -14 M316 144 q-4 -8 0 -14"
+                        stroke="#9aa0ad"
+                        stroke-width="1.6" />
+                    <text x="300"
+                        y="220"
+                        text-anchor="middle"
+                        class="t-sm">Mayur’s home, Anand’s home, a lot of chai</text>
+                </svg>
+                <figcaption><i>Fig. 3</i> — a chill few weeks, with a little anxiety underneath.</figcaption>
+            </figure>
+
+            <p>
+                The same thing was going on in our other circle: Gautami, Pranjal and me. I filled the forms for both of
+                them and helped them through the admission process, all the way to college selection.
+            </p>
+
+            <h2><span class="sec">MY LIST</span>My own CAP 1 list 📝</h2>
+
+            <p>
+                For CAP 1, my list had only <strong>6 or 7 colleges</strong>: COEP, PICT, VIT, DYP Akurdi, DYP Pimpri
+                and AISSMS. That was it. No other colleges, and only the Artificial Intelligence branches, no other
+                departments.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 226"
+                    role="img"
+                    aria-label="Sketch of a form listing six colleges in order with DYP Akurdi circled in red, and notes saying only Pune and AI branches only"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="170"
+                        y="14"
+                        width="260"
+                        height="196"
+                        fill="#fffdf7" />
+                    <text x="300"
+                        y="40"
+                        text-anchor="middle"
+                        class="t-sm">CAP 1: my options</text>
+                    <path d="M186 48 H414"
+                        stroke="#9aa0ad"
+                        stroke-width="1.6" />
+                    <text x="196"
+                        y="72"
+                        class="t-sm">1. COEP</text>
+                    <text x="196"
+                        y="96"
+                        class="t-sm">2. PICT</text>
+                    <text x="196"
+                        y="120"
+                        class="t-sm">3. VIT</text>
+                    <text x="196"
+                        y="144"
+                        class="t-sm">4. DYP Akurdi</text>
+                    <text x="196"
+                        y="168"
+                        class="t-sm">5. DYP Pimpri</text>
+                    <text x="196"
+                        y="192"
+                        class="t-sm">6. AISSMS</text>
+                    <ellipse cx="262"
+                        cy="140"
+                        rx="74"
+                        ry="15"
+                        stroke="#c4442f"
+                        stroke-width="2.6" />
+                    <text x="40"
+                        y="116"
+                        class="t-md t-red">only Pune</text>
+                    <path d="M130 120 Q150 130 176 138 M168 130 l8 8 -12 2"
+                        stroke="#c4442f" />
+                    <text x="446"
+                        y="100"
+                        class="t-sm t-blue">AI branches</text>
+                    <text x="446"
+                        y="118"
+                        class="t-sm t-blue">only</text>
+                </svg>
+                <figcaption><i>Fig. 4</i> — a short list, with one college I was quietly sure about.</figcaption>
+            </figure>
+
+            <span class="margin-note">only Pune. no hometown.</span>
+            <p>
+                I’d already decided that this time I was going to step out of my comfort zone and <strong>leave my
+                    hometown to study</strong>, and specifically, go to Pune. I’d heard many times that Pune has far
+                more
+                opportunities than the other cities around us. Mumbai was also an option, but living in Mumbai isn’t
+                easy, so I chose only Pune colleges. Not a single one from my hometown.
+            </p>
+            <p>
+                My relatives suggested I try <strong>government colleges</strong>. But I knew the reality: for a degree,
+                only two or three government colleges are really good, the ones in Pune, Mumbai and Walchand, and those
+                were far beyond my reach. So I’d already decided I wouldn’t settle for a government college in my
+                hometown or nearby if I could get a better private college in Pune.
+            </p>
+            <p>
+                During that time, I watched many videos about college reviews and fees. That’s how I learned that VIT
+                had
+                slightly higher fees than the others, so I wasn’t sure whether to put it on the list at all. In the end,
+                I did. Last year’s cutoff for that branch was already higher than my percentage, so I knew I probably
+                wouldn’t get in. But I tried anyway, because I knew VIT’s student culture, activities and participation
+                were great.
+            </p>
+            <p>
+                While filling the form, I was fairly sure that <strong>DYP Akurdi</strong> was the college I would get.
+                I knew it in my heart, not as a feeling, but backed by data, because I’d studied the numbers of all the
+                previous years.
+            </p>
+
+            <h2><span class="sec">THE FORMS</span>The form-filling guy 🧑‍💻</h2>
+
+            <p>
+                Because of all that data, and my helping nature, I became the person who filled everyone’s forms: Caste
+                Validity forms, CAP forms and option forms. Tushar, Anand, Mayur, Shubham, Shivam, Shyam, Gautami and
+                Pranjal. I did them all.
+            </p>
+            <p>
+                A few cases were harder than others.
+            </p>
+            <p>
+                <strong>Tushar and Shubham</strong> had lower marks, so a good college was never really on the table. In
+                the first and second rounds, they didn’t get a college they were happy with either.
+            </p>
+            <p>
+                <strong>Gautami and Pranjal</strong> had a different problem: they wanted to go to the <strong>same
+                    college</strong> together if they were moving to another city. They were a little stuck to their
+                comfort zone. I gave them my suggestions for CAP 1, but a friend of Gautami’s father, a teacher at a
+                government college, filled both their forms on his own and didn’t listen to what they wanted. He filled
+                in only government colleges across all cities. Since neither of them had marks good enough for a good
+                government college, there was hardly any benefit in that.
+            </p>
+
+            <h2><span class="sec">CAP 1</span>CAP 1 results 🎲</h2>
+
+            <p>
+                I got <strong>DYP Akurdi</strong>, exactly as I’d expected.
+            </p>
+            <ul>
+                <li><strong>Mayur and Shivam</strong> got into the same college in Nashik.</li>
+                <li><strong>Shubham and Tushar</strong> weren’t satisfied with what they got, so they went for
+                    betterment.</li>
+                <li><strong>Anand</strong> got AISSMS and was happy with it.</li>
+                <li><strong>Gautami and Pranjal</strong> got the same college together, but it was <strong>Government
+                        College Jalgaon</strong>, which I’d already warned them would happen. After asking a few seniors
+                    and teachers, they learned the college wasn’t good and was far out on the outskirts, so they were
+                    worried about what to do next.</li>
+            </ul>
+            <p>
+                They asked me to fill in their CAP 2 form. I filled it according to my research, but there was very
+                little chance of them landing in the same college again. Hardly any seats were left in their category,
+                since most get filled in round 1 itself.
+            </p>
+            <p>
+                Somehow, they both got colleges in Pune in the next round, but <strong>different ones</strong>. And
+                since
+                Pranjal’s Caste Validity still wasn’t printed, she had to go for round 3 without any real reason, and
+                Gautami went along too.
+            </p>
+            <p>
+                <strong>Shivam</strong> was a little annoyed about going to Nashik. He’d wanted a college in Pune too. A
+                few relatives and friends told him that the <strong>Robotics</strong> branch had a rising scope, so for
+                round 2 he picked Robotics, and he landed in my college.
+            </p>
+
+            <h2><span class="sec">THE ONE</span>The one I didn’t want to see 😶</h2>
+
+            <p>
+                Then there was <strong>Diksha</strong>.
+            </p>
+            <p>
+                For personal reasons, and because of some incidents during diploma, I didn’t want to meet her, talk to
+                her, or even see her. And she got into the same college as me.
+            </p>
+            <p>
+                I was very frustrated. Same college, same branch, maybe even the same class. How was I supposed to see,
+                every single day, the face of a person I never wanted to see again?
+            </p>
+            <p>
+                After admissions, at least we ended up in different divisions. We didn’t talk after that. Sometimes we’d
+                just pass each other like strangers.
+            </p>
+
+            <h2><span class="sec">THE SCATTER</span>Where everyone went 🗺️</h2>
+
+            <p>
+                By the end of the rounds, the gang had scattered:
+            </p>
+            <ul>
+                <li><strong>Shubham</strong> got into a local college in our city.</li>
+                <li><strong>Tushar</strong> didn’t get any change, and took admission in the same college he’d got.</li>
+                <li><strong>Mayur and Anand</strong> took admission in their respective colleges.</li>
+                <li><strong>Shyam</strong> just moved a wall apart, from our polytechnic campus to Deogiri College,
+                    right beside it.</li>
+            </ul>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 240"
+                    role="img"
+                    aria-label="Rough sketch map of Maharashtra with pins for Nashik, Jalgaon, our home city and Pune, and friends' names beside them"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <defs>
+                        <path id="pin-dyp1"
+                            d="M0 0 c-7 -10 -12 -15 -12 -22 a12 12 0 1 1 24 0 c0 7 -5 12 -12 22z" />
+                    </defs>
+                    <path d="M120 66 L260 44 L420 54 L520 96 L540 156 L470 196 L360 206 L260 196 L180 176 L110 126 Z"
+                        fill="#9aa0ad"
+                        fill-opacity=".14" />
+                    <text x="320"
+                        y="28"
+                        text-anchor="middle"
+                        class="t-sm t-red">Jalgaon: Gautami &amp; Pranjal (round 1)</text>
+                    <g transform="translate(320 78)">
+                        <use href="#pin-dyp1"
+                            stroke="#c4442f"
+                            fill="#fffdf7" />
+                    </g>
+                    <g transform="translate(180 104)">
+                        <use href="#pin-dyp1"
+                            stroke="#2b4f8a"
+                            fill="#fffdf7" />
+                    </g>
+                    <text x="20"
+                        y="112"
+                        class="t-sm t-blue">Nashik:</text>
+                    <text x="20"
+                        y="130"
+                        class="t-sm t-blue">Mayur, Shivam</text>
+                    <g transform="translate(350 134)">
+                        <use href="#pin-dyp1"
+                            stroke="#2a2f3a"
+                            fill="#fffdf7" />
+                    </g>
+                    <text x="368"
+                        y="124"
+                        class="t-sm">home city:</text>
+                    <text x="368"
+                        y="142"
+                        class="t-sm">Shubham, Shyam</text>
+                    <g transform="translate(240 182)">
+                        <use href="#pin-dyp1"
+                            stroke="#2b4f8a"
+                            fill="#ffe45e" />
+                    </g>
+                    <text x="262"
+                        y="180"
+                        class="t-sm t-blue">Pune: me, Anand</text>
+                    <text x="300"
+                        y="232"
+                        text-anchor="middle"
+                        class="t-sm">the gang, scattered</text>
+                </svg>
+                <figcaption><i>Fig. 5</i> — a rough map of where the gang landed. Not to scale.</figcaption>
+            </figure>
+
+            <h2><span class="sec">PUNE</span>My admission day in Pune 🏫</h2>
+
+            <p>
+                I took admission in the <strong>first round</strong>.
+            </p>
+            <p>
+                It was my first visit to Pune in a long time. I’d been there before, but only for a family occasion, and
+                I hadn’t gone anywhere except my relatives’ home. So it was almost a new city for me, with new people
+                all
+                around. For a kid who had always been shy and introverted, that was a big deal.
+            </p>
+            <p>
+                When I reached the campus, I was fascinated. I’d seen it in videos, but in reality it felt a little
+                different.
+            </p>
+            <p>
+                That day, I met <strong>Vikas</strong>. (Yes, the same Vikas who later became Mahesh’s roommate, and our
+                cameraman in the SIH story.) He was also taking admission and filling in the documents needed for loan
+                applications, just like me. We had a short meeting, exchanged numbers, but didn’t really talk much.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 226"
+                    role="img"
+                    aria-label="Sketch of a campus gate with a student holding a folder, and a receipt for a ten thousand rupee hostel advance"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="120"
+                        y="50"
+                        width="34"
+                        height="146"
+                        fill="#fffdf7" />
+                    <rect x="326"
+                        y="50"
+                        width="34"
+                        height="146"
+                        fill="#fffdf7" />
+                    <rect x="110"
+                        y="36"
+                        width="260"
+                        height="30"
+                        fill="#fffdf7" />
+                    <text x="240"
+                        y="58"
+                        text-anchor="middle"
+                        class="t-sm">campus</text>
+                    <path d="M20 196 H580" />
+                    <circle cx="240"
+                        cy="136"
+                        r="14"
+                        fill="#fffdf7" />
+                    <path d="M220 196 C220 160 260 160 260 196" />
+                    <rect x="250"
+                        y="168"
+                        width="30"
+                        height="22"
+                        fill="#ffe45e"
+                        fill-opacity=".8" />
+                    <path d="M250 168 l8 -6 h14 l8 6" />
+                    <g transform="rotate(-5 470 110)">
+                        <rect x="410"
+                            y="64"
+                            width="120"
+                            height="92"
+                            fill="#fffdf7"
+                            stroke="#c4442f" />
+                        <text x="470"
+                            y="90"
+                            text-anchor="middle"
+                            class="t-sm">hostel advance</text>
+                        <text x="470"
+                            y="128"
+                            text-anchor="middle"
+                            class="t-md t-red">₹10,000</text>
+                        <path d="M424 142 h92"
+                            stroke="#9aa0ad"
+                            stroke-width="1.6" />
+                    </g>
+                    <text x="40"
+                        y="216"
+                        class="t-sm">a new city, new people, one big folder</text>
+                </svg>
+                <figcaption><i>Fig. 6</i> — admission day, and a hostel I didn’t book.</figcaption>
+            </figure>
+
+            <p>
+                <strong>Mahendra Kaka</strong> and <strong>Mama</strong> (my uncles) came with me for the admission
+                process. While I was busy filling in my details on the college ERP portal, the hostel receptionist
+                walked
+                them through all the facilities of the college hostel, and they ended up paying a <strong>₹10,000
+                    advance
+                    booking fee.</strong>
+            </p>
+            <p>
+                When I came home, I told them many times: <em>“Why did you book the hostel without asking me?”</em> They
+                didn’t listen.
+            </p>
+
+            <h2><span class="sec">THE MESSAGE</span>The unknown number 📱</h2>
+
+            <p>
+                I took admission in August and joined the DSY group. Curious about who else had taken admission, I
+                compared the allotment list with the group members and checked their names on Truecaller to identify a
+                few.
+            </p>
+            <p>
+                A few days later, a message suddenly appeared on my WhatsApp from an unknown number:
+            </p>
+
+            <blockquote class="pull">
+                Hi, I am DSY, also from your college.
+                <cite>— an unknown number</cite>
+            </blockquote>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 232"
+                    role="img"
+                    aria-label="Sketch of a chat on a phone: an unknown person says they are from the same college, and asks if we met in a competition in Kolhapur, while I answer with questions"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="170"
+                        y="10"
+                        width="260"
+                        height="212"
+                        rx="22"
+                        fill="#fffdf7" />
+                    <path d="M170 38 H430"
+                        stroke-width="1.6" />
+                    <text x="300"
+                        y="30"
+                        text-anchor="middle"
+                        class="t-sm">unknown number</text>
+                    <rect x="182"
+                        y="46"
+                        width="210"
+                        height="42"
+                        rx="10"
+                        fill="#2b4f8a"
+                        fill-opacity=".12"
+                        stroke="#2b4f8a"
+                        stroke-width="1.6" />
+                    <text x="192"
+                        y="64"
+                        class="t-sm">Hi, I am DSY,</text>
+                    <text x="192"
+                        y="82"
+                        class="t-sm">also from your college.</text>
+                    <rect x="250"
+                        y="96"
+                        width="168"
+                        height="26"
+                        rx="10"
+                        fill="#ffe45e"
+                        fill-opacity=".5"
+                        stroke="#9aa0ad"
+                        stroke-width="1.6" />
+                    <text x="260"
+                        y="115"
+                        class="t-sm">how do you know me?</text>
+                    <rect x="182"
+                        y="130"
+                        width="210"
+                        height="26"
+                        rx="10"
+                        fill="#2b4f8a"
+                        fill-opacity=".12"
+                        stroke="#2b4f8a"
+                        stroke-width="1.6" />
+                    <text x="192"
+                        y="149"
+                        class="t-sm">we met in a competition</text>
+                    <rect x="330"
+                        y="164"
+                        width="88"
+                        height="26"
+                        rx="10"
+                        fill="#ffe45e"
+                        fill-opacity=".5"
+                        stroke="#9aa0ad"
+                        stroke-width="1.6" />
+                    <text x="340"
+                        y="183"
+                        class="t-sm">where?</text>
+                    <rect x="182"
+                        y="196"
+                        width="120"
+                        height="22"
+                        rx="10"
+                        fill="#2b4f8a"
+                        fill-opacity=".12"
+                        stroke="#2b4f8a"
+                        stroke-width="1.6" />
+                    <text x="192"
+                        y="212"
+                        class="t-sm">Kolhapur.</text>
+                    <text x="446"
+                        y="196"
+                        class="t-big t-red">?</text>
+                    <text x="466"
+                        y="196"
+                        class="t-sm t-red">never been to</text>
+                    <text x="466"
+                        y="214"
+                        class="t-sm t-red">Kolhapur…</text>
+                </svg>
+                <figcaption><i>Fig. 7</i> — a very friendly stranger, and one very strange detail.</figcaption>
+            </figure>
+
+            <p>
+                I assumed he’d got my number from the group. But I cross-checked, and his number wasn’t there, so it
+                looked suspicious. I asked how he knew me. He said we’d met in a competition. I’d been in a lot of
+                competitions here and there, so maybe. I asked where. He said <strong>Kolhapur.</strong>
+            </p>
+            <p>
+                That made me doubtful, because I’d never been to Kolhapur. I told him so.
+            </p>
+            <p>
+                He said he had a friend at DYP Akurdi who had taken admission and was pushing him to confirm his seat
+                too, so he would confirm in the next round and come after that. I said nice, I’d be coming around then
+                as well. He said maybe we could go together on our first day and sit together in class. I said “yeah,” a
+                little doubtfully.
+            </p>
+            <p>
+                I shared the chat with Shivam and Tushar, about this unknown guy who says he knows me but I don’t know
+                him. His name was <strong>Vinay.</strong> They said, <em>“We’ll look at it afterwards. Just tell us if
+                    anything happens at college.”</em>
+            </p>
+
+            <h2><span class="sec">THE STAY</span>The hostel trap and the PG hunt 🏠</h2>
+
+            <p>
+                Even though I took admission in round 1, I only started attending lectures after two or three weeks,
+                because not many students were coming yet, and I also had to figure out where to live.
+            </p>
+            <p>
+                I was unhappy about the hostel. It had many facilities, but honestly I didn’t need them, and it felt
+                like
+                a <strong>trap</strong>: outside friends not allowed, no going out after 10 PM, and all food from the
+                same mess every day, which is never a good thing. I needed a better alternative to make Kaka and Mama
+                reconsider.
+            </p>
+            <p>
+                I asked my diploma seniors, <strong>Manaswi</strong> and <strong>Pranav Patil</strong>, both at the same
+                college, if they knew any PGs or hostels nearby. They shared a few contacts. I called and enquired, but
+                none seemed good or clean.
+            </p>
+            <p>
+                That doesn’t mean there weren’t any good PGs around. I just didn’t find one, because I had no friends
+                other than those seniors to give me references. Later, after admission, I found many better
+                alternatives. But by then, the time had gone.
+            </p>
+
+            <h2><span class="sec">THE PUZZLE</span>The Sanika and Monika puzzle 🧩</h2>
+
+            <p>
+                There was one more issue. Pranjal and Gautami had landed in different colleges in round 2.
+            </p>
+            <p>
+                I cross-checked the allotment list and found two girls, <strong>Sanika</strong> and
+                <strong>Monika</strong>, who had taken the seats that kept my two friends apart:
+            </p>
+            <ul>
+                <li>Gautami could have joined Pranjal at AISSMS, but that seat was taken by <strong>Monika.</strong>
+                </li>
+                <li>Pranjal could have joined Gautami, but that seat was taken by <strong>Sanika.</strong></li>
+            </ul>
+            <p>
+                Both girls were unknown to us, and to each other.
+            </p>
+
+            <figure class="fig">
+                <svg class="sketch"
+                    viewBox="0 0 600 232"
+                    role="img"
+                    aria-label="Diagram of four people: Pranjal and Gautami on the left, Sanika and Monika on the right, with crossed dashed lines showing the seats that kept the friends apart, and a magnifying glass over Monika"
+                    fill="none"
+                    stroke="#2a2f3a"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="110"
+                        cy="62"
+                        r="20"
+                        fill="#fffdf7" />
+                    <circle cx="110"
+                        cy="162"
+                        r="20"
+                        fill="#fffdf7" />
+                    <circle cx="490"
+                        cy="62"
+                        r="20"
+                        fill="#fffdf7" />
+                    <circle cx="490"
+                        cy="162"
+                        r="20"
+                        fill="#fffdf7" />
+                    <path d="M134 168 L466 66"
+                        stroke="#c4442f"
+                        stroke-dasharray="6 7" />
+                    <path d="M134 56 L466 158"
+                        stroke="#c4442f"
+                        stroke-dasharray="6 7" />
+                    <path d="M288 98 l24 24 M312 98 l-24 24"
+                        stroke="#c4442f"
+                        stroke-width="3" />
+                    <text x="110"
+                        y="104"
+                        text-anchor="middle"
+                        class="t-sm">Pranjal</text>
+                    <text x="110"
+                        y="204"
+                        text-anchor="middle"
+                        class="t-sm">Gautami</text>
+                    <text x="490"
+                        y="104"
+                        text-anchor="middle"
+                        class="t-sm">Monika</text>
+                    <text x="490"
+                        y="204"
+                        text-anchor="middle"
+                        class="t-sm">Sanika</text>
+                    <text x="490"
+                        y="226"
+                        text-anchor="middle"
+                        class="t-sm t-blue">LinkedIn + Instagram</text>
+                    <text x="428"
+                        y="30"
+                        text-anchor="middle"
+                        class="t-sm t-red">no phone number</text>
+                    <circle cx="546"
+                        cy="50"
+                        r="12"
+                        stroke="#2b4f8a" />
+                    <path d="M555 59 l12 12"
+                        stroke="#2b4f8a"
+                        stroke-width="3" />
+                    <text x="300"
+                        y="20"
+                        text-anchor="middle"
+                        class="t-md">who took whose seat?</text>
+                </svg>
+                <figcaption><i>Fig. 8</i> — two friends, two seats, and two strangers in the way.</figcaption>
+            </figure>
+
+            <p>
+                So I had an idea: <strong>convince one of them to swap seats</strong> in the next round, so my friends
+                could be together. The problem was how to reach them with just a name, and no phone number or contact
+                details.
+            </p>
+            <p>
+                We searched on Google, used AI research, and a lot more. I found Sanika’s <strong>LinkedIn</strong>
+                account, and Gautami found her on <strong>Instagram.</strong> Since Sanika also had MMCOE in hand, I
+                asked Gautami to talk to her, with a warning: <em>“Be polite, because if she doesn’t swap, you’ll be her
+                    classmate for the next three years.”</em> First ask whether she was going to confirm admission, and
+                if not, whether she’d consider AISSMS.
+            </p>
+            <p>
+                But Gautami didn’t feel comfortable talking to a stranger, so I tried too, through LinkedIn, trying to
+                persuade her to consider AISSMS, since it was undeniably better than MMCOE. We only needed one of those
+                two girls. But she didn’t listen. She was going for betterment, but only to PCCOE, because her sister
+                studied there. We couldn’t change her mind.
+            </p>
+            <p>
+                <strong>Monika</strong> was the other option, but I couldn’t find her contact anywhere on the internet,
+                except that she was from <strong>JSPM</strong>, because her name was mentioned in the college magazine.
+                After many tries, we stopped searching.
+            </p>
+            <p>
+                But it stayed somewhere in the back of my head...
+            </p>
+
+            <h2><span class="sec">TAKEAWAYS</span>What I took from this part 📌</h2>
+
+            <ol>
+                <li><strong>Do your homework early.</strong> The Excel sheet and the scripts didn’t just help me, they
+                    helped a whole friend group. Data won’t make the decision for you, but it removes the guessing.</li>
+                <li><strong>Know what you want before others decide for you.</strong> Gautami and Pranjal’s forms, and
+                    my
+                    hostel booking, were both decided by someone else, with good intentions. Speak up before the form is
+                    filled.</li>
+                <li><strong>Leaving your comfort zone starts long before the move.</strong> It started with one
+                    decision: <em>only Pune.</em></li>
+                <li><strong>Not every plan works, and that’s okay.</strong> The swap didn’t happen, the PG hunt didn’t
+                    work. But both taught me something about asking, searching and letting go.</li>
+            </ol>
+
+            <div class="takeaway">
+                <b>To be continued</b>
+                <p>
+                    <em>Little did I know, I’d hear Monika’s name again very soon, on my very first day at DYP.</em>
+                </p>
+            </div>
+
+            <p class="signoff">— Yash</p>
+
+            <nav class="post-nav"
+                aria-label="Entries">
+                <a href="../index.html">← back to the notebook</a>
+                <a href="starting-at-dyp-part-2.html">Next: Part 2 →</a>
+            </nav>
+        </article>
+
+        <img class="edge-doodle"
+            src="../assets/admission-discussion.png"
+            alt="Pencil sketch of the diploma friends gathered for selecting colleges." />
+
+        <span class="page-no"
+            title="Blog number 7"
+            aria-hidden="true">Blog #7</span>
+    </main>
+
+    <script src="../notebook.js"></script>
+</body>
+
+</html>
