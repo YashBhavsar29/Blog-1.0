@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"
+    data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+    <title>The Notebook Archive — The Dev Notebook</title>
+    <meta name="description"
+        content="Browse every published entry in The Dev Notebook." />
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem("notebook-theme"); } catch (e) { }
+            if (!t) t = "light";
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="notebook.css" />
+</head>
+
+<body data-blog-page="archive">
+    <div data-include="partials/header-archive.html"></div>
+
+    <main class="sheet-page archive-page"
+        id="archive">
+        <span class="holes"
+            aria-hidden="true"></span>
+        <span class="tape tape--tl"
+            aria-hidden="true"></span>
+        <span class="tape tape--tr"
+            aria-hidden="true"></span>
+        <span class="stain"
+            aria-hidden="true"></span>
+
+        <section class="archive-intro">
+            <p class="kicker">the dev notebook · archive</p>
+            <h1 class="hero-title">All the <span class="hl">pages</span></h1>
+            <p class="hero-sub">Browse the full notebook, including the entries that do not fit on the front page.</p>
+        </section>
+
+        <div class="blog-controls blog-controls--archive"
+            data-blog-controls>
+            <label class="search-field">
+                <span class="sr-only">Search all blog posts</span>
+                <input type="search"
+                    data-blog-search
+                    placeholder="Search all blogs..."
+                    autocomplete="off" />
+            </label>
+            <button class="clear-search"
+                type="button"
+                data-clear-search
+                hidden>clear</button>
+            <label class="sort-field">
+                <span>sort</span>
+                <select data-blog-sort>
+                    <option value="newest">Newest first</option>
+                    <option value="oldest">Oldest first</option>
+                </select>
+            </label>
+            <span class="result-count"
+                data-result-count
+                aria-live="polite"></span>
+        </div>
+
+        <div class="tabs"
+            role="group"
+            aria-label="Filter by series">
+            <button class="tab is-active"
+                type="button"
+                data-series-tab="all">All</button>
+            <button class="tab"
+                type="button"
+                data-series-tab="journal">Life Journal</button>
+            <button class="tab"
+                type="button"
+                data-series-tab="thoughts">My Thoughts</button>
+            <button class="tab"
+                type="button"
+                data-series-tab="postmortem">Dev Learnings</button>
+        </div>
+
+        <div class="pages archive-grid"
+            data-blog-grid>
+            <p class="blog-status"
+                data-blog-status>Loading pages…</p>
+        </div>
+
+        <div data-include="partials/footer.html"></div>
+        <span class="page-no"
+            aria-hidden="true">archive</span>
+    </main>
+    <script src="notebook.js"></script>
+</body>
+
+</html>

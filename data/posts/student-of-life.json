@@ -1,0 +1,40 @@
+{
+  "id": "student-of-life",
+  "slug": "student-of-life",
+  "status": "published",
+  "seo": {
+    "webpageTitle": "Student of Life: Being a Continuous Learner — The Dev Notebook",
+    "metaDescription": "Why I call myself a “Student of Life”: a hackathon story about learning by doing, why “I can’t” usually means “I haven’t yet,” and why learning shouldn’t stop when school does."
+  },
+  "content": {
+    "title": "Student of Life: Being a Continuous Learner",
+    "dek": "School & college taught us that learning is boring. Here’s why I’m choosing to unlearn that.",
+    "kicker": "My Thoughts"
+  },
+  "classification": {
+    "series": "thoughts",
+    "label": "My Thoughts",
+    "pagePrefix": "M.T.",
+    "tags": []
+  },
+  "publication": {
+    "date": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "order": 1,
+    "pageNumber": 1,
+    "pageLabel": "M.T. Page 001"
+  },
+  "listing": {
+    "excerpt": "Why I call myself a “Student of Life”: a hackathon story about learning by doing, why “I can’t” usually means “I haven’t yet,” and why learning shouldn’t stop when school does.",
+    "cover": null,
+    "featured": false
+  },
+  "navigation": {
+    "previousPost": null,
+    "nextPost": null
+  },
+  "source": {
+    "file": "posts/student-of-life.html",
+    "migratedFrom": "student-of-life.html"
+  }
+}

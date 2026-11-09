@@ -1,0 +1,40 @@
+{
+  "id": "first-talk-experience",
+  "slug": "first-talk-experience",
+  "status": "published",
+  "seo": {
+    "webpageTitle": "“Bhaiya, Are You Yash Bhavsar?”: My First Talk to Juniors — The Dev Notebook",
+    "metaDescription": "How a junior’s question at my hostel became my first guidance talk for first-year AIML and CO students: the nerves, the blank moment, what I told them about learning online, and why the only way past the fear of speaking is to face it."
+  },
+  "content": {
+    "title": "“Bhaiya, Are You Yash Bhavsar?”: My First Talk to My Juniors",
+    "dek": "A stranger in the hostel, a long night of thinking, and a talk that took me out of my comfort zone.",
+    "kicker": "Life Journal"
+  },
+  "classification": {
+    "series": "journal",
+    "label": "Life Journal",
+    "pagePrefix": "L.J.",
+    "tags": []
+  },
+  "publication": {
+    "date": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "order": 4,
+    "pageNumber": 2,
+    "pageLabel": "L.J. Page 002"
+  },
+  "listing": {
+    "excerpt": "How a junior’s question at my hostel became my first guidance talk for first-year AIML and CO students: the nerves, the blank moment, what I told them about learning online, and why the only way past the fear of speaking is to face it.",
+    "cover": null,
+    "featured": false
+  },
+  "navigation": {
+    "previousPost": null,
+    "nextPost": null
+  },
+  "source": {
+    "file": "posts/first-talk-experience.html",
+    "migratedFrom": "first-talk-experience.html"
+  }
+}

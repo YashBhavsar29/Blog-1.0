@@ -1,0 +1,40 @@
+{
+  "id": "sih-journey",
+  "slug": "sih-journey",
+  "status": "published",
+  "seo": {
+    "webpageTitle": "The Hackathon That Taught Me How Hard It Is to Lead Friends — The Dev Notebook",
+    "metaDescription": "My Smart India Hackathon story: choosing a problem statement, six friends with six different goals, conflicts, sleepless nights, and what I learned about leading a team that doesn’t share your dream."
+  },
+  "content": {
+    "title": "The Hackathon That Taught Me How Hard It Is to Lead Friends",
+    "dek": "A month of sleepless nights, six very different friends, and what SIH taught me about leading a team.",
+    "kicker": "Life Journal"
+  },
+  "classification": {
+    "series": "journal",
+    "label": "Life Journal",
+    "pagePrefix": "L.J.",
+    "tags": []
+  },
+  "publication": {
+    "date": "2026-11-01",
+    "updatedAt": "2026-11-01",
+    "order": 6,
+    "pageNumber": 3,
+    "pageLabel": "L.J. Page 003"
+  },
+  "listing": {
+    "excerpt": "My Smart India Hackathon story: choosing a problem statement, six friends with six different goals, conflicts, sleepless nights, and what I learned about leading a team that doesn’t share your dream.",
+    "cover": null,
+    "featured": false
+  },
+  "navigation": {
+    "previousPost": null,
+    "nextPost": "starting-at-dyp-part-i"
+  },
+  "source": {
+    "file": "posts/sih-journey.html",
+    "migratedFrom": "sih-journey.html"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "starting-at-dyp-part-i",
+  "slug": "starting-at-dyp-part-i",
+  "status": "published",
+  "seo": {
+    "webpageTitle": "Starting at DYP, Part 1: Before the Campus — The Dev Notebook",
+    "metaDescription": "How I picked my degree college: scraping cutoff lists with Python, filling admission forms for my whole friend group, CAP round surprises, and a mysterious message from an unknown number."
+  },
+  "content": {
+    "title": "Starting at DYP, Part 1: Before the Campus",
+    "dek": "Results, college lists, friends, forms, and a lot of CAP round drama.",
+    "kicker": "Life Journal"
+  },
+  "classification": {
+    "series": "journal",
+    "label": "Life Journal",
+    "pagePrefix": "L.J.",
+    "tags": []
+  },
+  "publication": {
+    "date": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "order": 7,
+    "pageNumber": 4,
+    "pageLabel": "L.J. Page 004"
+  },
+  "listing": {
+    "excerpt": "How I picked my degree college: scraping cutoff lists with Python, filling admission forms for my whole friend group, CAP round surprises, and a mysterious message from an unknown number.",
+    "cover": null,
+    "featured": false
+  },
+  "navigation": {
+    "previousPost": null,
+    "nextPost": "starting-at-dyp-part-ii"
+  },
+  "source": {
+    "file": "posts/starting-at-dyp-part-i.html",
+    "migratedFrom": "starting-at-dyp-part-i.html"
+  }
+}

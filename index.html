@@ -92,11 +92,39 @@
                 data-series-tab="postmortem">Dev Learnings</button>
         </div>
 
-        <!-- ============ NOTEBOOK CARDS ============
-             Dev Learnings placeholder is third and intentionally unnumbered.
-             Numbered blog pages continue sequentially from 003 to 005. -->
+        <div class="blog-controls"
+            data-blog-controls>
+            <label class="search-field">
+                <span class="sr-only">Search all blog posts</span>
+                <input type="search"
+                    data-blog-search
+                    placeholder="Search all blog posts..."
+                    autocomplete="off" />
+            </label>
+            <button class="clear-search"
+                type="button"
+                data-clear-search
+                hidden>clear</button>
+            <span class="result-count"
+                data-result-count
+                aria-live="polite"></span>
+        </div>
+
+        <!-- Cards are generated from data/posts-index.json. The individual
+             article pages remain handcrafted and are never templated here. -->
         <div class="pages"
-            id="pages">
+            id="pages"
+            data-blog-grid>
+            <p class="blog-status"
+                data-blog-status>Loading pages…</p>
+        </div>
+        <a class="view-all-blogs"
+            href="blogs.html"
+            data-view-all>View all blogs →</a>
+
+        <!-- Legacy card markup retained in a non-rendered template for reference
+             while the generated grid remains the single homepage listing surface. -->
+        <template data-legacy-cards>
 
             <!-- Grid order: Life Journal, My Thoughts, Dev Learnings placeholder, then numbered posts 003–005. -->
             <!-- Page 001 · Life Journal -->
@@ -244,6 +272,7 @@
                 </div>
             </a>
         </div>
+        </template>
 
         <!-- ============ ABOUT (lives on the blog itself) ============ -->
         <section class="about"

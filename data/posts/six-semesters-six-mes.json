@@ -1,0 +1,40 @@
+{
+  "id": "six-semesters-six-mes",
+  "slug": "six-semesters-six-mes",
+  "status": "published",
+  "seo": {
+    "webpageTitle": "Six Semesters, Six Different Me’s — The Dev Notebook",
+    "metaDescription": "How my perspective changed every semester of college: from pure curiosity to certificates, competitions, an internship lesson, leadership, an intentional friendship, and a no-regrets final semester."
+  },
+  "content": {
+    "title": "Six Semesters, Six Different Me’s",
+    "dek": "How my perspective changed every semester of diploma days, and why I’m glad it did.",
+    "kicker": "Life Journal"
+  },
+  "classification": {
+    "series": "journal",
+    "label": "Life Journal",
+    "pagePrefix": "L.J.",
+    "tags": []
+  },
+  "publication": {
+    "date": "2026-10-22",
+    "updatedAt": "2026-10-22",
+    "order": 1,
+    "pageNumber": 1,
+    "pageLabel": "L.J. Page 001"
+  },
+  "listing": {
+    "excerpt": "How my perspective changed every semester of college: from pure curiosity to certificates, competitions, an internship lesson, leadership, an intentional friendship, and a no-regrets final semester.",
+    "cover": null,
+    "featured": false
+  },
+  "navigation": {
+    "previousPost": null,
+    "nextPost": null
+  },
+  "source": {
+    "file": "posts/six-semesters-six-mes.html",
+    "migratedFrom": "six-semesters-six-mes.html"
+  }
+}

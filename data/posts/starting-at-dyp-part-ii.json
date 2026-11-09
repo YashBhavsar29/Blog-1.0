@@ -1,0 +1,40 @@
+{
+  "id": "starting-at-dyp-part-ii",
+  "slug": "starting-at-dyp-part-ii",
+  "status": "published",
+  "seo": {
+    "webpageTitle": "Starting at DYP, Part 2: The First Days — The Dev Notebook",
+    "metaDescription": "My first days at DYP: sitting alone on the front bench, meeting the friends who would later become my SIH team, a temporary hostel in Hinjewadi, joining GDGC, and building a game for a TechFest that never happened."
+  },
+  "content": {
+    "title": "Starting at DYP, Part 2: The First Days",
+    "dek": "Nervous benches, new friends, a hostel on the 11th floor, and building games for TechFest.",
+    "kicker": "Life Journal"
+  },
+  "classification": {
+    "series": "journal",
+    "label": "Life Journal",
+    "pagePrefix": "L.J.",
+    "tags": []
+  },
+  "publication": {
+    "date": "2026-11-07",
+    "updatedAt": "2026-11-07",
+    "order": 8,
+    "pageNumber": 5,
+    "pageLabel": "L.J. Page 005"
+  },
+  "listing": {
+    "excerpt": "My first days at DYP: sitting alone on the front bench, meeting the friends who would later become my SIH team, a temporary hostel in Hinjewadi, joining GDGC, and building a game for a TechFest that never happened.",
+    "cover": null,
+    "featured": false
+  },
+  "navigation": {
+    "previousPost": "starting-at-dyp-part-i",
+    "nextPost": null
+  },
+  "source": {
+    "file": "posts/starting-at-dyp-part-ii.html",
+    "migratedFrom": "starting-at-dyp-part-ii.html"
+  }
+}

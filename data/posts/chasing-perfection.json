@@ -1,0 +1,40 @@
+{
+  "id": "chasing-perfection",
+  "slug": "chasing-perfection",
+  "status": "published",
+  "seo": {
+    "webpageTitle": "Chasing Perfection: Why I Know Better and Still Can’t Stop — The Dev Notebook",
+    "metaDescription": "Why I keep chasing perfection even when I know it drains me: the perfect 3D portfolio I never built, the normal one I made in a week, and three lessons about focus, small steps and pushing limits."
+  },
+  "content": {
+    "title": "Chasing Perfection: Why I Know Better and Still Can’t Stop",
+    "dek": "On doing things with intention, getting stuck anyway, and what I’m learning along the way.",
+    "kicker": "My Thoughts"
+  },
+  "classification": {
+    "series": "thoughts",
+    "label": "My Thoughts",
+    "pagePrefix": "M.T.",
+    "tags": []
+  },
+  "publication": {
+    "date": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "order": 3,
+    "pageNumber": 2,
+    "pageLabel": "M.T. Page 002"
+  },
+  "listing": {
+    "excerpt": "Why I keep chasing perfection even when I know it drains me: the perfect 3D portfolio I never built, the normal one I made in a week, and three lessons about focus, small steps and pushing limits.",
+    "cover": null,
+    "featured": false
+  },
+  "navigation": {
+    "previousPost": "sih-journey",
+    "nextPost": "student-of-life"
+  },
+  "source": {
+    "file": "posts/chasing-perfection.html",
+    "migratedFrom": "chasing-perfection.html"
+  }
+}

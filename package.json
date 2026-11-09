@@ -1,0 +1,13 @@
+{
+  "name": "dev-notebook-blog",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static publishing tools for The Dev Notebook",
+  "scripts": {
+    "migrate": "node scripts/migrate-metadata.js",
+    "validate": "node scripts/validate-posts.js",
+    "search:index": "node scripts/generate-search-index.js",
+    "publish": "node scripts/publish.js",
+    "publish:dry": "node scripts/publish.js --dry-run"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "workless-days",
+  "slug": "workless-days",
+  "status": "published",
+  "seo": {
+    "webpageTitle": "Workless Days Are Reflection Days — The Dev Notebook",
+    "metaDescription": "A trip to Nashik, a long traditional function and a paper journal: why days when you can’t work are reflection days, with six prompts from an Ali Abdaal video to try on yours."
+  },
+  "content": {
+    "title": "Workless Days Are Reflection Days",
+    "dek": "No laptop, a long family function and a half-finished to-do list. Here’s what I did with the time.",
+    "kicker": "My Thoughts"
+  },
+  "classification": {
+    "series": "thoughts",
+    "label": "My Thoughts",
+    "pagePrefix": "M.T.",
+    "tags": []
+  },
+  "publication": {
+    "date": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "order": 5,
+    "pageNumber": 3,
+    "pageLabel": "M.T. Page 003"
+  },
+  "listing": {
+    "excerpt": "A trip to Nashik, a long traditional function and a paper journal: why days when you can’t work are reflection days, with six prompts from an Ali Abdaal video to try on yours.",
+    "cover": null,
+    "featured": false
+  },
+  "navigation": {
+    "previousPost": null,
+    "nextPost": null
+  },
+  "source": {
+    "file": "posts/workless-days.html",
+    "migratedFrom": "workless-days.html"
+  }
+}

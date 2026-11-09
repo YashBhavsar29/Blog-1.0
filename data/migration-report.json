@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-11-06T18:38:58.234Z",
+  "overwrite": true,
+  "discovered": 8,
+  "migrated": 8,
+  "articles": [
+    {
+      "id": "chasing-perfection",
+      "file": "posts/chasing-perfection.html"
+    },
+    {
+      "id": "first-talk-experience",
+      "file": "posts/first-talk-experience.html"
+    },
+    {
+      "id": "sih-journey",
+      "file": "posts/sih-journey.html"
+    },
+    {
+      "id": "six-semesters-six-mes",
+      "file": "posts/six-semesters-six-mes.html"
+    },
+    {
+      "id": "starting-at-dyp-part-i",
+      "file": "posts/starting-at-dyp-part-i.html"
+    },
+    {
+      "id": "starting-at-dyp-part-ii",
+      "file": "posts/starting-at-dyp-part-ii.html"
+    },
+    {
+      "id": "student-of-life",
+      "file": "posts/student-of-life.html"
+    },
+    {
+      "id": "workless-days",
+      "file": "posts/workless-days.html"
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}
