@@ -166,5 +166,26 @@
     "cover": null,
     "featured": false,
     "url": "posts/starting-at-dyp-part-ii.html"
+  },
+  {
+    "id": "closing-first-client",
+    "slug": "closing-first-client",
+    "status": "published",
+    "title": "Closing the First Client: Four Students, One CA, and a Lesson in Value",
+    "dek": "Four naive students, one CA, a blocked WhatsApp number, and one sentence about value that I still remember.",
+    "kicker": "Life Journal",
+    "series": "journal",
+    "tags": [],
+    "date": "2026-11-09",
+    "updatedAt": "2026-11-09",
+    "order": 9,
+    "pageNumber": 6,
+    "pageLabel": "L.J. Page 006",
+    "categoryLabel": "Life Journal",
+    "categoryPrefix": "L.J.",
+    "excerpt": "How four college friends cold-called their way to a first client, built a WhatsApp tool, got blocked, and learned that value matters more than effort.",
+    "cover": null,
+    "featured": false,
+    "url": "posts/closing-first-client.html"
   }
 ]

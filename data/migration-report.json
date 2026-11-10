@@ -1,12 +1,16 @@
 {
-  "generatedAt": "2026-11-06T18:38:58.234Z",
-  "overwrite": true,
-  "discovered": 8,
-  "migrated": 8,
+  "generatedAt": "2026-11-09T20:19:55.800Z",
+  "overwrite": false,
+  "discovered": 9,
+  "migrated": 9,
   "articles": [
     {
       "id": "chasing-perfection",
       "file": "posts/chasing-perfection.html"
+    },
+    {
+      "id": "closing-first-client",
+      "file": "posts/closing-first-client.html"
     },
     {
       "id": "first-talk-experience",
@@ -37,6 +41,52 @@
       "file": "posts/workless-days.html"
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "file": "chasing-perfection.html",
+      "field": "json",
+      "message": "Existing JSON preserved; use --overwrite only for an intentional migration rerun"
+    },
+    {
+      "file": "closing-first-client.html",
+      "field": "links",
+      "message": "Broken article link: starting-at-dyp-part-2.html"
+    },
+    {
+      "file": "first-talk-experience.html",
+      "field": "json",
+      "message": "Existing JSON preserved; use --overwrite only for an intentional migration rerun"
+    },
+    {
+      "file": "sih-journey.html",
+      "field": "json",
+      "message": "Existing JSON preserved; use --overwrite only for an intentional migration rerun"
+    },
+    {
+      "file": "six-semesters-six-mes.html",
+      "field": "json",
+      "message": "Existing JSON preserved; use --overwrite only for an intentional migration rerun"
+    },
+    {
+      "file": "starting-at-dyp-part-i.html",
+      "field": "json",
+      "message": "Existing JSON preserved; use --overwrite only for an intentional migration rerun"
+    },
+    {
+      "file": "starting-at-dyp-part-ii.html",
+      "field": "json",
+      "message": "Existing JSON preserved; use --overwrite only for an intentional migration rerun"
+    },
+    {
+      "file": "student-of-life.html",
+      "field": "json",
+      "message": "Existing JSON preserved; use --overwrite only for an intentional migration rerun"
+    },
+    {
+      "file": "workless-days.html",
+      "field": "json",
+      "message": "Existing JSON preserved; use --overwrite only for an intentional migration rerun"
+    }
+  ],
   "errors": []
 }

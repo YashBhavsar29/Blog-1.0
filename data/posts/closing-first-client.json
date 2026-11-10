@@ -1,0 +1,39 @@
+{
+  "id": "closing-first-client",
+  "slug": "closing-first-client",
+  "status": "published",
+  "seo": {
+    "webpageTitle": "Closing the First Client: Four Students, One CA, and a Lesson in Value — The Dev Notebook",
+    "metaDescription": "How four college friends cold-called their way to a first client, built a WhatsApp tool, got blocked, and learned that value matters more than effort."
+  },
+  "content": {
+    "title": "Closing the First Client: Four Students, One CA, and a Lesson in Value",
+    "dek": "Four naive students, one CA, a blocked WhatsApp number, and one sentence about value that I still remember.",
+    "kicker": "Life Journal"
+  },
+  "classification": {
+    "series": "journal",
+    "pagePrefix": "L.J.",
+    "tags": []
+  },
+  "publication": {
+    "date": "2026-11-09",
+    "updatedAt": "2026-11-09",
+    "order": 9,
+    "pageNumber": 6,
+    "pageLabel": "L.J. Page 006"
+  },
+  "listing": {
+    "excerpt": "How four college friends cold-called their way to a first client, built a WhatsApp tool, got blocked, and learned that value matters more than effort.",
+    "cover": null,
+    "featured": false
+  },
+  "navigation": {
+    "previousPost": null,
+    "nextPost": null
+  },
+  "source": {
+    "file": "posts/closing-first-client.html",
+    "migratedFrom": "closing-first-client.html"
+  }
+}

@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-blog-meta="webpage-title">Closing the First Client: Four Students, One CA, and a Lesson in Value — The Dev Notebook</title>
+    <meta name="description" content="How four college friends cold-called their way to a first client, built a WhatsApp tool, got blocked, and learned that value matters more than effort."  data-blog-meta="meta-description"/>
+
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem("notebook-theme"); } catch (e) { }
+            if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../notebook.css" />
+    <link rel="stylesheet" href="../post-extras.css" />
+
+    <style>
+        /* College building drawn along the bottom edge of a post */
+        .edge-doodle {
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: min(540px, 82%);
+            height: auto;
+            margin: 0 auto -90px;
+            mix-blend-mode: multiply;
+            pointer-events: none;
+        }
+
+        [data-theme="dark"] .edge-doodle {
+            filter: invert(1);
+            mix-blend-mode: screen;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 760px) {
+            .edge-doodle { width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pencil-bar" aria-hidden="true"></div>
+
+    <div data-include="../partials/header-post.html"></div>
+
+    <main class="sheet-page">
+        <span class="holes" aria-hidden="true"></span>
+        <span class="tape tape--tl" aria-hidden="true"></span>
+        <span class="tape tape--tr" aria-hidden="true"></span>
+        <span class="stain" aria-hidden="true"></span>
+
+        <article class="post">
+            <div class="post-kicker" data-blog-meta="kicker"><span class="chip" data-blog-meta="page-number">L.J. Page 006</span>
+                <span data-blog-meta="series">Life Journal</span>
+                <span>·</span><span>12 min read</span>
+                <span>·</span><span data-blog-meta="date">09 November 2026</span></div>
+
+            <h1 data-blog-meta="blog-title">Closing the First Client: Four Students, One CA, and a Lesson in Value</h1>
+            <p class="dek" data-blog-meta="blog-dek">Four naive students, one CA, a blocked WhatsApp number, and one sentence about value that I still remember.</p>
+
+            <hr class="squiggle" />
+
+            <p class="lead">Our little startup didn’t last long, but honestly, <span class="hl">it was really great</span>. We were four friends in college, and we got something most classrooms can’t give: a real client, a real deadline, and a real lesson.</p>
+            <p>This is the story of that first client: how we found him, what we built for him, what went wrong, and the one sentence he said that I still carry with me. It happened around the even semester of my second year, a few months ago.</p>
+
+            <h2><span class="sec">GLOSSARY</span>A few words for outsiders 📖</h2>
+            <ul class="moments">
+                <li>
+                    <b>CA</b>
+                    A Chartered Accountant, a professional who handles accounts, taxes and audits for people and businesses.
+                </li>
+                <li>
+                    <b>Dnyansagar Incubation</b>
+                    Our college’s incubation centre, where young startups work and grow.
+                </li>
+                <li>
+                    <b>RamXR</b>
+                    A startup under our college’s incubation. We did an internship under it, and that gave us access to the incubation centre.
+                </li>
+                <li>
+                    <b>Cold calling</b>
+                    Phoning strangers to pitch your service without any earlier contact.
+                </li>
+                <li>
+                    <b>cPanel</b>
+                    The control panel used to manage a website’s files on its hosting server.
+                </li>
+            </ul>
+
+            <h2><span class="sec">THE WISH</span>I wanted to build something of my own 🎯</h2>
+            <p>During college, I always wanted to do something of my own. Many online influencers had inspired me to become an entrepreneur: make your own product, sell it, earn by yourself. Anything, really.</p>
+            <p>So I watched many videos on how to do freelancing and gig work. I applied on many sites, opened a Freelancer profile and showcased my services. Then I waited. Nobody reached out.</p>
+            <span class="margin-note">step one: have a profile. step two: ???</span>
+            <p>I’ll be honest: I was naive. I was blank about how exactly these things are done.</p>
+
+            <figure class="fig">
+                <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pencil sketch of a laptop showing a freelancer profile and an empty inbox">
+                    <rect x="8" y="8" width="384" height="204" rx="8" fill="#fbf6e6" stroke="#3b3b3b" stroke-width="2" />
+                    <rect x="95" y="30" width="210" height="125" rx="6" fill="#ffffff" stroke="#3b3b3b" stroke-width="2.5" />
+                    <circle cx="130" cy="62" r="14" fill="none" stroke="#3b3b3b" stroke-width="2" />
+                    <line x1="155" y1="55" x2="250" y2="55" stroke="#3b3b3b" stroke-width="2" />
+                    <line x1="155" y1="70" x2="215" y2="70" stroke="#3b3b3b" stroke-width="2" />
+                    <rect x="115" y="92" width="170" height="44" rx="4" fill="none" stroke="#3b3b3b" stroke-width="2" stroke-dasharray="5 4" />
+                    <text x="200" y="120" text-anchor="middle" font-family="Caveat, cursive" font-size="22" fill="#c0392b">inbox (0)</text>
+                    <path d="M70 155 H330 L345 178 H55 Z" fill="#fbf6e6" stroke="#3b3b3b" stroke-width="2.5" />
+                </svg>
+            </figure>
+
+            <h2><span class="sec">THE FIRST TRY</span>Freelancing with Vinay, and then nothing 📭</h2>
+            <p>The freelancing idea was first mine and <strong>Vinay’s</strong> together. We planned to open profiles on different platforms, try finding gig work, and maybe even try cold emailing. We never did the cold emailing. We got no response, so we stopped putting in effort, and the idea faded away.</p>
+            <p>Then came our internship under <strong>RamXR</strong>, in March 2026. It lasted nearly two months, and it gave us access to the Dnyansagar Incubation centre. We met many startups there, and they inspired us too. The question in my head was simple: how do they actually find paying customers for software?</p>
+
+            <h2><span class="sec">SWASTIK</span>Swastik, the side project nobody knew about 📱</h2>
+            <p>The next semester, <strong>Mahesh</strong> and I had a new idea. We would build college student projects and earn something from it. We made a WhatsApp group called <strong>Swastik</strong> and gathered almost 200 students, with our friends and some juniors from diploma. We posted many projects there, hoping someone would reach out to get theirs built.</p>
+            <p>It didn’t work.</p>
+
+            <figure class="fig">
+                <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pencil sketch of a phone showing a group chat with many tiny people and the number 200 plus">
+                    <rect x="8" y="8" width="384" height="204" rx="8" fill="#fbf6e6" stroke="#3b3b3b" stroke-width="2" />
+                    <rect x="150" y="20" width="100" height="180" rx="14" fill="#ffffff" stroke="#3b3b3b" stroke-width="2.5" />
+                    <line x1="150" y1="48" x2="250" y2="48" stroke="#3b3b3b" stroke-width="2" />
+                    <text x="200" y="40" text-anchor="middle" font-family="Caveat, cursive" font-size="18" fill="#3b3b3b">Swastik</text>
+                    <g fill="none" stroke="#3b3b3b" stroke-width="1.6">
+                        <circle cx="170" cy="75" r="6" /><circle cx="190" cy="75" r="6" /><circle cx="210" cy="75" r="6" /><circle cx="230" cy="75" r="6" />
+                        <circle cx="170" cy="95" r="6" /><circle cx="190" cy="95" r="6" /><circle cx="210" cy="95" r="6" /><circle cx="230" cy="95" r="6" />
+                        <circle cx="170" cy="115" r="6" /><circle cx="190" cy="115" r="6" /><circle cx="210" cy="115" r="6" /><circle cx="230" cy="115" r="6" />
+                    </g>
+                    <text x="200" y="165" text-anchor="middle" font-family="Caveat, cursive" font-size="30" fill="#c0392b">200+</text>
+                    <text x="320" y="110" text-anchor="middle" font-family="Caveat, cursive" font-size="22" fill="#3b3b3b">no replies</text>
+                    <path d="M262 108 C 275 100, 280 104, 285 108" fill="none" stroke="#3b3b3b" stroke-width="1.6" />
+                </svg>
+            </figure>
+
+            <p>We also made an Instagram account with the same name. We hadn’t told Vinay, Pranav or anyone else. It was only between the two of us.</p>
+            <p>Why? We kind of knew it would be very hard work. Around that time, I was getting more involved in discussions with Mahesh, getting to know him better and understand his perspectives. I was impressed by his mindset on many things. I hadn’t seen that kind of mindset in anyone except my best friend <strong>Anand</strong>, from diploma. So I started spending more time with Mahesh and making plans and goals with him, and that’s when we stumbled upon the Swastik idea.</p>
+            <p>We thought we would tell Vinay and Pranav once we had made something out of it. That didn’t happen.</p>
+            <p>A few weeks later, a discussion started in our group of four: we should do something to earn. At the same time, we were learning from the incubation startups how to get actual clients.</p>
+
+            <h2><span class="sec">COLD CALLING</span>Our first mistake: pitching as a startup 📞</h2>
+            <p>The method was <strong>cold calling</strong>. You make a calling list from Google Maps, call each business with a defined script, and pitch your services.</p>
+            <span class="margin-note">“startup” sounded big. it was too big.</span>
+            <p>We started by pitching ourselves as a <em>startup</em>. That was a mistake. We soon realised that nobody wants to take a service from a startup. A startup has to be bound to procedures and structure that we knew nothing about: a bill, an agreement, a tender, and so on.</p>
+            <p>Friends and seniors at the incubation centre gave us a better suggestion: pitch as college students and freelancers. So we did it that way.</p>
+
+            <h2><span class="sec">THE TEAM</span>Four friends, four jobs 🧩</h2>
+            <p>We divided the responsibilities among ourselves:</p>
+            <ul class="moments">
+                <li>
+                    <b>Pranav</b>
+                    Client communication and cold reach-out, because he was the best at speaking. (Our friend Pranav, not Pranav Patil the senior.)
+                </li>
+                <li>
+                    <b>Me</b>
+                    The backend.
+                </li>
+                <li>
+                    <b>Vinay</b>
+                    The frontend.
+                </li>
+                <li>
+                    <b>Mahesh</b>
+                    Negotiation.
+                </li>
+            </ul>
+            <p>First, we scraped contact details and business information for CA firms, hospitals and small businesses: what they do, what services they need, and what we could pitch them. From that information, we wrote pitching scripts for them.</p>
+
+            <figure class="fig">
+                <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pencil sketch of four desks labelled talk, backend, frontend and negotiate">
+                    <rect x="8" y="8" width="384" height="204" rx="8" fill="#fbf6e6" stroke="#3b3b3b" stroke-width="2" />
+                    <g fill="#ffffff" stroke="#3b3b3b" stroke-width="2.2">
+                        <rect x="22" y="110" width="76" height="50" rx="3" />
+                        <rect x="112" y="110" width="76" height="50" rx="3" />
+                        <rect x="202" y="110" width="76" height="50" rx="3" />
+                        <rect x="292" y="110" width="76" height="50" rx="3" />
+                    </g>
+                    <g fill="none" stroke="#3b3b3b" stroke-width="2.2">
+                        <circle cx="60" cy="75" r="14" /><circle cx="150" cy="75" r="14" /><circle cx="240" cy="75" r="14" /><circle cx="330" cy="75" r="14" />
+                        <line x1="60" y1="89" x2="60" y2="110" /><line x1="150" y1="89" x2="150" y2="110" /><line x1="240" y1="89" x2="240" y2="110" /><line x1="330" y1="89" x2="330" y2="110" />
+                    </g>
+                    <g font-family="Caveat, cursive" font-size="22" fill="#c0392b" text-anchor="middle">
+                        <text x="60" y="190">talk</text>
+                        <text x="150" y="190">backend</text>
+                        <text x="240" y="190">frontend</text>
+                        <text x="330" y="190">negotiate</text>
+                    </g>
+                </svg>
+            </figure>
+
+            <h2><span class="sec">THE WAIT</span>Fifty to a hundred calls and still no yes 😅</h2>
+            <p>After 50 to 100 calls, we were still struggling. <strong>Pranav</strong> did the pitching on the phone. A few people felt interested but didn’t pick up the next call. Others just ignored us on the very first call.</p>
+            <p>Then, after many cold reach-outs, we finally got our first client: <strong>a CA</strong>.</p>
+            <p>We had pitched him two things: a <strong>meeting scheduling feature</strong> on his website, and a <strong>WhatsApp automation tool</strong> that could send messages in bulk to many people.</p>
+
+            <h2><span class="sec">THE PROTOTYPE</span>Building something I didn’t fully understand 🛠️</h2>
+            <p>We got his requirements over a call. I built the prototype of the WhatsApp automation tool in <strong>Python</strong>. This was kind of new to me, so I didn’t know about the problems it might face, like WhatsApp blocking the number. I just thought WhatsApp wouldn’t do anything like that. My focus was on building a tool that could send messages to different numbers.</p>
+            <p>Meanwhile, <strong>Vinay</strong> built the meeting-booking demo. He first cloned the CA’s website, then added <strong>Google Calendar</strong> integration to it.</p>
+            <p>We showed the demo by scheduling an online meeting. The CA asked for a few changes. He wanted the tool to send messages to <strong>groups</strong> too, and he wanted it to <strong>not trigger any WhatsApp blocking</strong>.</p>
+            <span class="margin-note">i said yes. i did not know how.</span>
+            <p>I said yes.</p>
+            <p>In that same online meeting, we negotiated the price and timeline and finalised <strong>₹16,000 for both tools, with one month for delivery</strong>.</p>
+
+            <h2><span class="sec">THE MEETING</span>The day we dressed up for a CA 👔</h2>
+            <p>After the online meeting, the CA invited us to his office, to show the demo and discuss the requirements further. We had printed a so-called quotation, just to look professional and so that both sides could agree on the price and sign it on the day of the physical meeting.</p>
+
+            <div class="broke">
+                <span class="stamp">THE MOMENT</span>
+                <p>The four of us went there, well dressed. We were all nervous and trying to fake professionalism. But our reality was so strong that it showed right outside the CA’s cabin door.</p>
+                <p><strong>Pranav</strong> always handles things with a heavy hand. When he pulled the quotation pages out of the bag, all the other things came out with them and fell on the floor, including <strong>Vinay’s</strong> compass box. It made a lot of noise, so everyone must have noticed.</p>
+            </div>
+
+            <figure class="fig">
+                <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pencil sketch of an office door with papers and a compass box fallen on the floor">
+                    <rect x="8" y="8" width="384" height="204" rx="8" fill="#fbf6e6" stroke="#3b3b3b" stroke-width="2" />
+                    <rect x="150" y="25" width="100" height="140" rx="3" fill="#ffffff" stroke="#3b3b3b" stroke-width="2.5" />
+                    <circle cx="235" cy="100" r="4" fill="#3b3b3b" />
+                    <text x="200" y="60" text-anchor="middle" font-family="Caveat, cursive" font-size="20" fill="#3b3b3b">CA</text>
+                    <line x1="30" y1="165" x2="370" y2="165" stroke="#3b3b3b" stroke-width="2" />
+                    <g fill="#ffffff" stroke="#3b3b3b" stroke-width="2">
+                        <rect x="90" y="172" width="44" height="22" rx="2" transform="rotate(-8 112 183)" />
+                        <rect x="270" y="170" width="52" height="26" rx="2" />
+                        <rect x="200" y="176" width="38" height="18" rx="2" transform="rotate(12 219 185)" />
+                    </g>
+                    <text x="296" y="190" text-anchor="middle" font-family="Caveat, cursive" font-size="16" fill="#3b3b3b">compass box</text>
+                    <text x="75" y="130" text-anchor="middle" font-family="Caveat, cursive" font-size="28" fill="#c0392b">CLANG!</text>
+                    <path d="M95 140 L110 160 M60 140 L50 160" fill="none" stroke="#c0392b" stroke-width="2" />
+                </svg>
+            </figure>
+
+            <p>It was a little embarrassing and childish. We controlled our laughter and went inside the cabin.</p>
+            <p>I opened my laptop, and <strong>Mahesh</strong> silently plugged in the charger, because my laptop doesn’t start without a power supply 😅. It took a little time to load, but we showed the demo.</p>
+            <p>It was our first deal, so we were a little naive. Mahesh wondered how we would get access to the CA’s website to update it, so he asked the CA to give us access. The CA connected us to the tech service provider who had given him the website. Mahesh said, <strong>“Could we get your repo?”</strong> 🤭</p>
+            <p>I said to the CA directly, <strong>“Ask him for cPanel access.”</strong> That’s how we got the cPanel credentials.</p>
+            <p>About the quotation: it wasn’t legal, obviously, and the CA knew it. He just said, <strong>“Do you need it, or should I keep it?”</strong> It had no real value. It only proved how naive we were.</p>
+
+            <h2><span class="sec">FAKE IT</span>Fake it till you make it 🎭</h2>
+            <p>The only thing the CA trusted was that we could build software that solved his problem. Nothing else stood between him and us to prove our capability. We weren’t professional and we weren’t experienced. We had just started.</p>
+            <p>On his very first cold call, we had told him that we had <strong>already closed a few clients</strong>. In the meeting, we told him that <strong>three people worked under me</strong> for technical work. Even he knew all of this was fake. We just wanted to stand out and prove our significance.</p>
+
+            <blockquote class="pull">
+                Fake it till you make it sounded truer than it ever had before.
+                <cite>— me, outside the CA’s cabin</cite>
+            </blockquote>
+
+            <h2><span class="sec">THE OLD MISTAKE</span>The website that showed everything 😬</h2>
+            <p>I had a past experience that taught me, the hard but fun way, how a site can crash.</p>
+
+            <div class="broke">
+                <span class="stamp">WHAT BROKE</span>
+                <p>I was once hosting a website that <strong>Pranav Patil</strong> (the senior from incubation) had given me, from <strong>Ramastra</strong>, <strong>Omkar Mane’s</strong> startup. I made some mistakes, and when the website opened, it showed the <strong>whole directory</strong> and all its files. That very day, they had a meeting with a client, and they opened the site in front of the client and saw the whole directory.</p>
+                <p><strong>Omkar Mane</strong> scolded me later. I laughed from inside, making sure it didn’t show on my face.</p>
+                <p>The task had come to me because Pranav Patil got a little bored. He handed me the cPanel of Ramastra and said I just had to upload the code as a zip, extract it, and make sure the site worked. But his laptop had little charge, and there was no electricity in college at that time. I uploaded the zip, but the laptop died during extraction. I told him I couldn’t do anything further without power.</p>
+                <p class="say">He said he would look after it, but he forgot to do so as well.</p>
+            </div>
+
+            <p>It was a little funny to me. It wasn’t really high stakes and didn’t cause much harm. But I really learned that <span class="hl">being responsible is the main thing</span>.</p>
+
+            <h2><span class="sec">THE UPDATE</span>Going live at night 🌙</h2>
+            <p>So when it was the CA’s turn, I knew what to watch for. We developed the app, bundled it into a package and made a GUI. Vinay also made the HTML file for the appointment-booking page. We got the cPanel access of the CA’s website through a phone call and updated the website.</p>
+            <p>To make sure it wouldn’t crash, <strong>we took a full backup of the whole website first</strong>. I did the update at night so no one could see the site while it was being updated.</p>
+            <p>It wasn’t a big achievement, but it was the first time I had hosted and updated someone’s cPanel myself. 🙂</p>
+            <p>This was one day before our fixed deadline. We went to his office and installed the WhatsApp automation software on his desktop. It took us a little time, because his PC didn’t have the Chrome drivers the automation needed. We installed them, and everything worked well.</p>
+
+            <h2><span class="sec">THE BLOCK</span>When WhatsApp said stop 🚫</h2>
+            <p>He paid us <strong>half</strong> the amount. The other half was to be paid after a few days of trial and testing.</p>
+            <p>During that trial, his WhatsApp got <strong>blocked by Meta for 24 hours</strong>. He called us about it, and we went to see him. That day, I came to believe that Meta really does block repetitive spamming messages.</p>
+            <p>We updated the software with <strong>random delays and a pause of 1 to 3 minutes</strong> between messages. To test it, we used Mahesh’s phone and sent every contact in it a message about our startup. It was basically spam, but it told us how many messages we could send before WhatsApp blocked the number.</p>
+
+            <figure class="fig">
+                <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pencil sketch of a phone with a message bubble crossed by a red no sign and a counter near 100">
+                    <rect x="8" y="8" width="384" height="204" rx="8" fill="#fbf6e6" stroke="#3b3b3b" stroke-width="2" />
+                    <rect x="60" y="22" width="110" height="176" rx="14" fill="#ffffff" stroke="#3b3b3b" stroke-width="2.5" />
+                    <rect x="75" y="60" width="80" height="34" rx="10" fill="none" stroke="#3b3b3b" stroke-width="2" />
+                    <rect x="75" y="108" width="80" height="34" rx="10" fill="none" stroke="#3b3b3b" stroke-width="2" />
+                    <circle cx="115" cy="127" r="42" fill="none" stroke="#c0392b" stroke-width="4" />
+                    <line x1="85" y1="157" x2="145" y2="97" stroke="#c0392b" stroke-width="4" />
+                    <text x="290" y="100" text-anchor="middle" font-family="Caveat, cursive" font-size="48" fill="#c0392b">~100</text>
+                    <text x="290" y="135" text-anchor="middle" font-family="Caveat, cursive" font-size="22" fill="#3b3b3b">then blocked</text>
+                </svg>
+            </figure>
+
+            <p>We got blocked at <strong>around 100 contacts</strong>. So we told the CA he could send only <strong>100 messages per day</strong>. His requirement was 500, and we couldn’t meet it.</p>
+
+            <h2><span class="sec">GROUPS</span>Groups, groups and more groups 👥</h2>
+            <p>The CA also needed the tool to send messages to <strong>groups</strong>. It took us a few days to build that feature.</p>
+            <p>The new problem: we didn’t have 100+ groups to test on. So <strong>Vinay</strong> created 100+ groups on his own, each with just 2 or 3 members (me, Vinay and Mahesh). That’s when we found out there is a limit of <strong>20 groups we can make at a time</strong>, so we had to wait before we could make that many.</p>
+            <span class="margin-note">group chats: now with fewer people.</span>
+            <p>We tested the automation on groups, and all the groups got their messages without any blocking. So we realised that, in our tests, WhatsApp blocked us when we sent to contacts, not to groups.</p>
+
+            <h2><span class="sec">THE PRICE</span>From ₹16,000 to ₹12,000 💬</h2>
+            <p>Because we hadn’t completely met the CA’s requirements, we had to reduce our quotation to <strong>₹12,000</strong> instead of ₹16,000.</p>
+            <p>Mahesh tried to convince him. He said we had put a lot of effort into building it, and the CA should at least consider that.</p>
+            <p>Then the CA said something very important, and it stayed with me as a lesson:</p>
+
+            <blockquote class="pull">
+                You get paid based on how much value you deliver to others, not by how many efforts you have put in.
+                <cite>— the CA, to four college students</cite>
+            </blockquote>
+
+            <figure class="fig">
+                <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pencil sketch of a quotation slip with 16,000 rupees crossed out and 12,000 rupees written beside it">
+                    <rect x="8" y="8" width="384" height="204" rx="8" fill="#fbf6e6" stroke="#3b3b3b" stroke-width="2" />
+                    <rect x="90" y="25" width="220" height="170" rx="4" fill="#ffffff" stroke="#3b3b3b" stroke-width="2.5" />
+                    <text x="200" y="55" text-anchor="middle" font-family="Caveat, cursive" font-size="24" fill="#3b3b3b">Quotation</text>
+                    <line x1="110" y1="68" x2="290" y2="68" stroke="#3b3b3b" stroke-width="1.6" />
+                    <line x1="110" y1="88" x2="260" y2="88" stroke="#3b3b3b" stroke-width="1.6" />
+                    <line x1="110" y1="106" x2="240" y2="106" stroke="#3b3b3b" stroke-width="1.6" />
+                    <text x="150" y="146" text-anchor="middle" font-family="Caveat, cursive" font-size="30" fill="#3b3b3b">₹16,000</text>
+                    <line x1="110" y1="138" x2="192" y2="138" stroke="#c0392b" stroke-width="3" />
+                    <text x="250" y="146" text-anchor="middle" font-family="Caveat, cursive" font-size="30" fill="#c0392b">₹12,000</text>
+                    <text x="200" y="182" text-anchor="middle" font-family="Caveat, cursive" font-size="18" fill="#3b3b3b">signed, but not legal</text>
+                </svg>
+            </figure>
+
+            <h2><span class="sec">LOOKING BACK</span>What that first client gave us 🎓</h2>
+            <p>So these were the learnings, the experience and the lessons from closing our first client. None of it would have been possible without his support and trust in us. And we got something memorable for life.</p>
+
+            <h2><span class="sec">TAKEAWAYS</span>What I took from it 📌</h2>
+            <ol>
+                <li><strong>Value matters more than effort.</strong> You are paid for what the other person gets, not for how hard you worked.</li>
+                <li><strong>Don’t say yes before you understand the problem.</strong> I promised “no blocking” without knowing how WhatsApp works.</li>
+                <li><strong>Take a backup before touching someone else’s work.</strong> I had learned this the hard way.</li>
+                <li><strong>Being responsible is the main thing.</strong> I learned it from a dead laptop and a website that showed its whole directory.</li>
+                <li><strong>Trust is a gift.</strong> The CA believed we could solve his problem when we had nothing else to prove it.</li>
+            </ol>
+
+            <div class="takeaway">
+                <b>Takeaway</b>
+                <p>You get paid for the value you deliver, not for the effort you put in.</p>
+            </div>
+
+            <p class="signoff">— Yash</p>
+
+            <nav class="post-nav" aria-label="Entries" data-blog-meta="navigation"><a href="../index.html">← back to the notebook</a>
+                <a href="starting-at-dyp-part-ii.html">previous: Starting at DYP, Part 2: The First Days</a></nav>
+        </article>
+
+        <img class="edge-doodle" src="../assets/campus.png" alt="Pencil sketch of the diploma college building" />
+
+        <span class="page-no" title="Blog number 9" aria-hidden="true" data-blog-meta="page-number-label">L.J. Page 006</span>
+    </main>
+
+    <script src="../notebook.js"></script>
+</body>
+
+</html>

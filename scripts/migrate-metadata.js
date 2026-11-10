@@ -52,8 +52,14 @@ for (const file of files) {
     const series = /thought|mindset/i.test(seriesText) ? "thoughts" : /dev|postmortem/i.test(seriesText) ? "postmortem" : "journal";
     const title = textOf(document, h1) || slug;
     const metaDescription = descriptionNode ? document.attr(descriptionNode, "content") : "";
-    const month = (kicker ? textOf(document, kicker) : "").match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})/i);
-    const date = month ? `${month[2]}-${String(new Date(`${month[1]} 1, ${month[2]}`).getMonth() + 1).padStart(2, "0")}-01` : "2026-10-01";
+    const dateText = kicker ? textOf(document, kicker) : "";
+    const fullDate = dateText.match(/(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})/i);
+    const monthOnly = dateText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})/i);
+    const date = fullDate
+        ? `${fullDate[3]}-${String(new Date(`${fullDate[2]} 1, ${fullDate[3]}`).getMonth() + 1).padStart(2, "0")}-${String(fullDate[1]).padStart(2, "0")}`
+        : monthOnly
+            ? `${monthOnly[2]}-${String(new Date(`${monthOnly[1]} 1, ${monthOnly[2]}`).getMonth() + 1).padStart(2, "0")}-01`
+            : "2026-10-01";
     const outputPath = path.join(DATA_DIR, `${slug}.json`);
     for (const link of document.findAll("a", post)) {
         const href = document.attr(link, "href");
